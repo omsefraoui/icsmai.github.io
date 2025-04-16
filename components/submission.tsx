@@ -101,8 +101,8 @@ export default function Submission() {
                           <p>For more information about submissions, please contact us</p>
                           <p className="flex items-center gap-1 mt-1">
                             <Mail className="h-4 w-4" />
-                            <a href="mailto:icsmai_lsi@gmail.com" className="hover:underline">
-                              icsmai_lsi@gmail.com
+                            <a href="mailto:icsmai.alsi@gmail.com" className="hover:underline">
+                              icsmai.alsi@gmail.com 
                             </a>
                           </p>
                         </div>
