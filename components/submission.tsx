@@ -112,7 +112,7 @@ export default function Submission() {
 
                   <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 mt-6">
                     <Button className="flex items-center gap-2" asChild>
-                      <Link href="#">
+                      <Link href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19338734/data/v1">
                         <Download className="h-4 w-4" />
                         Download Word Template
                       </Link>
