@@ -220,7 +220,7 @@ export default function Committees() {
     "GENERAL CO-CHAIRS": <User className="h-5 w-5" />,
     "LOCAL ORGANIZING COMMITTEE": <Users className="h-5 w-5" />,
     "INTERNATIONAL ORGANIZING COMMITTEE": <Globe className="h-5 w-5" />,
-    "PhD STUDENT ORGANIZING COMMITTEE": <GraduationCap className="h-5 w-5" />,
+    "STUDENT COMMITTEE": <GraduationCap className="h-5 w-5" />,
     "TECHNICAL PROGRAM COMMITTEE": <BookOpen className="h-5 w-5" />,
   }
 
