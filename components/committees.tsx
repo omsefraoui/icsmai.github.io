@@ -71,7 +71,7 @@ export default function Committees() {
       "M. FAYAD, Franche-Comté Univ. Besançon, France",
       "F. BENKHALDOUN, Sorbonne Paris Nord University, France",
     ],
-    " STUDENT  COMMITTEE": [
+    "STUDENT COMMITTEE": [
       "R. Ghafir, UMP, Oujda, Morocco",
       "R. Baba, UMP, Oujda, Morocco",
       /*"Y. EL KANEB, UMP, Oujda, Morocco",
