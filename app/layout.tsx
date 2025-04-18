@@ -5,6 +5,21 @@ import Footer from "@/components/layout/footer";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import React from 'react';
+import MenuHamburger from "@/components/MenuHamburger";
+
+const Layout: React.FC = ({ children }) => {
+  return (
+    <div>
+      <MenuHamburger />
+      <main>{children}</main>
+    </div>
+  );
+};
+
+export default Layout;
+
+
 const inter = Inter({ subsets: ["latin"] });
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

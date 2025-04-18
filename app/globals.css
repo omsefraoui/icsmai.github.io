@@ -1,30 +1,3 @@
-/* Styles globaux */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Styles pour le menu */
-.menu {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Media query pour les écrans mobiles */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-item {
-    margin: 10px 0;
-  }
-}
-
-
-
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -354,4 +327,28 @@ body {
 
 .breathing-shadow {
   animation: breathing 4s ease-in-out infinite;
+}
+
+/* Styles par défaut pour les écrans larges */
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  padding: 10px;
+}
+
+/* Media query pour les écrans mobiles */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
 }
