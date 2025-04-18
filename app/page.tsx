@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar"
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import Keynotes from "@/components/keynotes"
@@ -9,37 +10,23 @@ import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
-///////////////////////////////
-
-import Navbar from '@/components/Navbar'
-
-export default function HomePage() {
+export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="p-6">
-        <h1 className="text-2xl">Bienvenue</h1>
+      <main className="flex min-h-screen flex-col items-center pt-20">
+        <Hero />
+        <div id="about"><About /></div>
+        <div id="keynotes"><Keynotes /></div>
+        <div id="committees"><Committees /></div>
+        <div id="topics"><Topics /></div>
+        <div id="submission"><Submission /></div>
+        <div id="dates"><Dates /></div>
+        <div id="registration"><Registration /></div>
+        {/*<Programme />*/}
+        <div id="sponsors"><Sponsors /></div>
+        <div id="contact"><Contact /></div>
       </main>
     </>
-  )
-}
-
-///////////////////////////////////
-
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center">
-      <Hero />
-      <About />
-      <Keynotes />
-      <Committees />
-      <Topics />
-      <Submission />
-      <Dates />
-      <Registration />
-      {/*<Programme />*/}
-      <Sponsors />
-      <Contact />
-    </main>
   )
 }
