@@ -19,8 +19,8 @@ export default function Committees() {
       "Pr. Kamal GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
     ],
     "GENERAL CO-CHAIRS": [
-      "Pr. Réda YAHIAOUI, Franche-Comté Univ. Besançon, France",
-      "Prof. Omar ELMAZRIA, Université de Lorraine, France"
+      "Pr. Réda YAHIAOUI, Franche-Comté University. Besançon, France",
+      "Pr. Omar ELMAZRIA, lorraine University , Nancy, France",
       //"K. GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
       //"M. SERRHINI, FSO, Med 1st University, Oujda, Morocco",
       //"M. CHOUKRI, FMPO, Med 1st University, Oujda, Morocco",
@@ -214,7 +214,7 @@ export default function Committees() {
       "A. Naji, ENSAO, Oujda, Morocco",
       "R. Malek, ENSAO, Oujda, Morocco",
       "A. Kerkri, ENSAO, Oujda, Morocco",
-      "M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
+      //"M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
       "M. Yandouzi,  ENSAO, Oujda, Morocco",
       "M. Grari, ESTO, Oujda, Morocco",
     ],
