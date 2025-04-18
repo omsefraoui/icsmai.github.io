@@ -10,9 +10,9 @@ import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
 ///////////////////////////////
-import { Home as HomeIcon } from 'lucide-react'
+import { HomeIcon } from 'lucide-react'
 
-export default function Home() {
+export default function HomeIcon() {
   return (
     <main>
       <HomeIcon />
