@@ -10,13 +10,17 @@ import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
 ///////////////////////////////
-import { HomeIcon } from 'lucide-react'
 
-export default function HomeIcon() {
+import Navbar from '@/components/Navbar'
+
+export default function HomePage() {
   return (
-    <main>
-      <HomeIcon />
-    </main>
+    <>
+      <Navbar />
+      <main className="p-6">
+        <h1 className="text-2xl">Bienvenue</h1>
+      </main>
+    </>
   )
 }
 
