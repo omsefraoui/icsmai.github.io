@@ -49,7 +49,7 @@ export default function About() {
   const organizers = [
     "Mohammed Premier University",
     "Franche-Comté University",
-    "Lorraine University Nancy",
+    "Université Lorraine de Nancy",
     "National School of Applied Sciences Oujda",
     "Faculty of Medicine and Pharmacy Oujda",
     "Faculty of Sciences Oujda",
