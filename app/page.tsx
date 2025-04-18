@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar"
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import Keynotes from "@/components/keynotes"
@@ -9,24 +10,22 @@ import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
-///////////////////////////////
-
-///////////////////////////////////
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
-      <Hero />
-      <About />
-      <Keynotes />
-      <Committees />
-      <Topics />
-      <Submission />
-      <Dates />
-      <Registration />
-      {/*<Programme />*/}
-      <Sponsors />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+      <main className="pt-24 flex flex-col items-center">
+        <Hero />
+        <div id="about"><About /></div>
+        <div id="keynotes"><Keynotes /></div>
+        <div id="committees"><Committees /></div>
+        <div id="topics"><Topics /></div>
+        <div id="submission"><Submission /></div>
+        <div id="dates"><Dates /></div>
+        <div id="registration"><Registration /></div>
+        <div id="sponsors"><Sponsors /></div>
+        <div id="contact"><Contact /></div>
+      </main>
+    </>
   )
 }
