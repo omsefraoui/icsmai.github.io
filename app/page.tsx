@@ -9,6 +9,26 @@ import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
+///////////////////////////////
+
+// pages/_app.js
+//import "@/styles/globals.css";
+import Menu from  "@/components/Menu";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Menu />
+      <Component {...pageProps} />
+    </>
+  );
+}
+
+export default MyApp;
+
+
+///////////////////////////////////
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
