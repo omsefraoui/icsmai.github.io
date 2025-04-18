@@ -20,7 +20,7 @@ export default function Committees() {
     ],
     "GENERAL CO-CHAIRS": [
       "Pr. Réda YAHIAOUI, Franche-Comté University. Besançon, France",
-      "Pr. Omar ELMAZRIA, lorraine University , Nancy, France",
+      "Pr. Omar ELMAZRIA, Lorraine University , Nancy, France",
       //"K. GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
       //"M. SERRHINI, FSO, Med 1st University, Oujda, Morocco",
       //"M. CHOUKRI, FMPO, Med 1st University, Oujda, Morocco",
