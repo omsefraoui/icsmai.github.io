@@ -1,7 +1,3 @@
-
-html {
-  scroll-behavior: smooth;
-}
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -351,6 +347,45 @@ html {
   }
 
   .menu-item {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+.hamburger {
+  display: none;
+  padding: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuItem {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menuItem {
     margin: 10px 0;
     width: 100%;
     text-align: center;
