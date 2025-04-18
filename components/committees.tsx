@@ -8,7 +8,7 @@ export default function Committees() {
   const committees = {
     "HONORARY COMMITTEE": [
       "Mr. Yassine ZARHLOULE, President of Mohammed Premier University Oujda, Morocco",
-      "Mr. Farid El HEBIL, Director of ENSA Oujda, Morocco",
+      "Mr. Farid EL HEBIL, Director of ENSA Oujda, Morocco",
       "Mr. Khalid SERRAJ, Dean of the Faculty of Medicine and Pharmacy of Oujda, Morocco",
       //"Mr. Abdelhafid CHAFI, Director of EST Oujda, Morocco",
       //"Mr. Ismail RADI, Dean of FS Oujda, Morocco",
@@ -16,10 +16,11 @@ export default function Committees() {
       //"Mr. Mohammed BARBOUCHA, Director of EHEI Oujda, Morocco",
     ],
     "GENERAL CHAIRS": [
-      "K. GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
-      "R. YAHIAOUI, Franche-Comté Univ. Besançon, France",
+      "Pr. Kamal GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
     ],
     "GENERAL CO-CHAIRS": [
+      "Pr. Réda YAHIAOUI, Franche-Comté Univ. Besançon, France",
+      "Prof. Omar ELMAZRIA, Université de Lorraine, France"
       //"K. GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
       //"M. SERRHINI, FSO, Med 1st University, Oujda, Morocco",
       //"M. CHOUKRI, FMPO, Med 1st University, Oujda, Morocco",
@@ -28,17 +29,19 @@ export default function Committees() {
     ],
     "LOCAL ORGANIZING COMMITTEE": [
       "H. Barboucha, ENSAO, Oujda, Morocco",
+      "S. Daoudi, FSO, Oujda, Morocco",
       "O. Sefraoui, ENSAO, Oujda, Morocco",
+      "H. Bouali, ESTO, Oujda, Morocco",
       "M.A. Madani, ENSAO, Oujda, Morocco",
+      "D. Bahia, FSO, Oujda, Morocco",
       "A. Naji, ENSAO, Oujda, Morocco",
+      "R. Malek, ENSAO, Oujda, Morocco",
       "A. Kerkri, ENSAO, Oujda, Morocco",
+      "M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
+      "M. Yandouzi,  ENSAO, Oujda, Morocco",
 
       /*"M. KODAD, ESTO, UMP, Oujda, Morocco",
-      "A. KERKOUR EL MIAD, UMP, Oujda, Morocco",
-      "S. DAOUDI, UMP, Oujda, Morocco",
-      "R. MALEK, ENSAO, UMP, Morocco",
-      "E-M. AR-REYOUCHI, SNRT, Morocco",
-      "D. BRIA, FSO, UMP, Oujda, Morocco",
+        "D. BRIA, FSO, UMP, Oujda, Morocco",
       "O. MOUSSAOUI, ESTO, UMP, Oujda, Morocco",
       "H. BOUALI, ESTO, UMP, Oujda, Morocco",
       "R. BENKADDOUR, ESTO, UMP, Oujda, Morocco",
@@ -203,11 +206,17 @@ export default function Committees() {
       "E. H. SEBBAR, FMPO, UMP, Oujda, Morocco",
       "D. EL MOUJTAHIDE, FMPO, UMP, Oujda, Morocco",
       "A. SADDARI, FMPO, UMP, Oujda, Morocco",*/
-      "H. Barboucha, ENSAO, Oujda, Morocco",
+      "S. Daoudi, FSO, Oujda, Morocco",
       "O. Sefraoui, ENSAO, Oujda, Morocco",
+      "H. Bouali, ESTO, Oujda, Morocco",
       "M.A. Madani, ENSAO, Oujda, Morocco",
+      "D. Bahia, FSO, Oujda, Morocco",
       "A. Naji, ENSAO, Oujda, Morocco",
+      "R. Malek, ENSAO, Oujda, Morocco",
       "A. Kerkri, ENSAO, Oujda, Morocco",
+      "M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
+      "M. Yandouzi,  ENSAO, Oujda, Morocco",
+      "M. Grari, ESTO, Oujda, Morocco",
     ],
   }
 
