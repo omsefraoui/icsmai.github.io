@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex min-h-screen flex-col items-center pt-20">
+      <main className="flex flex-col items-center pt-24"> {/* pt-24 pour espace sous navbar */}
         <Hero />
         <div id="about"><About /></div>
         <div id="keynotes"><Keynotes /></div>
@@ -23,7 +23,6 @@ export default function Home() {
         <div id="submission"><Submission /></div>
         <div id="dates"><Dates /></div>
         <div id="registration"><Registration /></div>
-        {/*<Programme />*/}
         <div id="sponsors"><Sponsors /></div>
         <div id="contact"><Contact /></div>
       </main>
