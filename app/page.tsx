@@ -11,21 +11,6 @@ import Contact from "@/components/contact"
 
 ///////////////////////////////
 
-// pages/_app.js
-//import "@/styles/globals.css";
-import Menu from  "@/components/Menu";
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Menu />
-      <Component {...pageProps} />
-    </>
-  );
-}
-
-export default MyApp;
-
 
 ///////////////////////////////////
 
