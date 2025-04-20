@@ -11,7 +11,16 @@ import { Button } from "@/components/ui/button"
 export default function Keynotes() {
   const speakers = [
     {
-      name: "Pr. Moulay Akhloufi",
+      name: "Pr. SHERMIN VOSHMGIR",
+      organization: "Université de Moncton",
+      location: "Moncton, Canada.",
+     // image: "/placeholder.svg?height=400&width=400",
+      image: "/images/keynotes/speaker_16.jpg?height=400&width=400",
+      bio: "Shermin is the author of the best selling book Token Economy and the founder of Token Kitchen. In the past she founded BlockchainHub Berlin and was the director of the Research Institute for Cryptoeconomics at the Vienna University of Economics which she also co-founded. Shermin was also a curator of the infamous project TheDAO back in 2016. Shermin studied information systems in Vienna and filmmaking in Madrid. Under her pseudonym KAMIKAT.SE  she has also published her creative works. An Austrian with Iranian roots, she now lives on an olive farm in Portugal, where she works at the intersection of technology, agriculture, art, and social science. Her biggest strength is to make complex issues easily understandable to a wide audience without losing the depth or scope of the issues she writes or talks about. Shermin has a long track record of public speaking about blockchain, cryptocurrencies, Web3 and the future of technologies in general – from prestigious community conferences such as TedX, The Next Web or Re:publica, to private events for companies and institutions such as Vodafone, Audi, IMF and the Worldbank. She has a multidisciplinary perspective of how Web3 will impact different areas of society. She believes that Web3 and its tokenized applications can shift the dynamics of our socio-economic systems. Her focus is to make technology accessible to a non-tech audience so that all those who use technology can also take part in the decision-making process of the technology they use. ",
+      topic: "The Future of Generative AI",
+    }, 
+    {
+      name: "Pr. MOULAY AKHLOUFI",
       organization: "Université de Moncton",
       location: "Moncton, Canada.",
      // image: "/placeholder.svg?height=400&width=400",
@@ -36,7 +45,7 @@ export default function Keynotes() {
       topic: "Reinforcement Learning for Autonomous Systems",
     },*/
     {
-      name: "Pr. Intissar HADDIYA",
+      name: "Pr. INTISSAR HADDIYA",
       organization: "FMPO, Med 1st University",
       location: "Oujda, Morocco.",
       image: "/images/keynotes/speaker_11.jpg?height=400&width=400",
