@@ -7,16 +7,16 @@ import { Users, Award, GraduationCap, Globe, BookOpen, User } from "lucide-react
 export default function Committees() {
   const committees = {
     "HONORARY COMMITTEE": [
-      "Mr. Yassine ZARHLOULE, President of Mohammed Premier University Oujda, Morocco",
-      "Mr. Farid EL HEBIL, Director of ENSA Oujda, Morocco",
-      "Mr. Khalid SERRAJ, Dean of the Faculty of Medicine and Pharmacy of Oujda, Morocco",
+      "Mr. Yassine ZARHLOULE, President of Mohammed Premier University, Oujda, Morocco",
+      "Mr. Farid EL HEBIL, Director of ENSAO Oujda, Morocco",
+      "Mr. Khalid SERRAJ, Dean of the Faculty of Medicine and Pharmacy, Oujda, Morocco",
       //"Mr. Abdelhafid CHAFI, Director of EST Oujda, Morocco",
       //"Mr. Ismail RADI, Dean of FS Oujda, Morocco",
       //"Mr. Abdelali Kaaouachi, Director of ENCG Oujda, Morocco",
       //"Mr. Mohammed BARBOUCHA, Director of EHEI Oujda, Morocco",
     ],
     "GENERAL CHAIRS": [
-      "Pr. Kamal GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
+      "Pr. Kamal GHOUMID, ENSAO, Oujda, Morocco",
     ],
     "GENERAL CO-CHAIRS": [
       "Pr. Réda YAHIAOUI, Franche-Comté University. Besançon, France",
@@ -131,7 +131,7 @@ export default function Committees() {
       //"O. MOUSSAOUI, ESTO, UMP, Oujda, Morocco",
       "A. TALBI, Centrale Lille, France",
       //"M. KODAD, ESTO, UMP, Oujda, Morocco",
-      //"A. KERKOUR ELMIAD, FS, Oujda, Morocco",
+      "A. KERKOUR ELMIAD, FS, Oujda, Morocco",
       "B. EL MAHDAWI, Engineering Technical College Bagdad, Irak",
       "C. DROCOURT, UPJV, Amiens, France",
       "D. DURAND, UPJV, Amiens, France",
@@ -150,7 +150,7 @@ export default function Committees() {
       "E. A. MOUSSA, UMP, Oujda, Morocco",*/
       //"M. BELLAFKIH, INPT, Rabat, Morocco",
       "N. KERZAZI, ENSIAS, Rabat, Morocco",
-      //"M. A. KASMI, FS, Oujda, Morocco",
+      "M. A. KASMI, FS, Oujda, Morocco",
      // "N. OUERDI, FS, Oujda, Morocco",
       "I. HAMZAOUI, Univ. Valencience, France",
       "M. UMAR KHAN, COMSATS University, IslamAbad, Pakistan",
