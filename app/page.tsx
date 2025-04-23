@@ -7,6 +7,7 @@ import Submission from "@/components/submission"
 import Dates from "@/components/dates"
 import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
+import Sponsors from "@/components/proceedings"
 import Contact from "@/components/contact"
 
 export default function Home() {
