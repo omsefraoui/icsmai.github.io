@@ -7,22 +7,22 @@ import { CalendarClock } from "lucide-react"
 export default function Dates() {
   const timelineItems = [
     {
-      date: "January 15, 2025",
+      date: "April 10, 2025",
       title: "Paper Submission Opens",
       description: "Start submitting your research papers.",
     },
     {
-      date: "June 25, 2025",
+      date: "July 20, 2025",
       title: "Paper Submission Deadline",
       description: "Last day to submit your papers for review.",
     },
     {
-      date: "April 15, 2025",
-      title: "Poster & Demo Submission Deadline",
-      description: "Last day to submit posters and demos.",
+      date: "July 10, 2025",
+      title: "Poster Submission Deadline",
+      description: "Last day to submit posters.",
     },
     {
-      date: "July  25, 2025",
+      date: "July  30, 2025",
       title: "Notification of Acceptance",
       description: "Authors will be notified of acceptance decisions.",
     },
