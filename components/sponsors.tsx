@@ -4,9 +4,9 @@ import { motion } from "motion/react"
 import Image from "next/image"
 import { InfiniteSlider } from "./motion-primitives/infinite-slider"
 
-export default function proceedings() {
+export default function Sponsors() {
   return (
-    <section id="proceedings" className="py-20 bg-background">
+    <section id="sponsors" className="py-20 bg-background">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -19,14 +19,14 @@ export default function proceedings() {
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Sponsors</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                We are grateful for the support of our proceedings who make this conference possible
+                We are grateful for the support of our sponsors who make this conference possible
               </p>
             
             <div className="mt-8 max-w-[1200px]">
             <InfiniteSlider gap={24} reverse>
-              {[1, 2, 3, 4, 5, 6, 8].map((proceedings, index) => (
+              {[1, 2, 3, 4, 5, 6, 8, 9].map((sponsor, index) => (
                   <motion.div
-                  key={proceedings}
+                  key={sponsor}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -45,8 +45,8 @@ export default function proceedings() {
                         className="flex items-center justify-center h-full"
                       >
                         <Image
-                          src={`/images/proceedings/${sponsor}.png`}
-                          alt={`proceedings ${proceedings}`}
+                          src={`/images/sponsors/${sponsor}.png`}
+                          alt={`Sponsor ${sponsor}`}
                           width={200}
                           height={100}
                           className="h-[100px] w-auto mx-6 mt-8 "
