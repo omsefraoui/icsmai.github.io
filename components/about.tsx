@@ -93,19 +93,19 @@ export default function About() {
             </div>
           </motion.div>
 
-
           <div className="flex justify-start mb-10"> 
-              <Link href="https://link.springer.com/book/10.1007/978-3-031-66854-8">
-                <a>
+             // <Link href="https://link.springer.com/book/10.1007/978-3-031-66854-8">
+              <Link href="https://www.springer.com/gp/icsmai2024">
+                  <a>
                   <Image
-                    src="/images/sponsors/9.png" // Remplacez par le chemin de votre image 
-                    //src={`/images/sponsors/9.png`}
-                    alt="Springer Proceedings"
-                    width={200}
-                    height={150}
-                    className="cursor-pointer"
+                    // src="/images/sponsors/9.png"
+                     src={`/images/sponsors/9.png`}
+                     alt="Springer Proceedings"
+                     width={200}
+                     height={150}
+                     className="cursor-pointer"
                   />
-                </a>
+                  </a>
               </Link>
           </div>
 
