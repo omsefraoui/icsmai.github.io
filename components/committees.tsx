@@ -38,6 +38,9 @@ export default function Committees() {
       "R. Malek, ENSAO, Oujda, Morocco",
       "A. Kerkri, ENSAO, Oujda, Morocco",
       "M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
+      "H. Benhaddouh, FMPO, Oujda, Morocco",
+      "Y. Bentata, FMPO, Oujda, Morocco",
+      "A. KERKOUR ELMIAD, FS, Oujda, Morocco",
       "M. Yandouzi,  ENSAO, Oujda, Morocco",
 
       /*"M. KODAD, ESTO, UMP, Oujda, Morocco",
@@ -65,7 +68,7 @@ export default function Committees() {
     "MEDICAL PROFESSORS ORGANIZING COMMITTEE": [
       "  H. Benhaddouh, FMPO, Oujda, Morocco",
       "  Y. Bentata, FMPO, Oujda, Morocco",
-      
+           
       /*"I. LAJOIE, Franche-Comté Besançon University, France",
       "G. HERLEM, Franche-Comté Besançon University, France",
       "A. MOUSTEFAOUI, Montbebilart University, France",
@@ -231,7 +234,7 @@ export default function Committees() {
     "GENERAL CHAIRS": <User className="h-5 w-5" />,
     "GENERAL CO-CHAIRS": <User className="h-5 w-5" />,
     "LOCAL ORGANIZING COMMITTEE": <Users className="h-5 w-5" />,
-    "MEDICAL PROFESSORS ORGANIZING COMMITTEE": <Stethoscope  className="h-5 w-5" />,
+    //"MEDICAL PROFESSORS ORGANIZING COMMITTEE": <Stethoscope  className="h-5 w-5" />,
     "STUDENT COMMITTEE": <GraduationCap className="h-5 w-5" />,
     "TECHNICAL PROGRAM COMMITTEE": <BookOpen className="h-5 w-5" />,
   }
