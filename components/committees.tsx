@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Users, Award, GraduationCap, Globe, BookOpen, User } from "lucide-react"
+import { Users, Award, GraduationCap, FlaskConical, BookOpen, User } from "lucide-react"
 
 export default function Committees() {
   const committees = {
@@ -231,7 +231,7 @@ export default function Committees() {
     "GENERAL CHAIRS": <User className="h-5 w-5" />,
     "GENERAL CO-CHAIRS": <User className="h-5 w-5" />,
     "LOCAL ORGANIZING COMMITTEE": <Users className="h-5 w-5" />,
-    "MEDICAL PROFESSORS ORGANIZING COMMITTEE": <Globe className="h-5 w-5" />,
+    "MEDICAL PROFESSORS ORGANIZING COMMITTEE": <FlaskConical className="h-5 w-5" />,
     "STUDENT COMMITTEE": <GraduationCap className="h-5 w-5" />,
     "TECHNICAL PROGRAM COMMITTEE": <BookOpen className="h-5 w-5" />,
   }
