@@ -69,7 +69,7 @@ export default function Committees() {
       "  H. Benhaddouh, FMPO, Oujda, Morocco",
       "  Y. Bentata, FMPO, Oujda, Morocco",
            
-      /*"I. LAJOIE, Franche-Comté Besançon University, France",
+      "I. LAJOIE, Franche-Comté Besançon University, France",
       "G. HERLEM, Franche-Comté Besançon University, France",
       "A. MOUSTEFAOUI, Montbebilart University, France",
       "E. YUSIFLI ATISOL Paris, France",
@@ -78,8 +78,8 @@ export default function Committees() {
       "L. BEKIROVA, ASOIU Baku, Azebaidjan",
       "B. ALAOUI SOSSE, Franche-Comté University. Besançon, France",
       "M. FAYAD, Franche-Comté Univ. Besançon, France",
-      "F. BENKHALDOUN, Sorbonne Paris Nord University, France",*/
-    //],
+      "F. BENKHALDOUN, Sorbonne Paris Nord University, France",
+    ],*/
     "STUDENT COMMITTEE": [
       "R. Ghafir, UMP, Oujda, Morocco",
       "R. Baba, UMP, Oujda, Morocco",
