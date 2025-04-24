@@ -2,7 +2,8 @@
 
 import { motion } from "motion/react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Users, Award, GraduationCap, Stethoscope , BookOpen, User } from "lucide-react"
+import { Users, Award, GraduationCap, BookOpen, User } from "lucide-react"
+//import { Users, Award, GraduationCap, Stethoscope , BookOpen, User } from "lucide-react"
 
 export default function Committees() {
   const committees = {
