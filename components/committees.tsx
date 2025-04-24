@@ -65,7 +65,7 @@ export default function Committees() {
       "D. EL MOUJTAHIDE, FMPO, UMP, Oujda, Morocco",
       "A. SADDARI, FMPO, UMP, Oujda, Morocco",*/
     ],
-    "MEDICAL PROFESSORS ORGANIZING COMMITTEE": [
+    /*"MEDICAL PROFESSORS ORGANIZING COMMITTEE": [
       "  H. Benhaddouh, FMPO, Oujda, Morocco",
       "  Y. Bentata, FMPO, Oujda, Morocco",
            
@@ -79,7 +79,7 @@ export default function Committees() {
       "B. ALAOUI SOSSE, Franche-Comté University. Besançon, France",
       "M. FAYAD, Franche-Comté Univ. Besançon, France",
       "F. BENKHALDOUN, Sorbonne Paris Nord University, France",*/
-    ],
+    //],
     "STUDENT COMMITTEE": [
       "R. Ghafir, UMP, Oujda, Morocco",
       "R. Baba, UMP, Oujda, Morocco",
