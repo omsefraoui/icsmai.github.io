@@ -28,6 +28,14 @@ export default function Keynotes() {
       bio: "Professor Moulay Akhloufi holds a Bachelor of Science in Physics from the University Abdelmalek Essaadi (Morocco) and a Bachelor of Engineering from Telecom Saint-Etienne (France). He has a Master's and Ph.D. in Electrical Engineering from Ecole Polytechnique of Montreal and Laval University (Canada), respectively. Additionally, he holds an MBA from Laval University. Currently, Professor Akhloufi is a Computer Science Professor at Université de Moncton. He leads the Perception, Robotics, and Intelligent Machines (PRIME) research lab and serves as the Director of the Center for Artificial Intelligence NB Power. Additionally, he holds the Chair of AI in Healthcare. Before joining Université de Moncton, he acquired significant experience in the industry and technology transfer, particularly in machine vision and robotics. Professor Akhloufi's research expertise spans across the domains of artificial intelligence, computer vision, and intelligent robotic systems, where he has contributed to over two hundred publications. Additionally, he holds the status of a Senior Member of the Institute of Electrical and Electronics Engineers (IEEE). He is also an active member of the Society of Photo-Optical Instrumentation Engineers (SPIE). ",
       topic: "The Future of Generative AI",
     }, 
+     /*{
+      name: "Pr. INTISSAR HADDIYA",
+      organization: "FMPO, Med 1st University",
+      location: "Oujda, Morocco.",
+      image: "/images/keynotes/speaker_11.jpg?height=400&width=400",
+      bio: "Intissar HADDIYA, MD, PhD, is a Moroccan nephrologist, and Professor of Nephrology at Mohammed Premier University, Oujda. She graduated from the Faculty of Medicine in Rabat in 2006 and specialized in nephrology, dialysis, and kidney transplantation, with training in France. She holds a PhD in Social Responsibility in Health (2021), a specialization in AI in Healthcare (Stanford University, 2024) and has been President of the Kidney Failure Patients Support Association in Eastern Morocco since 2022. An author and reviewer for several medical journals, she has published over 50 scientific articles and a book on social responsibility in health in Africa (Peter Lang, 2023). She also holds multiple international certifications in nephrology, medical education, and ethics..", 
+      topic: "Environmental determinants of hypertension",
+    },*/
     /*{
       name: "Pr. Abdelkrim DAOUDI",
       organization: "FMPO, Med 1st University",
@@ -44,14 +52,7 @@ export default function Keynotes() {
       bio: "Pioneer in reinforcement learning and robotics with 20+ years of experience.",
       topic: "Reinforcement Learning for Autonomous Systems",
     },*/
-    {
-      name: "Pr. INTISSAR HADDIYA",
-      organization: "FMPO, Med 1st University",
-      location: "Oujda, Morocco.",
-      image: "/images/keynotes/speaker_11.jpg?height=400&width=400",
-      bio: "Intissar HADDIYA, MD, PhD, is a Moroccan nephrologist, and Professor of Nephrology at Mohammed Premier University, Oujda. She graduated from the Faculty of Medicine in Rabat in 2006 and specialized in nephrology, dialysis, and kidney transplantation, with training in France. She holds a PhD in Social Responsibility in Health (2021), a specialization in AI in Healthcare (Stanford University, 2024) and has been President of the Kidney Failure Patients Support Association in Eastern Morocco since 2022. An author and reviewer for several medical journals, she has published over 50 scientific articles and a book on social responsibility in health in Africa (Peter Lang, 2023). She also holds multiple international certifications in nephrology, medical education, and ethics..", 
-      topic: "Environmental determinants of hypertension",
-    },
+   
     /*{
       name: "Pr. Abdelhadi Zahouani",
       organization: "Evolina Health Group",

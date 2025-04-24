@@ -62,8 +62,11 @@ export default function Committees() {
       "D. EL MOUJTAHIDE, FMPO, UMP, Oujda, Morocco",
       "A. SADDARI, FMPO, UMP, Oujda, Morocco",*/
     ],
-    "INTERNATIONAL ORGANIZING COMMITTEE": [
-      "I. LAJOIE, Franche-Comté Besançon University, France",
+    "MEDICAL PROFESSORS ORGANIZING COMMITTEE ": [
+      "  H. Benhaddouh, FMPO, Oujda, Morocco",
+      "  Y. BENTATA, FMPO, Oujda, Morocco",
+      
+      /*"I. LAJOIE, Franche-Comté Besançon University, France",
       "G. HERLEM, Franche-Comté Besançon University, France",
       "A. MOUSTEFAOUI, Montbebilart University, France",
       "E. YUSIFLI ATISOL Paris, France",
@@ -72,7 +75,7 @@ export default function Committees() {
       "L. BEKIROVA, ASOIU Baku, Azebaidjan",
       "B. ALAOUI SOSSE, Franche-Comté University. Besançon, France",
       "M. FAYAD, Franche-Comté Univ. Besançon, France",
-      "F. BENKHALDOUN, Sorbonne Paris Nord University, France",
+      "F. BENKHALDOUN, Sorbonne Paris Nord University, France",*/
     ],
     "STUDENT COMMITTEE": [
       "R. Ghafir, UMP, Oujda, Morocco",
@@ -228,7 +231,7 @@ export default function Committees() {
     "GENERAL CHAIRS": <User className="h-5 w-5" />,
     "GENERAL CO-CHAIRS": <User className="h-5 w-5" />,
     "LOCAL ORGANIZING COMMITTEE": <Users className="h-5 w-5" />,
-    "INTERNATIONAL ORGANIZING COMMITTEE": <Globe className="h-5 w-5" />,
+    "MEDICAL PROFESSORS ORGANIZING COMMITTEE": <Globe className="h-5 w-5" />,
     "STUDENT COMMITTEE": <GraduationCap className="h-5 w-5" />,
     "TECHNICAL PROGRAM COMMITTEE": <BookOpen className="h-5 w-5" />,
   }
