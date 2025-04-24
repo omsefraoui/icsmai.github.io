@@ -62,9 +62,9 @@ export default function Committees() {
       "D. EL MOUJTAHIDE, FMPO, UMP, Oujda, Morocco",
       "A. SADDARI, FMPO, UMP, Oujda, Morocco",*/
     ],
-    "MEDICAL PROFESSORS ORGANIZING COMMITTEE ": [
+    "MEDICAL PROFESSORS ORGANIZING COMMITTEE": [
       "  H. Benhaddouh, FMPO, Oujda, Morocco",
-      "  Y. BENTATA, FMPO, Oujda, Morocco",
+      "  Y. Bentata, FMPO, Oujda, Morocco",
       
       /*"I. LAJOIE, Franche-Comté Besançon University, France",
       "G. HERLEM, Franche-Comté Besançon University, France",
