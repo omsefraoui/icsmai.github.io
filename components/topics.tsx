@@ -69,6 +69,19 @@ export default function Topics() {
       ],
     },
     {
+      title: "AI & Cybersecurity",
+      icon: <MessageSquare className="h-6 w-6" />,
+      topics: [        
+       "Threat Detection and Response",
+        "Anomaly Detection in Cybersecurity",
+        "Adversarial Attacks and Defenses",
+        "AI for Identity and Access Management",
+        "Phishing Detection with Machine Learning",
+        "Privacy-Preserving AI in Cybersecurity",
+      ],
+    },
+    
+    {
       title: "Natural Language Processing",
       icon: <MessageSquare className="h-6 w-6" />,
       topics: [
