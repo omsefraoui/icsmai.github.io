@@ -16,7 +16,7 @@ import {
   Microscope,
   Cpu,
   HeartPulse,
-  Landmark,
+  //Landmark,
   //GraduationCap,
 } from "lucide-react"
 
@@ -35,15 +35,15 @@ export default function Topics() {
       ],
     },
     {
-      title: "Robotics & Autonomous Systems",
-      icon: <Bot className="h-6 w-6" />,
+      title: "AI in Healthcare",
+      icon: <HeartPulse className="h-6 w-6" />,
       topics: [
-        "Robot Learning",
-        "Human-Robot Interaction",
-        "Autonomous Vehicles",
-        "Swarm Robotics",
-        "Soft Robotics",
-        "Aerial Robotics",
+        "Medical Imaging",
+        "Drug Discovery",
+        "Clinical Decision Support",
+        "Personalized Medicine",
+        "Genomics",
+        "Remote Patient Monitoring",
       ],
     },
     {
@@ -56,6 +56,18 @@ export default function Topics() {
         "Smart Cities",
         "Smart Grids",
         "Industrial IoT",
+      ],
+    },
+    {
+      title: "Robotics & Autonomous Systems",
+      icon: <Bot className="h-6 w-6" />,
+      topics: [
+        "Robot Learning",
+        "Human-Robot Interaction",
+        "Autonomous Vehicles",
+        "Swarm Robotics",
+        "Soft Robotics",
+        "Aerial Robotics",
       ],
     },
     {
@@ -82,7 +94,6 @@ export default function Topics() {
         "Privacy-Preserving AI in Cybersecurity",
       ],
     },
-    
     {
       title: "Natural Language Processing",
       icon: <MessageSquare className="h-6 w-6" />,
@@ -136,19 +147,7 @@ export default function Topics() {
         "AI Chips",
       ],
     },
-    {
-      title: "AI in Healthcare",
-      icon: <HeartPulse className="h-6 w-6" />,
-      topics: [
-        "Medical Imaging",
-        "Drug Discovery",
-        "Clinical Decision Support",
-        "Personalized Medicine",
-        "Genomics",
-        "Remote Patient Monitoring",
-      ],
-    },
-    {
+    /*{
       title: "AI in Finance",
       icon: <Landmark className="h-6 w-6" />,
       topics: [
@@ -159,7 +158,7 @@ export default function Topics() {
         "Credit Scoring",
         "Market Prediction",
       ],
-    },
+    },*/
     /*{
       title: "AI in Education",
       icon: <GraduationCap className="h-6 w-6" />,
