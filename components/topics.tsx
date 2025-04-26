@@ -12,9 +12,9 @@ import {
   MessageSquare,
   Handshake,
   //Shield,
-  Building2,
-  Microscope,
-  Cpu,
+ // Building2,
+  //Microscope,
+  //Cpu,
   HeartPulse,
   //Landmark,
   //GraduationCap,
@@ -118,12 +118,12 @@ export default function Topics() {
         "AI Regulation",
       ],
     },
-    {
+    /*{
       title: "Industry Applications",
       icon: <Building2 className="h-6 w-6" />,
       topics: ["Manufacturing", "Retail", "Transportation", "Energy", "Agriculture", "Entertainment"],
-    },
-    {
+    },*/
+    /*{
       title: "Emerging Technologies",
       icon: <Microscope className="h-6 w-6" />,
       topics: [
@@ -134,8 +134,8 @@ export default function Topics() {
         "Metaverse",
         "6G Networks",
       ],
-    },
-    {
+    },*/
+    /*{
       title: "Edge AI & Hardware",
       icon: <Cpu className="h-6 w-6" />,
       topics: [
@@ -146,7 +146,7 @@ export default function Topics() {
         "Neural Processing Units",
         "AI Chips",
       ],
-    },
+    },*/
     /*{
       title: "AI in Finance",
       icon: <Landmark className="h-6 w-6" />,
