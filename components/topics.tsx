@@ -8,6 +8,7 @@ import {
   Bot,
   Network,
   Eye,
+  faShieldAlt,
   MessageSquare,
   Shield,
   Building2,
@@ -70,7 +71,7 @@ export default function Topics() {
     },
     {
       title: "AI & Cybersecurity",
-      icon: <MessageSquare className="h-6 w-6" />,
+      icon: <faShieldAlt className="h-6 w-6" />,
       topics: [        
        "Threat Detection and Response",
         "Anomaly Detection in Cybersecurity",
