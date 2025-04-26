@@ -11,13 +11,13 @@ import {
   Lock,
   MessageSquare,
   Handshake,
-  Shield,
+  //Shield,
   Building2,
   Microscope,
   Cpu,
   HeartPulse,
   Landmark,
-  GraduationCap,
+  //GraduationCap,
 } from "lucide-react"
 
 export default function Topics() {
