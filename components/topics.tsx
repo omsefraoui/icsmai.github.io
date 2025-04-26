@@ -8,8 +8,9 @@ import {
   Bot,
   Network,
   Eye,
-  faShieldAlt,
+  Lock,
   MessageSquare,
+  Handshake,
   Shield,
   Building2,
   Microscope,
@@ -71,7 +72,7 @@ export default function Topics() {
     },
     {
       title: "AI & Cybersecurity",
-      icon: <faShieldAlt className="h-6 w-6" />,
+      icon: <Lock className="h-6 w-6" />,
       topics: [        
        "Threat Detection and Response",
         "Anomaly Detection in Cybersecurity",
@@ -96,7 +97,7 @@ export default function Topics() {
     },
     {
       title: "AI Ethics & Governance",
-      icon: <Shield className="h-6 w-6" />,
+      icon: <Handshake  className="h-6 w-6" />,
       topics: [
         "Responsible AI",
         "Fairness in AI",
@@ -159,7 +160,7 @@ export default function Topics() {
         "Market Prediction",
       ],
     },
-    {
+    /*{
       title: "AI in Education",
       icon: <GraduationCap className="h-6 w-6" />,
       topics: [
@@ -170,7 +171,7 @@ export default function Topics() {
         "Learning Analytics",
         "Virtual Learning Environments",
       ],
-    },
+    },*/
   ]
 
   const container = {
