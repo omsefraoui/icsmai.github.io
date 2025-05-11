@@ -10,8 +10,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Keynotes() {
   const speakers = [
-    {
-     /* name: "Pr. SHERMIN VOSHMGIR",
+    /*{
+      name: "Pr. SHERMIN VOSHMGIR",
       organization: "Vienna University, Austria - Founder of BlockchainHub and  Token Kitchen.",
       location: "Author of the book 'Token Economy'. ",
      // image: "/placeholder.svg?height=400&width=400",
