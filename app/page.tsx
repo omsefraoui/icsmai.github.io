@@ -6,7 +6,7 @@ import Topics from "@/components/topics"
 import Submission from "@/components/submission"
 import Dates from "@/components/dates"
 import Registration from "@/components/registration"
-import Programme from "@/components/programmerogramme"
+import Programme from "@/components/programme"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
