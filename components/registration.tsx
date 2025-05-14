@@ -31,7 +31,7 @@ export default function Registration() {
       name: "Online",
       price: { morocco: "1500 dhs", foreign: "200 euros" },
       description: "Virtual attendance",
-      buttonText: "Register Online--<p style={{ fontWeight: 'bold' }}>Ce texte est en gras avec style inline</p>",
+      buttonText: "Register Online",
     },
   ]
 
