@@ -10,21 +10,21 @@ export default function Registration() {
   const earlyBirdPlans = [
     {
       name: "Student",
-      price: { morocco: "2300 dhs -- Registration + 2 nights all inclusive - Double Room (2 adults / with ICMES participant)", foreign: "300 euros" },
-      description: "For full-time students",
+      price: { morocco: "2300 dhs", foreign: "300 euros" },
+      description: "For full-time students:  Registration + 1 nights all inclusive",
       buttonText: "Register as Student",
     },
     {
       name: "Academia",
       price: { morocco: "3000 dhs", foreign: "350 euros" },
-      description: "For academic researchers",
+      description: "For academic researchers:  Registration + 1 nights all inclusive",
       buttonText: "Register as Academic",
       popular: true,
     },
     {
       name: "Industry",
       price: { morocco: "3500 dhs", foreign: "400 euros" },
-      description: "For industry professionals",
+      description: "For industry professionals:  Registration + 1 nights all inclusive",
       buttonText: "Register as Professional",
     },
     {
@@ -39,17 +39,17 @@ export default function Registration() {
     {
       name: "Student",
       price: { morocco: "2800 dhs", foreign: "350 euros" },
-      description: "For full-time students",
+      description: "For full-time students:  Registration + 1 nights all inclusive",
     },
     {
       name: "Academia",
       price: { morocco: "3500 dhs", foreign: "400 euros" },
-      description: "For academic researchers",
+      description: "For academic researchers:  Registration + 1 nights all inclusive",
     },
     {
       name: "Industry",
       price: { morocco: "4000 dhs", foreign: "450 euros" },
-      description: "For industry professionals",
+      description: "For industry professionals:  Registration + 1 nights all inclusive",
     },
     {
       name: "Online",
@@ -59,11 +59,11 @@ export default function Registration() {
   ]
 
   const registrationIncludes = [
-    "Certificate of Presentation and Participation ;",
+    "Certificate of Presentation and Participation",
     "Conference Package (Programme, Electronic Conference Proceedings, Bloc note...)",
     "Access to all Sessions (oral and poster)",
-    "Conference sessions",
-    "1 meal + 2 coffee breaks",
+    "Coffee breaks (all days of the conference) : all inclusive",
+    "Lunches (all days of the conference) : all inclusive ;",
     "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
   ]
 
