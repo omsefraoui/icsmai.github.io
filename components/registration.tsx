@@ -10,20 +10,20 @@ export default function Registration() {
   const earlyBirdPlans = [
     {
       name: "Student",
-      price: { morocco: "1700 dhs", foreign: "250 euros" },
+      price: { morocco: "2300 dhs -- Registration + 2 nights all inclusive - Double Room (2 adults / with ICMES participant)", foreign: "300 euros" },
       description: "For full-time students",
       buttonText: "Register as Student",
     },
     {
       name: "Academia",
-      price: { morocco: "2000 dhs", foreign: "280 euros" },
+      price: { morocco: "3000 dhs", foreign: "350 euros" },
       description: "For academic researchers",
       buttonText: "Register as Academic",
       popular: true,
     },
     {
       name: "Industry",
-      price: { morocco: "3500 dhs", foreign: "350 euros" },
+      price: { morocco: "3500 dhs", foreign: "400 euros" },
       description: "For industry professionals",
       buttonText: "Register as Professional",
     },
@@ -38,17 +38,17 @@ export default function Registration() {
   const regularPlans = [
     {
       name: "Student",
-      price: { morocco: "2200 dhs", foreign: "300 euros" },
+      price: { morocco: "2800 dhs", foreign: "350 euros" },
       description: "For full-time students",
     },
     {
       name: "Academia",
-      price: { morocco: "2500 dhs", foreign: "330 euros" },
+      price: { morocco: "3500 dhs", foreign: "400 euros" },
       description: "For academic researchers",
     },
     {
       name: "Industry",
-      price: { morocco: "3500 dhs", foreign: "400 euros" },
+      price: { morocco: "4000 dhs", foreign: "450 euros" },
       description: "For industry professionals",
     },
     {
@@ -59,10 +59,12 @@ export default function Registration() {
   ]
 
   const registrationIncludes = [
+    "Certificate of Presentation and Participation ;",
     "Conference Package (Programme, Electronic Conference Proceedings, Bloc note...)",
-    "Participation and Registration Certificates (Official Printed format)",
+    "Access to all Sessions (oral and poster)",
     "Conference sessions",
     "1 meal + 2 coffee breaks",
+    "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
   ]
 
   return (
