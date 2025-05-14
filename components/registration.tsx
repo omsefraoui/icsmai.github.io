@@ -31,7 +31,7 @@ export default function Registration() {
       name: "Online",
       price: { morocco: "1500 dhs", foreign: "200 euros" },
       description: "Virtual attendance",
-      buttonText: "Register Online",
+      buttonText: "Register Online--<p style={{ fontWeight: 'bold' }}>Ce texte est en gras avec style inline</p>",
     },
   ]
 
@@ -63,7 +63,7 @@ export default function Registration() {
     "Conference Package (Programme, Electronic Conference Proceedings, Bloc note...)",
     "Access to all Sessions (oral and poster)",
     "Coffee breaks (all days of the conference) : all inclusive",
-    "Lunches (all days of the conference) : all inclusive ;",
+    "Lunches (All days of the conference) : all inclusive",
     "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
   ]
 
