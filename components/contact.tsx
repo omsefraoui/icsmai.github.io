@@ -144,9 +144,13 @@ export default function Contact() {
                     </div>
                     <div className="space-y-1">
                       <p className="font-medium">The conference will be held in Hotel Radisson Blu Resort Saidia Beach (All Inclusive) in Saïdia, Morocco</p>
-                                              Please find the link of the hotel: 
+                      <Link
+                        href="https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-saidia-beach?facilitatorId=RHGSEM&cid=a%3Aps+b%3Aggl+c%3Aemea+i%3Abrand+e%3Ardb+d%3Amea+r%3Abrt+f%3Afr-FR+g%3Aho+h%3AMAOUDRST+v%3Acf&gad_source=1&gad_campaignid=21268767749&gbraid=0AAAAADtKuEWqxp9Q-Xtw0XgDK6O7NMc6_&gclid=Cj0KCQjwoZbBBhDCARIsAOqMEZXan6LB0T2O_V6JkKXEAir-6iADdnTOGTNYCNvNbAORfZb2fwjHM_saAhvJEALw_wcB&gclsrc=aw.ds"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Please find the link of the hotel: 
                          <Link href="https://www.youtube.com/watch?v=52z3h7JjG2E" className="text-primary hover:underline ml-1">
-                      CLICK
+                      Click for more information
                       </Link>
                       </Link>
                     </div>
