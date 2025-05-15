@@ -11,20 +11,20 @@ export default function Registration() {
     {
       name: "Student",
       price: { morocco: "2300 dhs", foreign: "300 euros" },
-      description: "For full-time students:  Registration + 1 nights all inclusive",
+      description: "For full-time students:  Registration + 1 night all inclusive",
       buttonText: "Register as Student",
     },
     {
       name: "Academia",
       price: { morocco: "3000 dhs", foreign: "350 euros" },
-      description: "For academic researchers:  Registration + 1 nights all inclusive",
+      description: "For academic researchers:  Registration + 1 night all inclusive",
       buttonText: "Register as Academic",
       popular: true,
     },
     {
       name: "Industry",
       price: { morocco: "3500 dhs", foreign: "400 euros" },
-      description: "For industry professionals:  Registration + 1 nights all inclusive",
+      description: "For industry professionals:  Registration + 1 night all inclusive",
       buttonText: "Register as Professional",
     },
     {
@@ -39,17 +39,17 @@ export default function Registration() {
     {
       name: "Student",
       price: { morocco: "2800 dhs", foreign: "350 euros" },
-      description: "For full-time students:  Registration + 1 nights all inclusive",
+      description: "For full-time students:  Registration + 1 night all inclusive",
     },
     {
       name: "Academia",
       price: { morocco: "3500 dhs", foreign: "400 euros" },
-      description: "For academic researchers:  Registration + 1 nights all inclusive",
+      description: "For academic researchers:  Registration + 1 night all inclusive",
     },
     {
       name: "Industry",
       price: { morocco: "4000 dhs", foreign: "450 euros" },
-      description: "For industry professionals:  Registration + 1 nights all inclusive",
+      description: "For industry professionals:  Registration + 1 night all inclusive",
     },
     {
       name: "Online",
