@@ -3,14 +3,14 @@
 import { useRef, useEffect, useState } from "react"
 import { motion, useAnimation, useInView, useScroll, useTransform } from "motion/react"
 import { Button } from "@/components/ui/button"
-import { Calendar, Users, Globe, MapPin    , ChevronDown, FileText, Boxes } from "lucide-react"
+import { Calendar, Users, Globe, MessageSquare    , ChevronDown, FileText, Boxes } from "lucide-react"
 import Link from "next/link"
 import { AnimatedNumber } from "./motion-primitives/animated-number"
 import Image from "next/image"
 export default function Hero() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
-  const [values, setValues] = useState([0, 0])
+  const [values, setValues] = useState([0, 0, 0])
   const controls = useAnimation()
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,8 +21,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   useEffect(() => {
-    //setValues([300, 20, 25])
-    setValues([300, 20])
+    setValues([300, 20, 25])
 
     // Add dark class to body for dark theme
     /*document.body.classList.add("dark")
@@ -41,8 +40,8 @@ export default function Hero() {
   const stats = [
     { icon: <Users className="h-5 w-5" />, value: values[0], label: "Attendees" },
     { icon: <Globe className="h-5 w-5" />, value: values[1], label: "Countries" },
-    { icon: <MapPin className="h-5 w-5" />, text: "Saidia", label: "Morocco" },
-    //{ icon: <MessageSquare className="h-5 w-5" />, value: values[2], label: "Speakers" },
+    //{ icon: <MapPin className="h-5 w-5" />, value:values[2] text: "Saidia", label: "Saidia, Morocco" },
+    { icon: <MessageSquare className="h-5 w-5" />, value: values[2], label: "Speakers" },
   ]
 
   const letterVariants = {

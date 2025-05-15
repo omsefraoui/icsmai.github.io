@@ -137,6 +137,21 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
+
+                <div className="flex items-start space-x-4">
+                    <div className="p-2 rounded-full bg-primary/10">
+                      <Phone className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-medium">Phone</p>
+                      <Link
+                        href="tel:+212-05-36-50-54-70/71"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +212-05-36-50-54-70/71
+                      </Link>
+                    </div>
+                  </div>
               </CardContent>
             </Card>
           </motion.div>
