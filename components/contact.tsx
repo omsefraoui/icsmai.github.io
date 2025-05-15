@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { AtSign, Mail, MapPin, Phone } from "lucide-react"
+import { AtSign, Mail, MapPin, Hotel ,Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Contact() {
@@ -140,15 +140,14 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                     <div className="p-2 rounded-full bg-primary/10">
-                      <Phone className="h-5 w-5 text-primary" />
+                      <Hotel  className="h-5 w-5 text-primary" />
                     </div>
                     <div className="space-y-1">
-                      <p className="font-medium">Phone</p>
-                      <Link
-                        href="tel:+212-05-36-50-54-70/71"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        +212-05-36-50-54-70/71
+                      <p className="font-medium">The conference will be held in Hotel Radisson Blu Resort Saidia Beach (All Inclusive) in Saïdia, Morocco</p>
+                                              Please find the link of the hotel: 
+                         <Link href="https://www.youtube.com/watch?v=52z3h7JjG2E" className="text-primary hover:underline ml-1">
+                      CLICK
+                      </Link>
                       </Link>
                     </div>
                   </div>
