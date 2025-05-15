@@ -10,7 +10,7 @@ import Image from "next/image"
 export default function Hero() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
-  const [values, setValues] = useState([0, 0, 0])
+  const [values, setValues] = useState([0, 0])
   const controls = useAnimation()
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,7 +21,8 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   useEffect(() => {
-    setValues([300, 20, 25])
+    //setValues([300, 20, 25])
+    setValues([300, 20])
 
     // Add dark class to body for dark theme
     /*document.body.classList.add("dark")
