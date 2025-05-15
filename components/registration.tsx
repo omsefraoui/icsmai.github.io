@@ -61,9 +61,9 @@ export default function Registration() {
   const registrationIncludes = [
     "Certificate of Presentation and Participation",
     "Conference Package (Programme, Electronic Conference Proceedings, Bloc note...)",
-    "Access to all Sessions (oral and poster)",
-    "Coffee breaks (all days of the conference) : all inclusive",
-    "Lunches (All days of the conference) : all inclusive",
+    "Access to all Sessions",
+    "Coffee breaks (all days of the conference) : All inclusive",
+    "Lunches (All days of the conference) : All inclusive",
     "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
   ]
 
