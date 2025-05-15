@@ -88,10 +88,10 @@ export default function Registration() {
           <div className="flex justify-center mb-8">
             <TabsList className="grid w-full max-w-md grid-cols-2">
               <TabsTrigger value="early">
-                Before september 8th
+                Before July  30th
               </TabsTrigger>
               <TabsTrigger value="regular">
-                After September 8th
+                After July  30th
               </TabsTrigger>
             </TabsList>
           </div>

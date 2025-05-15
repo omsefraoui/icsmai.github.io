@@ -12,7 +12,7 @@ export default function Dates() {
       description: "Start submitting your research papers.",
     },
     {
-      date: "July 20, 2025",
+      date: "July 10, 2025",
       title: "Paper Submission Deadline",
       description: "Last day to submit your papers for review.",
     },
@@ -22,17 +22,17 @@ export default function Dates() {
       description: "Last day to submit posters.",
     },
     {
-      date: "July  30, 2025",
+      date: "July  15, 2025",
       title: "Notification of Acceptance",
       description: "Authors will be notified of acceptance decisions.",
     },
     {
-      date: "September 05, 2025",
+      date: "July  20, 2025",
       title: "Camera-Ready Submission",
       description: "Deadline for final camera-ready papers.",
     },
     {
-      date: "September 25, 2025",
+      date: "July  25, 2025",
       title: "Early Registration Deadline",
       description: "Last day for early bird registration rates.",
     },
