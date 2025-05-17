@@ -21,7 +21,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   useEffect(() => {
-    setValues([300, 20, 25])
+    setValues([300, 20])
 
     // Add dark class to body for dark theme
     /*document.body.classList.add("dark")
