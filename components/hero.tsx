@@ -10,7 +10,7 @@ import Image from "next/image"
 export default function Hero() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
-  const [values, setValues] = useState([0, 0, 0])
+  const [values, setValues] = useState([0, 0])
   const controls = useAnimation()
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -21,7 +21,7 @@ export default function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   useEffect(() => {
-    setValues([300, 20])
+    setValues([300, 20, 25])
 
     // Add dark class to body for dark theme
     /*document.body.classList.add("dark")
@@ -40,8 +40,7 @@ export default function Hero() {
   const stats = [
     { icon: <Users className="h-5 w-5" />, value: values[0], label: "Attendees" },
     { icon: <Globe className="h-5 w-5" />, value: values[1], label: "Countries" },
-    { icon: <MapPin className="h-5 w-5" />, value:values[2], text: "Saidia", label: "Saidia, Morocco" },
-   // { icon: <MessageSquare className="h-5 w-5" />, value: values[2], label: "Speakers" },
+    
   ]
 
   const letterVariants = {
@@ -138,7 +137,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              The 2nd International Conference on Smart Medical, IoT & Artificial Intelligence
+              International Conference on Smart Medical, IoT & Artificial Intelligence
             </motion.h2>
           </div>
 
@@ -196,6 +195,24 @@ export default function Hero() {
                 </div>
               </motion.div>
             ))}
+            <motion.div
+                className="flex flex-col items-center gap-3 group"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <div className="p-4 rounded-full bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl text-blue-300 group-hover:text-blue-100 transition-all duration-300 relative">
+                  <div className="absolute inset-0 rounded-full bg-blue-500/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative">
+                    <MapPin className="h-5 w-5" />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-3xl font-bold text-white flex items-center gap-1">
+                    <div className="tracking-tight">Saidia</div>
+                  </span>
+                  <span className="text-sm text-blue-200 font-medium tracking-wide">Morocco</span>
+                </div>
+            </motion.div>
           </motion.div>
 
           {/* CTA buttons */}
@@ -260,5 +277,5 @@ export default function Hero() {
         </Link>
       </motion.div>
     </section>
-  )
+  )
 }
