@@ -80,24 +80,25 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center space-y-8">
           {/* Animated conference badge */}
            
-           <motion.div
-  initial={{ opacity: 0, scale: 0.8 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="relative"
->
-  <div className="absolute inset-0 bg-blue-500/20 blur-xl rounded-full transform scale-110 breathing-shadow" />
-  <motion.div 
-    whileHover={{ scale: 1.05 }}
-    className="relative bg-white/5 backdrop-blur-lg border shadow-xl rounded-full px-6 py-3 text-blue-50 font-medium text-lg flex items-center justify-center border-blue-400/30"
-  >
-    <img
-      src= "/images/icon.png?height=400&width=400", // Replace with the actual URL
-      alt="ICSMAI 2025"
-      className="h-16 w-16"  // Adjust size as needed
-    />
-  </motion.div>
-</motion.div>
+                     <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-blue-500/20 blur-xl rounded-full transform scale-110 breathing-shadow" />
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="relative bg-white/5 backdrop-blur-lg border shadow-xl; rounded-full px-6 py-3 text-blue-50 font-medium text-lg flex items-center gap-2 border-blue-400/30"
+            >
+              <Calendar className="h-4 w-4 text-blue-300" />
+              <span className="relative overflow-hidden">
+                <span className="relative">October 23-25, 2025</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400/50 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </span>
+            </motion.div>
+          </motion.div>
+
 
 
           {/* Main title with creative animation */}
