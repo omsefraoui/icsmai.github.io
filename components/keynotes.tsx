@@ -38,11 +38,11 @@ export default function Keynotes() {
     }, 
      {
       name: "Pr. MOHAMED MESTARI",
-      organization: " ENSET,  Hessan II University, Casablanca",
+      organization: " ENSET,  Hassan II University, Casablanca",
       location: "Mohammedia, Morocco.",
       image: "/images/keynotes/speaker_18.jpg?height=400&width=400",
-      bio: " Professor Mohammed MESTARI is Co-founder of the International Neural Network Society Morocco Chapter (INNS Morocco Chapter), Co-founder of the IEEE Computational Intelligence Morocco Chapter, and Senior Member of the IEEE Transactions on Neural Network and Learning Systems (IEEE TNNLS). His current research interests include neural networks for image classification, data-driven approach, neural networks hardware implementation, high-speed and/or low-power techniques and systems for neural networks, and theoretical issues directly related to hardware implementation of techniques based on the principle of decomposition coordination for optimal control and trajectory planning for an Unmanned Aerial Vehicle (UAV) and a robot.", 
-      topic: "",
+      bio: " Professor Mohammed Mestari is a researcher and academic in the field of artificial intelligence and computational intelligence. He is a Co-founder of the International Neural Network Society (INNS) Morocco Chapter and the IEEE Computational Intelligence Society Morocco Chapter. He also serves as a contributing member of the prestigious editorial board of the IEEE Transactions on Neural Networks and Learning Systems (TNNLS). Professor Mestari’s research spans several high-impact domains within AI, with a strong emphasis on neural networks and their real-world applications. His work focuses on neural network architectures for image classification, data-driven modeling, and the hardware implementation of neural algorithms. He has contributed significantly to the development of high-speed and low-power systems for neural computing, bridging the gap between algorithmic design and efficient embedded deployment. A major area of his theoretical and applied research lies in the hardware-oriented implementation of decomposition-coordination principles for advanced control systems. This includes the optimal control and real-time trajectory planning for autonomous systems such as unmanned aerial vehicles (UAVs) and intelligent robotic platforms. Professor Mestari’s interdisciplinary approach integrates theoretical rigor with practical innovation, contributing to the advancement of intelligent systems in both academia and industry.", 
+      topic: "From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects",
     },
      /*{
       name: "Pr. INTISSAR HADDIYA",
