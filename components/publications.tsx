@@ -64,7 +64,7 @@ export default function Publications() {
                       <Image
                         src="/images/WOS_Logo.png"
                         alt="Clarivate Web of Science Logo"
-                        width={200}
+                        width={220}
                         height={60}
                         className="rounded"
                       />
@@ -73,7 +73,7 @@ export default function Publications() {
                       <Image
                         src="/images/springer.png"
                         alt="Springer Logo"
-                        width={170}
+                        width={200}
                         height={70}
                         className="rounded"
                       />
@@ -98,7 +98,7 @@ export default function Publications() {
                       transition={{ duration: 0.3 }}
                       className="relative"
                     >
-                      <div className="relative w-64 h-96 overflow-hidden rounded-xl shadow-lg border-2 border-primary/20">
+                      <div className="relative w-54 h-86 overflow-hidden rounded-xl shadow-lg border-2 border-primary/20">
                         <Image
                           src="/images/icsmai24_springer.png"
                           alt="ICSMAI Conference Proceedings"
