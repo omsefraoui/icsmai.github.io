@@ -227,12 +227,12 @@ export default function Hero() {
                     <Calendar  className="h-5 w-5" />
                   </div>
                 </div>
-                <div className="flex flex-col items-center">
+                {/*<div className="flex flex-col items-center">
                   <span className="text-3xl font-bold text-white flex items-center gap-1">
                     <div className="tracking-tight">23-25 October</div>
                   </span>
                   <span className="text-sm text-blue-200 font-medium tracking-wide">2025</span>
-                </div>
+                </div>*/}
             </motion.div>
           </motion.div>
 
