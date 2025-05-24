@@ -85,6 +85,9 @@ export default function Publications() {
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       All reviewed and accepted papers will be published in{" "}
                       <span className="font-semibold text-primary">Springer Indexed Book Proceedings</span>
+                      <Link href="https://link.springer.com/book/10.1007/978-3-031-66850-0" className="text-primary hover:underline ml-1">
+                      Springer Indexed Book Proceedings
+                      </Link>
                     </p>
                     
                   </div>

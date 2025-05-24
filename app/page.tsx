@@ -10,6 +10,7 @@ import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 import Publications from "@/components/publications"
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -22,9 +23,9 @@ export default function Home() {
       <Submission />
       <Dates />
       <Registration />
-      {/<Programme />/}
+      {/*<Programme />*/}
       <Sponsors />
       <Contact />
-    </main>
-  )
+    </main>
+  )
 }
