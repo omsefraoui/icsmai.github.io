@@ -37,7 +37,7 @@ export default function Keynotes() {
       topic: "The Future of Generative AI",
     }, 
      {
-      name: "Pr. MOHAMED MESTARI",
+      name: "Pr. MOHAMMED MESTARI",
       organization: " ENSET,  Hassan II University, Casablanca",
       location: "Mohammedia, Morocco.",
       image: "/images/keynotes/speaker_18.jpg?height=400&width=400",
