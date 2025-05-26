@@ -98,8 +98,8 @@ export default function Publications() {
                       transition={{ duration: 0.3 }}
                       className="relative"
                     >
-                      <Link href="#">
-                        <div className="relative w-64 h-96 overflow-hidden rounded-xl shadow-lg border-2 border-primary/20">
+                      <Link href="https://link.springer.com/book/10.1007/978-3-031-66854-8">
+                        <div className="relative w-54 h-96 overflow-hidden rounded-xl shadow-lg border-2 border-primary/20">
                           <Image
                             src="/images/icsmai24_springer.png"
                             alt="ICSMAI Conference Proceedings"
