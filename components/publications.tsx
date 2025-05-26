@@ -98,15 +98,17 @@ export default function Publications() {
                       transition={{ duration: 0.3 }}
                       className="relative"
                     >
-                      <div className="relative w-54 h-86 overflow-hidden rounded-xl shadow-lg border-2 border-primary/20">
-                        <Image
-                          src="/images/icsmai24_springer.png"
-                          alt="ICSMAI Conference Proceedings"
-                          fill
-                          className="object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-                      </div>
+                      <Link href="#">
+                        <div className="relative w-64 h-96 overflow-hidden rounded-xl shadow-lg border-2 border-primary/20">
+                          <Image
+                            src="/images/icsmai24_springer.png"
+                            alt="ICSMAI Conference Proceedings"
+                            fill
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+                        </div>
+                      </Link>
                       
                     </motion.div>
                   </div>
