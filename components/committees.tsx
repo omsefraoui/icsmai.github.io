@@ -9,7 +9,8 @@ export default function Committees() {
   const committees = {
     "HONORARY COMMITTEE": [
       "Mr. Yassine ZARHLOULE, President of Mohammed Premier University, Oujda, Morocco",
-      "Mr. Farid EL HEBIL, Director of ENSAO Oujda, Morocco",
+      "Mr. Farid EL HEBIL, Director of National School of Applied Sciences, Oujda, Morocco",
+      "Mr. El Bekkay MAAROUF, Dean of Faculty of Sciences Oujda, Morocco",
       "Mr. Khalid SERRAJ, Dean of the Faculty of Medicine and Pharmacy, Oujda, Morocco",
       //"Mr. Abdelhafid CHAFI, Director of EST Oujda, Morocco",
       //"Mr. Ismail RADI, Dean of FS Oujda, Morocco",
