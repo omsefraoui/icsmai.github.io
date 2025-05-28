@@ -17,7 +17,7 @@ export default function Committees() {
       //"Mr. Abdelali Kaaouachi, Director of ENCG Oujda, Morocco",
       //"Mr. Mohammed BARBOUCHA, Director of EHEI Oujda, Morocco",
     ],
-    "GENERAL CHAIRS": [
+    "GENERAL CHAIR": [
       "Pr. Kamal GHOUMID, ENSAO, Oujda, Morocco",
     ],
     "GENERAL CO-CHAIRS": [
