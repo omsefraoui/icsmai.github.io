@@ -39,9 +39,7 @@ export default function Acknowledgment() {
               By submitting to ICSMAI 2025, authors confirm that their work is original, has not been published previously, and is not under consideration elsewhere. Authors agree to abide by the ethical standards and review process of the conference.
                        <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"   className="text-blue-800 underline hover:text-blue-900">
                                Go to CMT Platform
-                               <Button variant="outline" className="flex items-center gap-2" asChild>
-                                </Button>
-                      </Link>
+                         </Link>
             </p>
           </motion.div>
 
