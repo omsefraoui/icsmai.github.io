@@ -7,27 +7,41 @@ import { CheckCircle, FileText } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+export default function Acknowledgment() {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1 * i,
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    }),
+  }
 
-import React from 'react';
-import Head from 'next/head';
-
-const Acknowledgment = () => {
   return (
-    <>
-      <Head>
-        <title>Acknowledgment – ICSMAI 2025</title>
-        <meta name="description" content="Acknowledgment for ICSMAI 2025 submissions" />
-      </Head>
-      <main className="p-6 max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4">Acknowledgment</h1>
-        <p>
-          By submitting to ICSMAI 2025, authors confirm that their work is original, has not been published previously,
-          and is not under consideration elsewhere. Authors agree to abide by the ethical standards and review process
-          of the conference.
-        </p>
-      </main>
-    </>
-  );
-};
+    <section id="acknowledgment" className="w-full py-18 md:py-20 md:pb-32">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center space-y-16">
+          {/* Section Header */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            custom={0}
+            className="text-center space-y-6 max-w-4xl"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Acknowledgment</h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              By submitting to ICSMAI 2025, authors confirm that their work is original, has not been published previously, and is not under consideration elsewhere. Authors agree to abide by the ethical standards and review process of the conference
+            </p>
+          </motion.div>
 
-export default Acknowledgment;
+          </div>
+        </div>
+       </section>
+  )
+}
