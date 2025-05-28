@@ -9,6 +9,7 @@ import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 import Publications from "@/components/publications"
+import Acknowledgment from "@/components/acknowledgment"
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Committees />
       <Topics />
       <Submission />
+      <Acknowledgment/>
       <Dates />
       <Registration />
       {/*<Programme />*/}
