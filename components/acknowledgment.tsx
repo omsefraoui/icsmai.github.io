@@ -1,10 +1,6 @@
 "use client"
 
 import { motion } from "motion/react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { CheckCircle, FileText } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 export default function Acknowledgment() {
