@@ -37,8 +37,10 @@ export default function Acknowledgment() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Acknowledgment</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
               By submitting to ICSMAI 2025, authors confirm that their work is original, has not been published previously, and is not under consideration elsewhere. Authors agree to abide by the ethical standards and review process of the conference.
-                       <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F">
+                       <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"   className="text-blue-800 underline hover:text-blue-900">
                                Go to CMT Platform
+                               <Button variant="outline" className="flex items-center gap-2" asChild>
+                                </Button>
                       </Link>
             </p>
           </motion.div>
