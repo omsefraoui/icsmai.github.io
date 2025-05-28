@@ -118,9 +118,9 @@ export default function Submission() {
                       </Link>
                     </Button>
                     <Button variant="outline" className="flex items-center gap-2" asChild>
-                      <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F">
+                      <Link href="/acknowledgment" className="text-blue-600 underline hover:text-blue-800">
                         <ExternalLink className="h-4 w-4" />
-                        Go to CMT Platform
+                        Go to CMT Platform acknowledgment
                       </Link>
                     </Button>
                   </motion.div>
