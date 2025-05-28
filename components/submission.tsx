@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs" // Using shadcn Tabs [^1]
 import { Button } from "@/components/ui/button"
-import { FileText, Download, BookOpen, FileCheck, Mail, ExternalLink, Info, CheckCircle } from "lucide-react"
+import { FileText, Download, BookOpen, FileCheck, Mail, Info, CheckCircle } from "lucide-react"
 import Link from "next/link"
 import { motion } from "motion/react"
 
