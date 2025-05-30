@@ -34,7 +34,7 @@ export default function Keynotes() {
      // image: "/placeholder.svg?height=400&width=400",
       image: "/images/keynotes/MoulayAKHLOUFI.jpg?height=400&width=400",
       bio: "Professor Moulay Akhloufi holds a Bachelor of Science in Physics from the University Abdelmalek Essaadi (Morocco) and a Bachelor of Engineering from Telecom Saint-Etienne (France). He has a Master's and Ph.D. in Electrical Engineering from Ecole Polytechnique of Montreal and Laval University (Canada), respectively. Additionally, he holds an MBA from Laval University. Currently, Professor Akhloufi is a Computer Science Professor at Université de Moncton. He leads the Perception, Robotics, and Intelligent Machines (PRIME) research lab and serves as the Director of the Center for Artificial Intelligence NB Power. Additionally, he holds the Chair of AI in Healthcare. Before joining Université de Moncton, he acquired significant experience in the industry and technology transfer, particularly in machine vision and robotics. Professor Akhloufi's research expertise spans across the domains of artificial intelligence, computer vision, and intelligent robotic systems, where he has contributed to over two hundred publications. Additionally, he holds the status of a Senior Member of the Institute of Electrical and Electronics Engineers (IEEE). He is also an active member of the Society of Photo-Optical Instrumentation Engineers (SPIE). ",
-      topic: "The Future of Generative AI",
+      topic: "Advances and Challenges in AI for Healthcare",
     }, 
      {
       name: "Pr. MOHAMMED MESTARI",
