@@ -34,7 +34,7 @@ export default function Acknowledgment() {
             <p className="text-xl text-muted-foreground leading-relaxed">The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
               
               By submitting to ICSMAI 2025, authors confirm that their work is original, has not been published previously, and is not under consideration elsewhere. Authors agree to abide by the ethical standards and review process of the conference.
-                       <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"   className="text-blue-800 underline hover:text-blue-900">
+                       <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICSMAI2025"   className="text-blue-800 underline hover:text-blue-900">
                                Go to CMT Platform
                          </Link>
             </p>
