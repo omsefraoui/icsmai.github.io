@@ -39,6 +39,7 @@ export default function Committees() {
       "A. Naji, ENSAO, Oujda, Morocco",
       "R. Malek, ENSAO, Oujda, Morocco",
       "A. Kerkri, ENSAO, Oujda, Morocco",
+      "R. Naciri, ENSAO, Oujda, Morocco",
       "A. El Mezouari, ENSAO, Oujda, Morocco",
       "M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
       "H. Benhaddouh, FMPO, Oujda, Morocco",
