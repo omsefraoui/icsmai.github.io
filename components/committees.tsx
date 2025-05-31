@@ -105,6 +105,7 @@ export default function Committees() {
       //"O. BARAKAT, Franche-Comté Univ. Besançon, France",
       "F. AUBER, Marie and louis Pasteur University, France",
       "A. Moustefaoui, Montbebilart. Marie and louis Pasteur University, France",
+      "B. ALLAOUI-SOSSÉ, Marie and louis Pasteur University, France",
       "E. YUSIFLI ATISOL Paris, France",
       "M. ABBOUD-ABID ENP, Oran, Algeria",
       "K. CETINKAYA, Karabuk University, Turkey",
