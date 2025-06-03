@@ -232,6 +232,7 @@ export default function Committees() {
       //"M. Saidi, Hôpital Al Farabi, Oujda, Morocco",
       "M. Yandouzi,  ENSAO, Oujda, Morocco",
       "M. Grari, ESTO, Oujda, Morocco",
+      "M.A. Moutaouekkil, ENSAO, Oujda, Morocco",
     ],
   }
 
