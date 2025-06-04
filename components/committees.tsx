@@ -12,6 +12,7 @@ export default function Committees() {
       "Mr. Farid EL HEBIL, Director of National School of Applied Sciences, Oujda, Morocco",
       "Mr. El Bekkay MAAROUF, Dean of Faculty of Sciences Oujda, Morocco",
       "Mr. Khalid SERRAJ, Dean of the Faculty of Medicine and Pharmacy, Oujda, Morocco",
+      "Mr. Mohammed BARBOUCHA, Director of Ecole des Hautes Etudes d'Ingénierie,  Oujda, Morocco",
       //"Mr. Abdelhafid CHAFI, Director of EST Oujda, Morocco",
       //"Mr. Ismail RADI, Dean of FS Oujda, Morocco",
       //"Mr. Abdelali Kaaouachi, Director of ENCG Oujda, Morocco",
@@ -22,7 +23,7 @@ export default function Committees() {
     ],
     "GENERAL CO-CHAIRS": [
       "Pr. Réda YAHIAOUI, Marie and louis Pasteur University, France",
-      "Pr. Omar ELMAZRIA, Lorraine University , Nancy, France",
+      "Pr. Omar ELMAZRIA, Université de lorraine , Nancy, France",
       //"K. GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
       //"M. SERRHINI, FSO, Med 1st University, Oujda, Morocco",
       //"M. CHOUKRI, FMPO, Med 1st University, Oujda, Morocco",

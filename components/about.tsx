@@ -49,7 +49,7 @@ export default function About() {
   const organizers = [
     "Mohammed Premier University Morocco",
     "Marie and louis Pasteur University France",
-    "Lorraine University Nancy France",
+    "Université de lorraine Nancy France",
     "University of Moncton Canada",
     "National School of Applied Sciences Oujda",
     "Faculty of Medicine and Pharmacy Oujda",
