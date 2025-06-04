@@ -65,7 +65,7 @@ export default function Registration() {
     "Coffee breaks (all days of the conference) : All inclusive",
     "Lunches (All days of the conference) : All inclusive",
     "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
-    "For bookings of two nights or more—whether in a single room, double room, or other accommodation types—please contact the Organizing Committee or the Conference Chair using the contact details provided.",
+    "For individual bookings, kindly consult the accommodation information available",
   ]
 
   return (
@@ -218,14 +218,11 @@ export default function Registration() {
                       Publication charges cover maximum 8 pages. Authors will pay additional fees for each extra page
                       (20 euros for each one)
                     </AccordionContent>
-                    <AccordionContent> 
-                      For bookings of two nights or more—whether in a single room, double room, or other accommodation types—please contact the Organizing Committee or the Conference Chair using the contact details provided.
-
-                    </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="item-3">
                     <AccordionTrigger>Accommodation</AccordionTrigger>
-                    <AccordionContent>For accommodation, additional fees with reduced prices.</AccordionContent>
+                    <AccordionContent>For reservations of two or more nights, whether in a single, double, or other accommodation, please contact the organizing committee or the conference chair using the contact information provided.
+                    </AccordionContent>
                   </AccordionItem>
                 </Accordion>
               </CardContent>
