@@ -65,7 +65,7 @@ export default function Registration() {
     "Coffee breaks (all days of the conference) : All inclusive",
     "Lunches (All days of the conference) : All inclusive",
     "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
-    "For bookings of two nights or more, please contact the Organizing Committee or the Conference Chair through our provided contact details.",
+    "For bookings of two nights or more—whether in a single room, double room, or other accommodation types—please contact the Organizing Committee or the Conference Chair using the contact details provided.",
   ]
 
   return (
@@ -219,7 +219,7 @@ export default function Registration() {
                       (20 euros for each one)
                     </AccordionContent>
                     <AccordionContent> 
-                      For bookings of two nights or more, please contact the Organizing Committee or the Conference Chair through our provided contact details
+                      For bookings of two nights or more—whether in a single room, double room, or other accommodation types—please contact the Organizing Committee or the Conference Chair using the contact details provided.
 
                     </AccordionContent>
                   </AccordionItem>
