@@ -109,7 +109,7 @@ export default function Committees() {
       "A. Moustefaoui, Montbebilart. Marie and louis Pasteur University, France",
       "B. ALAOUI-SOSSÉ, Marie and louis Pasteur University, France",
       "K. CETINKAYA, Karabuk University, Turkey",
-      "Divyadharshini Karthikeyan, Amazon, Ontario, Canada",
+      "Divyadharshini Karthikeyan, Amazon, Canada",
       "S. YEVSEIEV, Kharkiv Polytechnic Institute, Ukraine",
       "L. BEKIROVA, ASOIU Baku, Azebaidjan",
       "A. G. Armada, Universidad Carlos III de Madrid, Spain",
