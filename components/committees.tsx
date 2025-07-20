@@ -22,8 +22,11 @@ export default function Committees() {
       "Pr. Kamal GHOUMID, ENSAO, Oujda, Morocco",
     ],
     "GENERAL CO-CHAIRS": [
+      "Pr. Mohamed LAZAAR, ENSIAS, Rabat, Morocco",
+      "Pr. Khalid HADDOUCH, ENSAF, FEZ, Morocco",
       "Pr. Réda YAHIAOUI, Marie and louis Pasteur University, France",
       "Pr. Omar ELMAZRIA, Université de lorraine , Nancy, France",
+      
       //"K. GHOUMID, ENSAO, Med 1st University, Oujda, Morocco",
       //"M. SERRHINI, FSO, Med 1st University, Oujda, Morocco",
       //"M. CHOUKRI, FMPO, Med 1st University, Oujda, Morocco",
