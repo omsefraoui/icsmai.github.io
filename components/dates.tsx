@@ -12,17 +12,19 @@ export default function Dates() {
       description: "Start submitting your research papers.",
     },
     {
-      date: "July 30, 2025",
+      oldDate: "July 30, 2025",
+      date: "September 05, 2025",
       title: "Paper Submission Deadline",
       description: "Last day to submit your papers for review.",
     },
     {
-      date: "July 30, 2025",
+      oldDate: "July 30, 2025",
+      date: "September 05, 2025",
       title: "Poster Submission Deadline",
       description: "Last day to submit posters.",
     },
     {
-      date: "August 10, 2025",
+      date: "September 15, 2025",
       title: "Notification of Acceptance",
       description: "Authors will be notified of acceptance decisions.",
     },
@@ -32,7 +34,7 @@ export default function Dates() {
       description: "Deadline for final camera-ready papers.",
     },
     {
-      date: "September 02, 2025",
+      date: "September 20, 2025",
       title: "Early Registration Deadline",
       description: "Last day for early bird registration rates.",
     },
@@ -79,9 +81,18 @@ export default function Dates() {
                     <Card className={`w-full max-w-md ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"}`}>
                       <CardContent className="p-6">
                         <div className="flex flex-col space-y-2">
-                          <div className="flex items-center space-x-2 text-primary">
-                            <CalendarClock className="h-5 w-5" />
-                            <span className="font-medium">{item.date}</span>
+                          <div className="flex items-center space-x-2">
+                            <CalendarClock className="h-5 w-5 text-primary" />
+                            {item.oldDate && (
+                              <span className="text-red-500 line-through">{item.oldDate}</span>
+                            )}
+                            <span
+                              className={`${
+                                item.oldDate ? "text-blue-500" : "text-primary"
+                              } font-medium`}
+                            >
+                              {item.date}
+                            </span>
                           </div>
                           <h3 className="text-xl font-bold">{item.title}</h3>
                           <p className="text-muted-foreground">{item.description}</p>
@@ -105,4 +116,3 @@ export default function Dates() {
     </section>
   )
 }
-
