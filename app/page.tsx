@@ -8,7 +8,6 @@ import Dates from "@/components/dates"
 import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
-/*import Publications from "@/components/publications"*/
 import Acknowledgment from "@/components/acknowledgment"
 
 
@@ -17,7 +16,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center">
       <Hero />
       <About />
-      <Publications />
+      {/*<Publications />*/}
       <Keynotes />
       <Committees />
       <Topics />
