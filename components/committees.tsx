@@ -106,6 +106,14 @@ export default function Committees() {
       "Y. Guetbach, UMP, Oujda, Morocco",*/
     ],
     "TECHNICAL PROGRAM COMMITTEE": [
+      "Mrunal Gangrade  Vice President at JPMorgan Chase & Co. Floride, USA",
+      "Sunil Kumar Gurram    Californie, USA",
+      "Ranadheer Charabuddi  Nutrien, USA",
+      "Bhavnish Walia,  Amazon,  New York City  USA",
+      "Banani Mohapatra,  Walmart, San Francisco, USA",
+      "Navom Saxena,  Meta, New York, USA",
+      "Chaitanya Reddy, Dallas , USA",
+      "Naveen Kolli,  Bank of America Texas,  USA",
       "I. LAJOIE, Marie and louis Pasteur University, France",
       //"O. BARAKAT, Franche-Comté Univ. Besançon, France",
       "F. AUBER, Marie and louis Pasteur University, France",
