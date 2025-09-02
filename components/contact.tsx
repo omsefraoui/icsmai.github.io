@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { AtSign, Mail, MapPin, Hotel,Phone } from "lucide-react"
+import { AtSign, Mail, MapPin, Hotel, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Contact() {
@@ -91,7 +91,7 @@ export default function Contact() {
                         href="tel:+212-05-36-50-54-70/71"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +212-05-36-50-54-70/71000 +212 615-148509
+                        +212-05-36-50-54-70
 
                       </Link>
                     </div>
