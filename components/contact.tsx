@@ -94,7 +94,7 @@ export default function Contact() {
             href="tel:+212-05-36-50-54-70/71"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            +212-05-36-50-54-70/71
+            +212 05 36 50 54 70/71
           </Link>
         </div>
       </div>
@@ -105,13 +105,13 @@ export default function Contact() {
           <FaWhatsapp className="h-5 w-5 text-green-500" />
         </div>
         <div className="space-y-1">
-          <p className="font-medium">WhatsApp</p>
+          <p className="font-medium">Contact US on WhatsApp</p>
           <Link
-            href="https://wa.me/212671026271"
+            href="https://wa.me/212615148509"
             className="text-muted-foreground hover:text-green-600 transition-colors"
             target="_blank"
           >
-            +212 6 71 02 62 71
+            +212 615 148 509
           </Link>
         </div>
       </div>
