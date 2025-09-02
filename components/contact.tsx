@@ -99,7 +99,7 @@ export default function Contact() {
                     <div className="space-y-1">
                       <p className="font-medium">Contact US on WhatsApp</p>
                       <Link
-                        href="https://wa.me/0615148509"
+                        href="https://wa.me/+212615148509"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-green-600 transition-colors"
