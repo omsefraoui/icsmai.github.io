@@ -86,7 +86,7 @@ export default function Contact() {
                     <div className="space-y-1">
                       <p className="font-medium">Phone</p>
                       <Link href="tel:+2120536505470" className="text-muted-foreground hover:text-primary transition-colors">
-                        +212-05-36-50-54-70
+                        +212 5 36 50 54 70/71
                       </Link>
                     </div>
                   </div>
@@ -97,14 +97,14 @@ export default function Contact() {
                       <FaWhatsapp className="h-5 w-5 text-green-600" />
                     </div>
                     <div className="space-y-1">
-                      <p className="font-medium">WhatsApp</p>
+                      <p className="font-medium">Contact US on WhatsApp</p>
                       <Link
                         href="https://wa.me/061562587"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-green-600 transition-colors"
                       >
-                        061562587
+                        +212 6 15 14 85 09 
                       </Link>
                     </div>
                   </div>
