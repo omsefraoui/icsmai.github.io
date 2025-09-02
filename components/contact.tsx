@@ -1,10 +1,24 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants, Easing } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AtSign, Mail, MapPin, Hotel, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+
+// Fade-in variant compatible TypeScript
+const fadeIn: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (custom: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: custom * 0.2,
+      duration: 0.6,
+      ease: [0.42, 0, 0.58, 1] as Easing,
+    },
+  }),
+};
 
 export default function Contact() {
   return (
@@ -12,10 +26,11 @@ export default function Contact() {
       <div className="container px-4 md:px-6">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          variants={fadeIn}
+          custom={0}
           className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
         >
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
@@ -31,10 +46,11 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:items-stretch">
           {/* Map */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            variants={fadeIn}
+            custom={1}
             className="h-full"
           >
             <Card className="h-full flex flex-col p-0">
@@ -56,10 +72,11 @@ export default function Contact() {
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            variants={fadeIn}
+            custom={2}
             className="h-full"
           >
             <Card className="h-full flex flex-col">
