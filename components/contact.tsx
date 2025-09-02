@@ -2,8 +2,7 @@
 
 import { motion } from "motion/react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { AtSign, Mail, MapPin, Hotel,Phone } from "lucide-react"
-import { FaWhatsapp } from "react-icons/fa";
+import { AtSign, Mail, MapPin, Hotel,FaWhatsapp, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Contact() {
@@ -82,7 +81,22 @@ export default function Contact() {
                     </div>
                   </div>
 
-                              <div className="flex items-start space-x-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="p-2 rounded-full bg-primary/10">
+                      <Phone className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-medium">Phone</p>
+                      <Link
+                        href="tel:+212-05-36-50-54-70/71"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +212-05-36-50-54-70/71
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
                     <div className="p-2 rounded-full bg-primary/10">
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
@@ -91,7 +105,7 @@ export default function Contact() {
                       <p className="text-muted-foreground">
                         Bd Mohammed VI
                         <br />
-                        Oujda 6000020000
+                        Oujda 60000
                         <br />
                         Morocco
                       </p>
