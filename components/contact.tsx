@@ -91,7 +91,8 @@ export default function Contact() {
                         href="tel:+212-05-36-50-54-70/71"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +212-05-36-50-54-70/71000
+                        +212-05-36-50-54-70/71000 +212 615-148509
+                        
                       </Link>
                     </div>
                   </div>
