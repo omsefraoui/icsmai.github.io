@@ -81,6 +81,22 @@ export default function Contact() {
                       </Link>
                     </div>
                   </div>
+              {/* WhatsApp */}
+      <div className="flex items-start space-x-4">
+        <div className="p-2 rounded-full bg-green-100">
+          <FaWhatsapp className="h-5 w-5 text-green-500" />
+        </div>
+        <div className="space-y-1">
+          <p className="font-medium">Contact US on WhatsApp</p>
+          <Link
+            href="https://wa.me/212615148509"
+            className="text-muted-foreground hover:text-green-600 transition-colors"
+            target="_blank"
+          >
+            +212 615 148 509
+          </Link>
+        </div>
+      </div>
 
                   <div className="space-y-4">
       {/* Phone */}
@@ -99,22 +115,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* WhatsApp */}
-      <div className="flex items-start space-x-4">
-        <div className="p-2 rounded-full bg-green-100">
-          <FaWhatsapp className="h-5 w-5 text-green-500" />
-        </div>
-        <div className="space-y-1">
-          <p className="font-medium">Contact US on WhatsApp</p>
-          <Link
-            href="https://wa.me/212615148509"
-            className="text-muted-foreground hover:text-green-600 transition-colors"
-            target="_blank"
-          >
-            +212 615 148 509
-          </Link>
-        </div>
-      </div>
+      
     </div>
 
                   <div className="flex items-start space-x-4">
