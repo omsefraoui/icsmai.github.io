@@ -2,7 +2,8 @@
 
 import { motion } from "motion/react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { AtSign, Mail, MapPin, Hotel,FaWhatsapp} from "lucide-react"
+import { AtSign, Mail, MapPin, Hotel, Phone } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import Link from "next/link"
 
 export default function Contact() {
@@ -80,7 +81,6 @@ export default function Contact() {
                       </Link>
                     </div>
                   </div>
-                  
 
                   <div className="flex items-start space-x-4">
                     <div className="p-2 rounded-full bg-primary/10">
