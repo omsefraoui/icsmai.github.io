@@ -51,7 +51,8 @@ export default function Hero() {
       transition: {
         duration: 0.3,
         delay: 0.05 * i,
-        ease: [0.215, 0.61, 0.355, 1],
+       // ease: [0.215, 0.61, 0.355, 1],
+       ease: "easeOut", 
       },
     }),
   };

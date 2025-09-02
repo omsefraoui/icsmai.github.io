@@ -1,6 +1,5 @@
 import Hero from "@/components/hero"
 import About from "@/components/about"
-import Publications from "@/components/publications";
 import Keynotes from "@/components/keynotes"
 import Committees from "@/components/committees"
 import Topics from "@/components/topics"
@@ -18,7 +17,6 @@ export default function Home() {
       <Hero />
       <About />
       {/*<Publications />*/}
-      <Publications />
       <Keynotes />
       <Committees />
       <Topics />
