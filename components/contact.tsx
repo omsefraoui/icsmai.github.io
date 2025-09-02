@@ -2,7 +2,8 @@
 
 import { motion } from "motion/react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { AtSign, Mail, MapPin, Hotel,FaWhatsapp, Phone } from "lucide-react"
+import { AtSign, Mail, MapPin, Hotel,Phone } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link"
 
 export default function Contact() {
@@ -80,6 +81,25 @@ export default function Contact() {
                       </Link>
                     </div>
                   </div>
+
+                {/* WhatsApp 2 */}
+<div className="flex items-start space-x-4">
+  <div className="p-2 rounded-full bg-green-100">
+    <FaWhatsapp className="h-5 w-5 text-green-600" />
+  </div>
+  <div className="space-y-1">
+    <p className="font-medium">Contact Us on WhatsApp</p>
+    <Link
+      href="https://wa.me/212671225222"
+      className="text-muted-foreground hover:text-green-600 transition-colors"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      +212 67 12 25 222
+    </Link>
+  </div>
+</div>
+
 
                   <div className="flex items-start space-x-4">
                     <div className="p-2 rounded-full bg-primary/10">
