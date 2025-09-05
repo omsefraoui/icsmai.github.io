@@ -89,10 +89,10 @@ export default function Registration() {
           <div className="flex justify-center mb-8">
             <TabsList className="grid w-full max-w-md grid-cols-2">
               <TabsTrigger value="early">
-                Before September 15th
+                Before September 24th
               </TabsTrigger>
               <TabsTrigger value="regular">
-                After September 15th
+                After September 24th
               </TabsTrigger>
             </TabsList>
           </div>
@@ -210,7 +210,7 @@ export default function Registration() {
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1">
                     <AccordionTrigger>Listener Registration</AccordionTrigger>
-                    <AccordionContent>Listener (attendance without participation): 1200 dhs</AccordionContent>
+                    <AccordionContent>Listener (attendance without participation): 800 dhs</AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="item-2">
                     <AccordionTrigger>Publication Charges</AccordionTrigger>

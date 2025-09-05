@@ -29,7 +29,7 @@ export default function Dates() {
       description: "Authors will be notified of acceptance decisions.",
     },
     {
-      date: "September 20, 2025",
+      date: "September 15, 2025",
       title: "Camera-Ready Submission",
       description: "Deadline for final camera-ready papers.",
     },
