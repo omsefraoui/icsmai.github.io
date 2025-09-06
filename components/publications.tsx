@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "motion/react"
+import { motion, easeOut } from "motion/react"   // 👈 ajout de easeOut
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, FileText } from "lucide-react"
@@ -16,7 +16,7 @@ export default function Publications() {
       transition: {
         delay: 0.1 * i,
         duration: 0.5,
-        ease: "easeOut",
+        ease: easeOut,   // 👈 corrigé
       },
     }),
   }
@@ -34,15 +34,16 @@ export default function Publications() {
             custom={0}
             className="text-center space-y-6 max-w-4xl"
           >
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Publication Opportunities</h2>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Publication Opportunities
+            </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
               All accepted papers will be published in internationally recognized, indexed publications
             </p>
           </motion.div>
 
-          
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 w-full max-w-7xl">
-            
+            {/* Left Column */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -55,7 +56,9 @@ export default function Publications() {
                 <CardContent className="p-8 md:p-10 space-y-8">
                   {/* Header */}
                   <div className="text-center space-y-4">
-                    <h3 className="text-2xl md:text-3xl font-bold">Springer International Conference</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold">
+                      Springer International Conference
+                    </h3>
                   </div>
 
                   {/* Logos */}
@@ -84,9 +87,10 @@ export default function Publications() {
                   <div className="text-center space-y-4">
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       All reviewed and accepted papers will be published in{" "}
-                      <span className="font-semibold text-primary">Springer Indexed Book Proceedings</span>
+                      <span className="font-semibold text-primary">
+                        Springer Indexed Book Proceedings
+                      </span>
                     </p>
-                    
                   </div>
 
                   {/* Proceedings Book */}
@@ -105,7 +109,6 @@ export default function Publications() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                       </div>
-                      
                     </motion.div>
                   </div>
 
@@ -120,7 +123,7 @@ export default function Publications() {
               </Card>
             </motion.div>
 
-            {/* Right Column - Scopus & Submission */}
+            {/* Right Column */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -144,7 +147,9 @@ export default function Publications() {
                     </div>
                   </div>
                   <h4 className="font-semibold text-lg">Scopus Indexed</h4>
-                  <p className="text-sm text-muted-foreground">Ensuring global visibility and citation tracking</p>
+                  <p className="text-sm text-muted-foreground">
+                    Ensuring global visibility and citation tracking
+                  </p>
                 </CardContent>
               </Card>
 
@@ -161,7 +166,9 @@ export default function Publications() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span>International Journal of Sensors Wireless Communications and Control</span>
+                      <span>
+                        International Journal of Sensors Wireless Communications and Control
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -179,7 +186,6 @@ export default function Publications() {
                     All papers must be submitted through the CMT Microsoft Platform.
                   </p>
                   <div className="mt-8">
-                    
                     <Button size="sm" className="w-full" asChild>
                       <Link href="#submission" className="flex items-center justify-center gap-2">
                         <FileText className="h-4 w-4" />
@@ -187,7 +193,6 @@ export default function Publications() {
                       </Link>
                     </Button>
                   </div>
-                  
                 </CardContent>
               </Card>
             </motion.div>
