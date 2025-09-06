@@ -29,12 +29,12 @@ export default function Dates() {
       description: "Authors will be notified of acceptance decisions.",
     },
     {
-      date: "September 24, 2025",
+      date: "October 05, 2025",
       title: "Camera-Ready Submission",
       description: "Deadline for final camera-ready papers.",
     },
     {
-      date: "September 24, 2025",
+      date: "October 10, 2025",
       title: "Early Registration Deadline",
       description: "Last day for early bird registration rates.",
     },
