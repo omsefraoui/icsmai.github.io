@@ -181,8 +181,8 @@ export default function Keynotes() {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
         >
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Keynote Speakers (In progress )</div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">World-Class Experts - In progress --</h2>
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Keynote Speakers </div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">World-Class Experts </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Learn from leading researchers and practitioners in AI, IoT and Smart Medical.
           </p>
