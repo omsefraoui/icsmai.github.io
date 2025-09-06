@@ -1,5 +1,6 @@
 import Hero from "@/components/hero"
 import About from "@/components/about"
+import Publications from "@/components/publications"
 import Keynotes from "@/components/keynotes"
 import Committees from "@/components/committees"
 import Topics from "@/components/topics"
@@ -16,7 +17,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center">
       <Hero />
       <About />
-      {/*<Publications />*/}
+      <Publications />
       <Keynotes />
       <Committees />
       <Topics />
