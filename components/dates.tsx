@@ -24,7 +24,7 @@ export default function Dates() {
       description: "Last day to submit posters.",
     },
     {
-      date: "September 20, 2025",
+      date: "September 25, 2025",
       title: "Notification of Acceptance",
       description: "Authors will be notified of acceptance decisions.",
     },
