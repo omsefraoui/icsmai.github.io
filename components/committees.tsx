@@ -195,8 +195,9 @@ export default function Committees() {
       "I. HAMZAOUI, Univ. Valencience, France",
       "M. UMAR KHAN, COMSATS University, IslamAbad, Pakistan",
       "A. MOKHTARI, Univ. Gronoble, France",
-      //"M. A. KOULALI, ENSA, Oujda, Morocco",
-      //"Y. JABRI, ENSA, Oujda, Morocco",
+      "M. Zeryouh, ENSA, Oujda, Morocco",
+      "K. Alaoui, ENSA, Oujda, Morocco",
+      "J. Oubaha, ENSA, Oujda, Morocco",
       //"H. BOUALI, ESTO, UMP, Oujda, Morocco",
       //"R. BENKADDOUR, ESTO, UMP, Oujda, Morocco",
       //"M. JEYAR, ESTO, UMP, Oujda, Morocco",
@@ -239,13 +240,14 @@ export default function Committees() {
       "A. Al-Azzawi, TCE, MT University, Baghdad, IRAQ",
       "A. Abdulazeez, CS, Al-Mustansiriyah University, Baghdad, IRAQ",
       /*"A. Moussa, FSO, UMP, Oujda, Morocco",
-      "A. Ghadbane, FSO, UMP, Oujda, Morocco",
+      "A. Ghadbane, FSO, UMP, Oujda, Morocco",*/
       "A. BENLGHAZI, ENSAO, Oujda, Morocco",
-      "Z. Bougroune, ENSAO, Oujda, Morocco",
-      "K. AZGHIOU, ENSAO, Oujda, Morocco",
+      //"Z. Bougroune, ENSAO, Oujda, Morocco",
+      //"K. AZGHIOU, ENSAO, Oujda, Morocco",
       "E. H. SEBBAR, FMPO, UMP, Oujda, Morocco",
       "D. EL MOUJTAHIDE, FMPO, UMP, Oujda, Morocco",
-      "A. SADDARI, FMPO, UMP, Oujda, Morocco",*/
+      "A. SADDARI, FMPO, UMP, Oujda, Morocco",
+      "M Benheddi, FMPO, UMP, Oujda, Morocco",
     ],
   }
 
