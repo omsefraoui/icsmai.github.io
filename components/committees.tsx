@@ -50,6 +50,7 @@ export default function Committees() {
       //"Y. Bentata, FMPO, Oujda, Morocco",
       "A. KERKOUR ELMIAD, FS, Oujda, Morocco",
       "M. Yandouzi,  ENSAO, Oujda, Morocco",
+      "S. Chabel, EST Guelmim, Université Ibn Zohr, Morocco",
 
       /*"M. KODAD, ESTO, UMP, Oujda, Morocco",
         "D. BRIA, FSO, UMP, Oujda, Morocco",
