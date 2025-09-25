@@ -44,14 +44,14 @@ export default function Keynotes() {
       bio: " Professor Mohammed Mestari is a researcher and academic in the field of artificial intelligence and computational intelligence. He is a Co-founder of the International Neural Network Society (INNS) Morocco Chapter and the IEEE Computational Intelligence Society Morocco Chapter. He also serves as a contributing member of the prestigious editorial board of the IEEE Transactions on Neural Networks and Learning Systems (TNNLS). Professor Mestari’s research spans several high-impact domains within AI, with a strong emphasis on neural networks and their real-world applications. His work focuses on neural network architectures for image classification, data-driven modeling, and the hardware implementation of neural algorithms. He has contributed significantly to the development of high-speed and low-power systems for neural computing, bridging the gap between algorithmic design and efficient embedded deployment. A major area of his theoretical and applied research lies in the hardware-oriented implementation of decomposition-coordination principles for advanced control systems. This includes the optimal control and real-time trajectory planning for autonomous systems such as unmanned aerial vehicles (UAVs) and intelligent robotic platforms. Professor Mestari’s interdisciplinary approach integrates theoretical rigor with practical innovation, contributing to the advancement of intelligent systems in both academia and industry.", 
       topic: "From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects",
     },
-     /*{
+     {
       name: "Pr. INTISSAR HADDIYA",
       organization: "FMPO, Med 1st University",
       location: "Oujda, Morocco.",
       image: "/images/keynotes/speaker_11.jpg?height=400&width=400",
       bio: "Intissar HADDIYA, MD, PhD, is a Moroccan nephrologist, and Professor of Nephrology at Mohammed Premier University, Oujda. She graduated from the Faculty of Medicine in Rabat in 2006 and specialized in nephrology, dialysis, and kidney transplantation, with training in France. She holds a PhD in Social Responsibility in Health (2021), a specialization in AI in Healthcare (Stanford University, 2024) and has been President of the Kidney Failure Patients Support Association in Eastern Morocco since 2022. An author and reviewer for several medical journals, she has published over 50 scientific articles and a book on social responsibility in health in Africa (Peter Lang, 2023). She also holds multiple international certifications in nephrology, medical education, and ethics..", 
       topic: "Environmental determinants of hypertension",
-    },*/
+    },
     /*{
       name: "Pr. Abdelkrim DAOUDI",
       organization: "FMPO, Med 1st University",
