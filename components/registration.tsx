@@ -10,6 +10,12 @@ export default function Registration() {
   const earlyBirdPlans = [
     {
       name: "Student",
+      price: { morocco: "1600 dhs", foreign: "300 euros" },
+      description: "For full-time students:  Registration ",
+      buttonText: "Register as Student",
+    },
+    {
+      name: "Student++",
       price: { morocco: "2300 dhs", foreign: "300 euros" },
       description: "For full-time students:  Registration + 1 night all inclusive",
       buttonText: "Register as Student",
@@ -38,6 +44,12 @@ export default function Registration() {
   const regularPlans = [
     {
       name: "Student",
+      price: { morocco: "2100 dhs", foreign: "300 euros" },
+      description: "For full-time students:  Registration ",
+      buttonText: "Register as Student",
+    },
+    {
+      name: "Student++",
       price: { morocco: "2800 dhs", foreign: "350 euros" },
       description: "For full-time students:  Registration + 1 night all inclusive",
     },
@@ -63,8 +75,8 @@ export default function Registration() {
     "Conference Package (Programme, Electronic Conference Proceedings, Bloc note...)",
     "Access to all Sessions",
     "Coffee breaks (all days of the conference) : All inclusive",
-    "Lunches (All days of the conference) : All inclusive",
-    "One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
+    "++Lunches (All days of the conference) : All inclusive",
+    "++One Night in Hotel Saidia all inclusive (5***** Hotel) for students, double room",
     "For individual bookings, kindly consult the accommodation information available",
   ]
 
@@ -89,10 +101,10 @@ export default function Registration() {
           <div className="flex justify-center mb-8">
             <TabsList className="grid w-full max-w-md grid-cols-2">
               <TabsTrigger value="early">
-                Before September 24th
+                Before October 5th
               </TabsTrigger>
               <TabsTrigger value="regular">
-                After September 24th
+                After October 5th
               </TabsTrigger>
             </TabsList>
           </div>
