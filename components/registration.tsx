@@ -10,7 +10,7 @@ export default function Registration() {
   const earlyBirdPlans = [
     {
       name: "Student",
-      price: { morocco: "1600 dhs", foreign: "300 euros" },
+      price: { morocco: "1600 dhs", foreign: "250 euros" },
       description: "For full-time students:  Registration ",
       buttonText: "Register as Student",
     },
