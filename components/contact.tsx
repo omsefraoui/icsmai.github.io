@@ -155,7 +155,7 @@ export default function Contact() {
                     </p>
                     <Link
                       href=""
-                      //https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-saidia-beach
+                      {/* Hotel //https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-saidia-beach*/}
                       className="text-muted-foreground hover:text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
