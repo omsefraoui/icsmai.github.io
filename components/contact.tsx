@@ -149,12 +149,13 @@ export default function Contact() {
                   </div>
                   <div className="space-y-1">
                     <p className="font-medium">
-                      
+                      {/* Contact Info 
+                      The conference will be held in Hotel Radisson Blu Resort Saidia Beach (All Inclusive) in Saïdia, Morocco */}
                       The conference will be held in Hotel 5 star (All Inclusive) in Saïdia, Morocco
                     </p>
                     <Link
-                      href="https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-saidia-beach"
-                      
+                      href=""
+                      //https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-saidia-beach
                       className="text-muted-foreground hover:text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
