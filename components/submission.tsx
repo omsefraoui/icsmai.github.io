@@ -144,8 +144,8 @@ export default function Submission() {
                     </p>
                     <ul className="space-y-2 ml-7 list-disc">
                       <li><strong>First paper:</strong> full registration fee.</li>
-                      <li><strong>Second paper:</strong> <strong>+50%</strong> of the full registration fee.</li>
-                      <li><strong>Third paper:</strong> <strong>+30%</strong> of the full registration fee.</li>
+                      <li><strong>Second paper:</strong> <strong>-50%</strong> of the full registration fee.</li>
+                      <li><strong>Third paper:</strong> <strong>-70%</strong> of the full registration fee.</li>
                     </ul>
                   </motion.div>
                   <motion.p variants={item} className="flex items-start gap-2">
