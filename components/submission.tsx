@@ -201,17 +201,23 @@ export default function Submission() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <FileCheck className="h-5 w-5" />
-                CMT Platform — Submission Acknowledgment
+                Acknowledgment
               </CardTitle>
               <CardDescription>
-                Use CMT to submit, track, and receive acknowledgment emails for your manuscripts.
+                Information about Microsoft CMT and author responsibilities.
               </CardDescription>
             </CardHeader>
-            <CardContent className="pt-2">
+            <CardContent className="pt-2 space-y-4">
+              <p>
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+              </p>
+              <p>
+                By submitting to ICSMAI 2025, authors confirm that their work is original, has not been published previously, and is not under consideration elsewhere. Authors agree to abide by the ethical standards and review process of the conference.
+              </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild>
                   <Link href="https://cmt3.research.microsoft.com/" target="_blank" rel="noreferrer noopener" className="flex items-center gap-2">
-                    Open Microsoft CMT
+                    Go to CMT Platform
                     <ExternalLink className="h-4 w-4" />
                   </Link>
                 </Button>
