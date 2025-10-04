@@ -9,7 +9,7 @@ import Dates from "@/components/dates"
 import Registration from "@/components/registration"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
-import Acknowledgment from "@/components/acknowledgment"
+
 
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       <Committees />
       <Topics />
       <Submission />
-      <Acknowledgment/>
+      {/*<Acknowledgment/>*/}
       <Dates />
       <Registration />
       {/*<Programme />*/}

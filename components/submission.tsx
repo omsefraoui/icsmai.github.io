@@ -145,7 +145,7 @@ export default function Submission() {
                     <ul className="space-y-2 ml-7 list-disc">
                       <li><strong>First paper:</strong> full registration fee.</li>
                       <li><strong>Second paper:</strong> <strong>+50%</strong> of the full registration fee.</li>
-                      <li><strong>Third paper:</strong> <strong>+70%</strong> of the full registration fee.</li>
+                      <li><strong>Third paper:</strong> <strong>+30%</strong> of the full registration fee.</li>
                     </ul>
                   </motion.div>
                   <motion.p variants={item} className="flex items-start gap-2">
@@ -216,7 +216,7 @@ export default function Submission() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild>
-                  <Link href="https://cmt3.research.microsoft.com/" target="_blank" rel="noreferrer noopener" className="flex items-center gap-2">
+                  <Link href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICSMAI2025" target="_blank" rel="noreferrer noopener" className="flex items-center gap-2">
                     Go to CMT Platform
                     <ExternalLink className="h-4 w-4" />
                   </Link>
