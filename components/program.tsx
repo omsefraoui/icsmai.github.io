@@ -4,15 +4,13 @@ import { useState, type ReactElement } from "react"
 import { motion } from "motion/react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
 /**
- * ICSMAI 2025 — Program Component (Saïdia, Morocco)
- * Source of truth: Technical_Program_ICSMAI2025.docx
- * All times: Africa/Casablanca (UTC+1)
+ * ICSMAI 2025 — Program Component (color‑coded, detailed)
+ * Venue: Saïdia, Morocco — Timezone: Africa/Casablanca (UTC+1)
  */
-export default function ProgramICSMAI2025() {
+export default function ProgramICSMAI2025Fixed() {
   const [activeDay, setActiveDay] = useState("day1")
 
   const days = [
@@ -21,7 +19,30 @@ export default function ProgramICSMAI2025() {
     { id: "day3", label: "Day 3", date: "Saturday, Oct 25" },
   ] as const
 
-  // Color styles per event type
+  type ItemType = {
+    time: string
+    title: string
+    location: string
+    type:
+      | "keynote"
+      | "session"
+      | "break"
+      | "social"
+      | "panel"
+      | "ceremony"
+      | "workshop"
+      | "registration"
+      | "closing"
+    speaker?: string
+    details?: string
+    track?: string
+    room?: string
+    chair?: string
+    papers?: string[]
+    icon?: ReactElement
+  }
+
+  // Color styles per event type (badges & legend)
   const typeStyles: Record<ItemType["type"], string> = {
     keynote: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-200",
     session: "bg-sky-100 text-sky-800 ring-1 ring-sky-200",
@@ -46,232 +67,38 @@ export default function ProgramICSMAI2025() {
     closing: "Closing",
   }
 
-  type ItemType = {
-    time: string
-    title: string
-    location: string
-    type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
-    speaker?: string
-    details?: string
-    track?: string
-    room?: string
-    chair?: string
-    papers?: string[]
-    icon?: ReactElement
-  }
-
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
     day1: [
-      {
-        time: "14:00 – 15:30",
-        title: "Welcome & Registration",
-        location: "Main Conference Registration",
-        type: "registration",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "15:30 – 16:30",
-        title: "Official Opening Ceremony",
-        location: "Conference Hall",
-        type: "ceremony",
-        details:
-          "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "16:30 – 18:30",
-        title: "Keynotes Block #1",
-        location: "Conference Hall",
-        type: "keynote",
-        details:
-          "#1 Prof. Intissar Haddiaya — Environmental determinants of hypertension; #2 Prof. Shermin Voshmgir — Web3 at the intersection of Blockchain, AI & IoT; #3 Prof. Mohammed Mestari — Graph Neural Networks for Polypharmacy Side Effects",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "20:00",
-        title: "Dinner Break",
-        location: "Hotel Restaurants",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
+      { time: "14:00 – 15:30", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
+      { time: "15:30 – 16:30", title: "Official Opening Ceremony", location: "Conference Hall", type: "ceremony", details: "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee", icon: <Presentation className="h-5 w-5" /> },
+      { time: "16:30 – 18:30", title: "Keynotes Block #1", location: "Conference Hall", type: "keynote", details: "#1 Prof. Intissar Haddiaya — Environmental determinants of hypertension; #2 Prof. Shermin Voshmgir — Web3 at the intersection of Blockchain, AI & IoT; #3 Prof. Mohammed Mestari — Graph Neural Networks for Polypharmacy Side Effects", icon: <Presentation className="h-5 w-5" /> },
+      { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
     ],
     day2: [
-      {
-        time: "08:00 – 09:00",
-        title: "Welcome & Registration",
-        location: "Main Conference Registration",
-        type: "registration",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "09:00 – 10:30",
-        title: "Keynotes Block #2",
-        location: "Conference Hall",
-        type: "keynote",
-        details:
-          "#5 Prof. Yassamine Bentata — The Future of Medicine: Horizons and Limits!; #6 Prof. Moulay Akhloufi — Advances & Challenges in AI for Healthcare",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 – 12:30",
-        title: "Session 4: IoT & Computing",
-        location: "Parallel Sessions",
-        room: "Room 1",
-        type: "session",
-        track: "IoT architectures, edge computing, embedded systems",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 – 12:30",
-        title: "Session 5: AI / ML / DL",
-        location: "Parallel Sessions",
-        room: "Room 2",
-        type: "session",
-        track: "Learning theory, optimization, deep architectures",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 – 12:30",
-        title: "Session 6: Data Analysis, Big Data & HPC",
-        location: "Parallel Sessions",
-        room: "Room 3",
-        type: "session",
-        track: "Data engineering, analytics, high‑performance computing",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "13:00 – 15:30",
-        title: "Lunch Break",
-        location: "Dining Hall",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "15:30 – 17:00",
-        title: "Keynotes Block #3 (Healthcare Innovations)",
-        location: "Conference Hall",
-        type: "keynote",
-        details:
-          "#7 Prof. Mohammed Choukri · #8 Prof. Dounia El Moujtahide · #9 Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · #11 Mr. Mustapha El Machad (Abbott Masterlab)",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "17:00 – 17:30",
-        title: "Coffee Break",
-        location: "Lobby",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "17:30 – 20:00",
-        title: "Session 7: Networks, Security & Social Network",
-        location: "Room 1",
-        type: "session",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "17:30 – 18:30",
-        title: "Medicine Special Session I — Workshop #1 (SOMADIAG)",
-        location: "Room 3",
-        type: "workshop",
-        details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "18:30 – 21:00",
-        title: "Medicine Special Session I — Oral Communications",
-        location: "Room 3",
-        type: "session",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "20:00",
-        title: "Dinner Break",
-        location: "Hotel Restaurants",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
+      { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
+      { time: "09:00 – 10:30", title: "Keynotes Block #2", location: "Conference Hall", type: "keynote", details: "#5 Prof. Yassamine Bentata — The Future of Medicine: Horizons and Limits!; #6 Prof. Moulay Akhloufi — Advances & Challenges in AI for Healthcare", icon: <Presentation className="h-5 w-5" /> },
+      // Parallel Sessions 4–6
+      { time: "10:30 – 12:30", title: "Session 4: IoT & Computing", location: "Parallel Sessions", room: "Room 1", type: "session", track: "IoT architectures, edge computing, embedded systems", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:30", title: "Session 5: AI / ML / DL", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Learning theory, optimization, deep architectures", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:30", title: "Session 6: Data Analysis, Big Data & HPC", location: "Parallel Sessions", room: "Room 3", type: "session", track: "Data engineering, analytics, high‑performance computing", icon: <Users className="h-5 w-5" /> },
+      { time: "13:00 – 15:30", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
+      { time: "15:30 – 17:00", title: "Keynotes Block #3 (Healthcare Innovations)", location: "Conference Hall", type: "keynote", details: "#7 Prof. Mohammed Choukri · #8 Prof. Dounia El Moujtahide · #9 Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · #11 Mr. Mustapha El Machad (Abbott Masterlab)", icon: <Presentation className="h-5 w-5" /> },
+      { time: "17:00 – 17:30", title: "Coffee Break", location: "Lobby", type: "break", icon: <Coffee className="h-5 w-5" /> },
+      { time: "17:30 – 20:00", title: "Session 7: Networks, Security & Social Network", location: "Technical Track", room: "Room 1", type: "session", track: "Networks, cybersecurity, social graphs", icon: <Users className="h-5 w-5" /> },
+      { time: "17:30 – 18:30", title: "Medicine Special Session I — Workshop #1 (SOMADIAG)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada", icon: <Presentation className="h-5 w-5" /> },
+      { time: "18:30 – 21:00", title: "Medicine Special Session I — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
+      { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
     ],
     day3: [
-      {
-        time: "08:00 – 09:00",
-        title: "Welcome & Registration",
-        location: "Main Conference Registration",
-        type: "registration",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "09:00 – 10:30",
-        title: "Keynotes Block #4",
-        location: "Conference Hall",
-        type: "keynote",
-        details:
-          "Prof. Muhamad Umar Khan — Empowering Healthcare with IoT & AI; Prof. Mostafa Azizi (with Prof. Cyril Drocourt) — MIoT & Security Challenges",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "09:00 – 12:40",
-        title: "Session 12: Medicine Special Session II — Oral Communications",
-        location: "Room 3",
-        type: "session",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 – 12:40",
-        title: "Session 10: Emerging Technologies & Environment",
-        location: "Parallel Sessions",
-        room: "Room 1",
-        type: "session",
-        track: "Green ICT, energy systems, environmental sensing",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 – 12:40",
-        title: "Session 11: Smart Applications & Computing",
-        location: "Parallel Sessions",
-        room: "Room 2",
-        type: "session",
-        track: "Smart cities, recommender systems, applied AI",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "12:40 – 14:00",
-        title: "Lunch Break",
-        location: "Dining Hall",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "14:00 – 17:00",
-        title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)",
-        location: "Room 3",
-        type: "workshop",
-        details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "17:00",
-        title: "Closing Ceremony",
-        location: "Conference Hall",
-        type: "closing",
-        icon: <Presentation className="h-5 w-5" />,
-      },
+      { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
+      { time: "09:00 – 10:30", title: "Keynotes Block #4", location: "Conference Hall", type: "keynote", details: "Prof. Muhamad Umar Khan — Empowering Healthcare with IoT & AI; Prof. Mostafa Azizi (with Prof. Cyril Drocourt) — MIoT & Security Challenges", icon: <Presentation className="h-5 w-5" /> },
+      { time: "09:00 – 12:40", title: "Session 12: Medicine Special Session II — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:40", title: "Session 10: Emerging Technologies & Environment", location: "Parallel Sessions", room: "Room 1", type: "session", track: "Green ICT, energy systems, environmental sensing", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:40", title: "Session 11: Smart Applications & Computing", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Smart cities, recommender systems, applied AI", icon: <Users className="h-5 w-5" /> },
+      { time: "12:40 – 14:00", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
+      { time: "14:00 – 17:00", title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)", icon: <Presentation className="h-5 w-5" /> },
+      { time: "17:00", title: "Closing Ceremony", location: "Conference Hall", type: "closing", icon: <Presentation className="h-5 w-5" /> },
     ],
-  }
-
-  
-  }
-
-  const TypeLabel: Record<ItemType["type"], string> = {
-    keynote: "Keynote",
-    session: "Session",
-    break: "Break",
-    social: "Social",
-    panel: "Panel",
-    ceremony: "Ceremony",
-    workshop: "Workshop",
-    registration: "Registration",
-    closing: "Closing",
   }
 
   return (
@@ -287,8 +114,15 @@ export default function ProgramICSMAI2025() {
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Conference Program</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Schedule of Events</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Explore the confirmed keynotes, technical sessions, and special tracks for ICSMAI 2025.
+            Explore the confirmed keynotes, technical sessions, special tracks and workshops for ICSMAI 2025.
           </p>
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
+            {(
+              ["keynote","session","workshop","panel","ceremony","registration","break","social","closing"] as ItemType["type"][]
+            ).map((t) => (
+              <span key={t} className={`px-2 py-1 rounded-md text-xs ${typeStyles[t]}`}>{TypeLabel[t]}</span>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
@@ -352,6 +186,13 @@ export default function ProgramICSMAI2025() {
                               <MapPin className="h-4 w-4" />
                               <span>{item.room ? `${item.location} — ${item.room}` : item.location}</span>
                             </div>
+                            {item.papers && item.papers.length > 0 && (
+                              <ul className="list-disc ms-5 text-sm text-muted-foreground">
+                                {item.papers.map((p, i) => (
+                                  <li key={i}>{p}</li>
+                                ))}
+                              </ul>
+                            )}
                           </div>
                           <div className="sm:w-10 flex items-center justify-center">
                             <div className="p-2 rounded-full bg-primary/10">{item.icon ?? <Users className="h-5 w-5" />}</div>
