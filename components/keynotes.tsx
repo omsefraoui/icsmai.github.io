@@ -58,7 +58,7 @@ export default function Keynotes() {
       location: "Oujda, Morocco.",
       image: "/images/keynotes/speaker_14.jpg?height=400&width=400",
       bio: "Leading researcher in deep learning and computer vision with over 100 publications.",
-      topic: "The Future of Generative AI",
+      topic: "Telemedicine: experience in the Eastern region",
     },
     /*{
       name: "Pr. MOHAMMED CHOUKRI",
