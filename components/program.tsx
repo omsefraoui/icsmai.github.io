@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { JSX, useState } from "react"
 import { motion } from "motion/react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -29,7 +29,7 @@ export default function Program() {
     type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
     speaker?: string
     details?: string
-    icon: >,
+    icon?: JSX.Element
   }
 
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
