@@ -267,7 +267,7 @@ export default function Programme() {
                     <CardTitle>
                       Program for {day.label} ({day.date})
                     </CardTitle>
-                    <CardDescription>All times are in Eastern Time (ET)</CardDescription>
+                    <CardDescription>All times are in Morocco Standard Time (GMT+1)</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-6">
