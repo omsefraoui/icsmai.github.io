@@ -1,12 +1,11 @@
 "use client"
 
-import { JSX, useState } from "react"
+import { useState, type ReactElement } from "react"
 import { motion } from "motion/react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
-
 
 /**
  * ICSMAI 2025 — Program Component (Saïdia, Morocco)
@@ -29,7 +28,7 @@ export default function Program() {
     type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
     speaker?: string
     details?: string
-    icon?: JSX.Element
+    icon?: ReactElement
   }
 
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
