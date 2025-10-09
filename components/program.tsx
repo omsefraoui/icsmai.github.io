@@ -91,21 +91,21 @@ export default function ProgramICSMAI2025Fixed() {
       { time: "10:30 – 12:30", title: "Session 5: AI / ML / DL", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Learning theory, optimization, deep architectures", icon: <Users className="h-5 w-5" /> },
       { time: "10:30 – 12:30", title: "Session 6: Data Analysis, Big Data & HPC", location: "Parallel Sessions", room: "Room 3", type: "session", track: "Data engineering, analytics, high‑performance computing", icon: <Users className="h-5 w-5" /> },
       { time: "13:00 – 15:30", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
-      { time: "15:30 – 17:00", title: "Keynotes Block #3 (Healthcare Innovations)", location: "Conference Hall", type: "keynote", details: "Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · ", icon: <Presentation className="h-5 w-5" /> },
+      { time: "15:30 – 17:00", title: "Keynotes Block #3 (Healthcare Innovations)", location: "Conference Hall", type: "keynote", details: "#7 Prof. Mohammed Choukri · #8 Prof. Dounia El Moujtahide · #9 Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · #11 Mr. Mustapha El Machad (Abbott Masterlab)", icon: <Presentation className="h-5 w-5" /> },
       { time: "17:00 – 17:30", title: "Coffee Break", location: "Lobby", type: "break", icon: <Coffee className="h-5 w-5" /> },
       { time: "17:30 – 20:00", title: "Session 7: Networks, Security & Social Network", location: "Technical Track", room: "Room 1", type: "session", track: "Networks, cybersecurity, social graphs", icon: <Users className="h-5 w-5" /> },
-      { time: "17:30 – 18:30", title: "Medicine Special Session I — Workshop #1 (SOMADIAG)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Designing", icon: <Presentation className="h-5 w-5" /> },
+      { time: "17:30 – 18:30", title: "Medicine Special Session I — Workshop #1 (SOMADIAG)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada", icon: <Presentation className="h-5 w-5" /> },
       { time: "18:30 – 21:00", title: "Medicine Special Session I — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
       { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
     ],
     day3: [
       { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
-      { time: "09:00 – 10:30", title: "Keynotes Block #4", location: "Conference Hall", type: "keynote", details: "Prof.  Mostafa - Security Challenges", icon: <Presentation className="h-5 w-5" /> },
+      { time: "09:00 – 10:30", title: "Keynotes Block #4", location: "Conference Hall", type: "keynote", details: "Prof. Muhamad Umar Khan — Empowering Healthcare with IoT & AI; Prof. Mostafa Azizi (with Prof. Cyril Drocourt) — MIoT & Security Challenges", icon: <Presentation className="h-5 w-5" /> },
       { time: "09:00 – 12:40", title: "Session 12: Medicine Special Session II — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
       { time: "10:30 – 12:40", title: "Session 10: Emerging Technologies & Environment", location: "Parallel Sessions", room: "Room 1", type: "session", track: "Green ICT, energy systems, environmental sensing", icon: <Users className="h-5 w-5" /> },
       { time: "10:30 – 12:40", title: "Session 11: Smart Applications & Computing", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Smart cities, recommender systems, applied AI", icon: <Users className="h-5 w-5" /> },
       { time: "12:40 – 14:00", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
-      { time: "14:00 – 17:00", title: "Session 13: Medicine Special Session II — Workshop #2", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Quality control workshop; interpreting internal/external reports)", icon: <Presentation className="h-5 w-5" /> },
+      { time: "14:00 – 17:00", title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)", icon: <Presentation className="h-5 w-5" /> },
       { time: "17:00", title: "Closing Ceremony", location: "Conference Hall", type: "closing", icon: <Presentation className="h-5 w-5" /> },
     ],
   }
@@ -199,18 +199,14 @@ export default function ProgramICSMAI2025Fixed() {
                                       <p className="text-sm text-muted-foreground">{items[0].details}</p>
                                     )}
                                     {items[0].papers && items[0].papers.length > 0 && (
-                                      <Accordion type="single" collapsible className="w-full">
-                                        <AccordionItem value="papers">
-                                          <AccordionTrigger className="text-sm">Papers</AccordionTrigger>
-                                          <AccordionContent>
-                                            <ul className="list-disc ms-5 text-sm text-muted-foreground">
-                                              {items[0].papers.map((p, i) => (
-                                                <li key={i}>{p}</li>
-                                              ))}
-                                            </ul>
-                                          </AccordionContent>
-                                        </AccordionItem>
-                                      </Accordion>
+                                      <div className="mt-2">
+                                        <div className="text-sm font-medium">Papers</div>
+                                        <ul className="list-disc ms-5 text-sm text-muted-foreground">
+                                          {items[0].papers.map((p, i) => (
+                                            <li key={i}>{p}</li>
+                                          ))}
+                                        </ul>
+                                      </div>
                                     )}
                                   </div>
                                 ) : (
@@ -237,18 +233,14 @@ export default function ProgramICSMAI2025Fixed() {
                                           <p className="mt-1 text-xs text-muted-foreground">{it.details}</p>
                                         )}
                                         {it.papers && it.papers.length > 0 && (
-                                          <Accordion type="single" collapsible className="mt-2">
-                                            <AccordionItem value={`papers-${idx}`}>
-                                              <AccordionTrigger className="text-xs">Papers</AccordionTrigger>
-                                              <AccordionContent>
-                                                <ul className="list-disc ms-5 text-xs text-muted-foreground">
-                                                  {it.papers.map((p, i) => (
-                                                    <li key={i}>{p}</li>
-                                                  ))}
-                                                </ul>
-                                              </AccordionContent>
-                                            </AccordionItem>
-                                          </Accordion>
+                                          <div className="mt-2">
+                                            <div className="text-xs font-medium">Papers</div>
+                                            <ul className="list-disc ms-5 text-xs text-muted-foreground">
+                                              {it.papers.map((p, i) => (
+                                                <li key={i}>{p}</li>
+                                              ))}
+                                            </ul>
+                                          </div>
                                         )}
                                       </div>
                                     ))}
