@@ -135,7 +135,7 @@ export default function ProgramICSMAI2025Fixed() {
       location: "Parallel Sessions",
       room: "Room 1",
       type: "session",
-      chair: "Chairs: Prof. Zineb Bougroun, Prof. Ilhame El Farissi, Prof. Mounir Grari",
+      chair: "Chairs: Prof. Mounir Grari",
       track: "IoT architectures, edge computing, embedded systems",
       papers: [
         "ID9: Optimi",
@@ -149,7 +149,7 @@ export default function ProgramICSMAI2025Fixed() {
       location: "Parallel Sessions",
       room: "Room 2",
       type: "session",
-      chair: "Chairs: Prof. Kamal Azghiou, Prof. Sanae Mazouz, Prof. Mohamed Jeyar",
+      chair: "Chairs: Prof. Mohamed Jeyar",
       track: "Learning theory, optimization, deep architectures",
       papers: [
         "ID46: Forest Fire Surveillance through Deep Learning Segmentation and Drone Technology. (Mimoun Yandouzi et al.)",
@@ -272,7 +272,7 @@ export default function ProgramICSMAI2025Fixed() {
       type: "session",
       chair: "Chairs: Prof. Ahmed ",
       papers: [
-        "ID50: Monte Carlo simulation of a modified Elekta Precise LINAC for FLASH radiotherapy using TOPAS. (Fatimazahra Rimchi et al.)",
+        "ID5: Monte C",
       ],
       icon: <Users className="h-5 w-5" />,
     },
