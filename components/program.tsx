@@ -12,7 +12,7 @@ import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
  * Source of truth: Technical_Program_ICSMAI2025.docx
  * All times: Africa/Casablanca (UTC+1)
  */
-export default function ProgramICSMAI2025() {
+export default function Program() {
   const [activeDay, setActiveDay] = useState("day1")
 
   const days = [
