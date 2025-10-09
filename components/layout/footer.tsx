@@ -23,7 +23,7 @@ export default function Footer() {
       links: [
         { name: "Important Dates", href: "#dates" },
         { name: "Committees", href: "#committees" },
-        { name: "Programme", href: "#programme" },
+        { name: "Program", href: "#programme" },
         { name: "Sponsors", href: "#sponsors" },
         { name: "Contact", href: "#contact" },
       ],
