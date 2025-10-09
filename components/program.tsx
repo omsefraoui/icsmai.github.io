@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
-export default function ProgramICSMAI2025Structured() {
+export default function Program() {
   const [activeDay, setActiveDay] = useState<"day1" | "day2" | "day3">("day1")
   const [expandAll, setExpandAll] = useState(false)
   // Forcer un léger remount pour appliquer defaultValue des accordéons quand on toggle
@@ -139,17 +139,11 @@ export default function ProgramICSMAI2025Structured() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "Chairs: Z. Bougroun, I. El Farissi, M. Grari",
+        chair: "Chairs:  M. Grari",
         track: "IoT architectures, edge computing, embedded systems",
         papers: [
-          "ID94: Optimizing Digital Modulation for Energy Efficiency in WSN within IoMT.",
-          "ID40: GNSS Signal Integrity for Medical Supply Chain (DL).",
-          "ID71: Agent-Based Simulation of Energy & Water in Smart Homes.",
-          "ID121: Multi-networks communications in modular robots.",
-          "ID123: Feature Selection Strategies in Failure Prediction.",
-          "ID79: Factors Influencing Lipreading Accuracy.",
-          "ID22: QC of Solar Radiation Data (semi-arid climate).",
-          "ID53: Oscillatory motion of a heavy pendulum (Micro-Lab).",
+          "ID4: Optimizing Di
+          "ID5: .",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -159,10 +153,10 @@ export default function ProgramICSMAI2025Structured() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "Chairs: K. Azghiou, S. Mazouz, M. Jeyar",
+        chair: "Chairs:  M. Jeyar",
         track: "Learning theory, optimization, deep architectures",
         papers: [
-          "ID46: Forest Fire Surveillance via DL Segmentation & Drones.",
+          "ID4: Forest s.",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -172,7 +166,7 @@ export default function ProgramICSMAI2025Structured() {
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
-        chair: "Chairs: M.A. Madani, M. Emharraf, B. Tidaf",
+        chair: "Chairs: M.A. Madani, M. Emharraf",
         track: "Data engineering, analytics, high-performance computing",
         papers: [
           "ID60: Transfer Learning for Elderly Fall Detection with Limited Data.",
@@ -193,7 +187,7 @@ export default function ProgramICSMAI2025Structured() {
         location: "Conference Hall",
         type: "keynote",
         details:
-          "Choukri — AI & Big Data in Central Laboratory | El Moujtahide — AI error detection in medical biology | Sebbar — Molecular Docking | Saddari — Connected devices (INDEXOR) | El Machad — Abbott AlinIQ.",
+          "big | El al — AI  | | Saddari — Conne.",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
@@ -209,7 +203,7 @@ export default function ProgramICSMAI2025Structured() {
         location: "Technical Track",
         room: "Room 1",
         type: "session",
-        chair: "Chairs: H. Tarik, M. Blej, E.M. Chaabelasri",
+        chair: "Chairs: H. ALI",
         papers: [
           "ID38: Adaptive DSR Metrics for Low-Energy LoRa Mesh (Forest Fire).",
         ],
@@ -217,12 +211,12 @@ export default function ProgramICSMAI2025Structured() {
       },
       {
         time: "17:30 - 18:30",
-        title: "Medicine Special Session I — Workshop #1 (SOMADIAG)",
+        title: "Medicine Special Session I — Workshop #1 ",
         location: "Medicine Track",
         room: "Room 3",
         type: "workshop",
         details:
-          "Concevoir/équiper un laboratoire de biologie médicale; place du LIS. (Zakaria Berrada, SOMADIAG)",
+          "Concevoir/équiper un laboratoire de biologie médicale; place du LIS. ",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
@@ -232,11 +226,11 @@ export default function ProgramICSMAI2025Structured() {
         room: "Room 3",
         type: "session",
         track:
-          "Jury: Pr A. Assahrao, Pr A. Khermach, Pr A. Saddari, Pr A. Hami",
+          "Jury: Pr A. A",
         papers: [
-          "CO1: Primitive plasma leukemia — case-report",
-          "CO2: Difficulties of grouping ABO — retrospective (97 cases)",
-          "CO3: Carcinocythemia — first case detected",
+          "CO1: Pri",
+          "CO2:)",
+          "CO3",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -262,7 +256,7 @@ export default function ProgramICSMAI2025Structured() {
         location: "Conference Hall",
         type: "keynote",
         details:
-          "Daoudi — IoT & AI for diagnosis and treatment | Mostafa Azizi (avec C. Drocourt) — MIoT & Security Challenges.",
+          "Daoudi — IoT & AI for diagnosis and treatment | Mostafa ",
         icon: <Presentation className="h-5 w-5" />,
       },
 
@@ -273,9 +267,9 @@ export default function ProgramICSMAI2025Structured() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "Chairs: A. Benbrike, M. Benhaddou, K. Kasmi",
+        chair: "Chairs: A. Ben",
         papers: [
-          "ID50: Monte Carlo on modified Elekta Precise LINAC (FLASH, TOPAS).",
+          "ID50: Mon.",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -285,22 +279,11 @@ export default function ProgramICSMAI2025Structured() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "Chairs: H. Bouali, F. Falyouni, E.M. Ar-Reyouchi",
+        chair: "Chairs: H. Bouali and E.M. Ar-Reyouchi",
         papers: [
-          "ID17: Nanofluids — heat transfer in complex geometries.",
-          "ID120: Hybrid ACO + Simulated Annealing — multi-objective k-MST.",
-          "ID125: Smart city framework — model-driven review.",
-          "ID18: Natural Convection in a Nanofluid-Filled Cavity.",
-          "ID19: Heat Transfer in Rectangular Duct with 7-Shaped Baffle.",
-          "ID105: Beat Phenomenon with Oscillating Coupled Pendulums.",
-          "ID76: Diabetic Retinopathy Classification (Transfer Learning + MixUp).",
-          "ID116: Plasma Discharge in 2D Inductively Coupled Reactors — EEDF.",
-          "ID86: InAs/InP vs InAs/GaAs Quantum Dots — emission range.",
-          "ID57: Curved intersected honeycomb structures — compression.",
-          "ID102: Elastic Pendulum via Piezoelectric Sensor & Microlab.",
-          "ID14: Tech for Aromatic & Medicinal Plant Cooperatives.",
-          "ID200: Age & Residence Time — PINNs.",
-        ],
+          "ID17: Nanofs.",
+          "ID120: H.",
+              ],
         icon: <Users className="h-5 w-5" />,
       },
 
@@ -311,31 +294,11 @@ export default function ProgramICSMAI2025Structured() {
         location: "Medicine Track",
         room: "Room 3",
         type: "session",
-        track: "Jury: Pr Benachat, Pr Maarouf, Pr M. Kodad, Pr E.H. Sebbar",
+        track: "Jury: Pr E.H. Sebbar",
         papers: [
-          "CO16: iPTH assay (Alinity i).",
-          "CO17: 25-OH Vitamin D assay (Alinity i).",
-          "CO18: S-DHEA (Architect ci8200).",
-          "CO19: Methotrexate (Architect c).",
-          "CO20: CEA (Alinity i).",
-          "CO21: TSH (Alinity i).",
-          "CO22: TRAb (Alinity i).",
-          "CO23: C-peptide CMIA (Alinity i).",
-          "CO25: Cyclosporin (Alinity i).",
-          "CO25: Triglyceride (Architect Ci8200).",
-          "CO26: CK-MB (Alinity i).",
-          "CO27: Iron — AI-Enhanced verification (Alinity ci).",
-          "CO28: AI for PPI targeting in drug design.",
-          "CO29: Immunofixation in hypogammaglobulinemia.",
-          "CO30: Vitamin D & diabetic balance — CHU Oujda.",
-          "CO31: Hypogammaglobulinemia in biochemistry department.",
-          "CO32: Immunofixation prescription pertinence.",
-          "CO33: Quantitative Analytical Method Validation — application.",
-          "CO34: Sperm DNA Fragmentation & semen parameters.",
-          "CO35: Data management for fertility preservation.",
-          "CO36: Coenzyme Q10 doses & male fertility — RCT.",
-          "CO37: Crocus sativus stamens — antioxidant & chelating.",
-        ],
+          "CO16: ",
+          "CO17: 25.",
+                 ],
         icon: <Users className="h-5 w-5" />,
       },
 
@@ -348,12 +311,12 @@ export default function ProgramICSMAI2025Structured() {
       },
       {
         time: "14:00 - 17:00",
-        title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)",
+        title: "Session 13: Medicine Special Session II — Workshop #2 ",
         location: "Medicine Track",
         room: "Room 3",
         type: "workshop",
         details:
-          "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab).",
+          "Quality control workshop; interpreting internal/exter.",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
