@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
+
 /**
  * ICSMAI 2025 — Program Component (Saïdia, Morocco)
  * Source of truth: Technical_Program_ICSMAI2025.docx
@@ -28,7 +29,7 @@ export default function Program() {
     type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
     speaker?: string
     details?: string
-    icon?: JSX.Element
+    icon: <Users className="h-5 w-5" />,
   }
 
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
