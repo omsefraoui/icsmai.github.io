@@ -29,7 +29,7 @@ export default function Program() {
     type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
     speaker?: string
     details?: string
-    icon: <Users className="h-5 w-5" />,
+    icon: >,
   }
 
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
