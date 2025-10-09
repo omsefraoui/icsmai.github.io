@@ -7,221 +7,230 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
-export default function Program() {
+/**
+ * ICSMAI 2025 — Program Component (Saïdia, Morocco)
+ * Source of truth: Technical_Program_ICSMAI2025.docx
+ * All times: Africa/Casablanca (UTC+1)
+ */
+export default function ProgramICSMAI2025() {
   const [activeDay, setActiveDay] = useState("day1")
 
   const days = [
-    { id: "day1", label: "Day 1", date: "October 23" },
-    { id: "day2", label: "Day 2", date: "October 24" },
-    { id: "day3", label: "Day 3", date: "October 25" },
-  ]
+    { id: "day1", label: "Day 1", date: "Thursday, Oct 23" },
+    { id: "day2", label: "Day 2", date: "Friday, Oct 24" },
+    { id: "day3", label: "Day 3", date: "Saturday, Oct 25" },
+  ] as const
 
-  const schedules = {
+  type ItemType = {
+    time: string
+    title: string
+    location: string
+    type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
+    speaker?: string
+    details?: string
+    icon?: JSX.Element
+  }
+
+  const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
     day1: [
       {
-        time: "08:00 - 09:00",
-        title: "Registration & Breakfast",
-        location: "Main Hall",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
+        time: "14:00 – 15:30",
+        title: "Welcome & Registration",
+        location: "Main Conference Registration",
+        type: "registration",
+        icon: <Users className="h-5 w-5" />,
       },
       {
-        time: "09:00 - 10:00",
-        title: "Opening Ceremony",
-        speaker: "Conference Chairs",
-        location: "Auditorium A",
+        time: "15:30 – 16:30",
+        title: "Official Opening Ceremony",
+        location: "Conference Hall",
         type: "ceremony",
+        details:
+          "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "10:00 - 11:30",
-        title: "Keynote: The Future of Generative AI",
-        speaker: "Dr. Sarah Johnson",
-        location: "Auditorium A",
+        time: "16:30 – 18:30",
+        title: "Keynotes Block #1",
+        location: "Conference Hall",
         type: "keynote",
+        details:
+          "#1 Prof. Intissar Haddiaya — Environmental determinants of hypertension; #2 Prof. Shermin Voshmgir — Web3 at the intersection of Blockchain, AI & IoT; #3 Prof. Mohammed Mestari — Graph Neural Networks for Polypharmacy Side Effects",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "11:30 - 13:00",
-        title: "Lunch Break",
-        location: "Dining Hall",
+        time: "20:00",
+        title: "Dinner Break",
+        location: "Hotel Restaurants",
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "13:00 - 15:00",
-        title: "Technical Session: Deep Learning Advances",
-        location: "Room 101",
-        type: "session",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "15:00 - 15:30",
-        title: "Coffee Break",
-        location: "Lobby",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "15:30 - 17:30",
-        title: "Technical Session: Computer Vision",
-        location: "Room 102",
-        type: "session",
-        icon: <Users className="h-5 w-5" />,
-      },
-      {
-        time: "18:00 - 20:00",
-        title: "Welcome Reception",
-        location: "Garden Terrace",
-        type: "social",
-        icon: <Users className="h-5 w-5" />,
       },
     ],
     day2: [
       {
-        time: "08:30 - 09:00",
-        title: "Breakfast",
-        location: "Main Hall",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "09:00 - 10:30",
-        title: "Keynote: Reinforcement Learning for Autonomous Systems",
-        speaker: "Prof. Michael Chen",
-        location: "Auditorium A",
-        type: "keynote",
-        icon: <Presentation className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 - 11:00",
-        title: "Coffee Break",
-        location: "Lobby",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "11:00 - 13:00",
-        title: "Technical Session: Natural Language Processing",
-        location: "Room 101",
-        type: "session",
+        time: "08:00 – 09:00",
+        title: "Welcome & Registration",
+        location: "Main Conference Registration",
+        type: "registration",
         icon: <Users className="h-5 w-5" />,
       },
       {
-        time: "13:00 - 14:30",
+        time: "09:00 – 10:30",
+        title: "Keynotes Block #2",
+        location: "Conference Hall",
+        type: "keynote",
+        details:
+          "#5 Prof. Yassamine Bentata — The Future of Medicine: Horizons and Limits!; #6 Prof. Moulay Akhloufi — Advances & Challenges in AI for Healthcare",
+        icon: <Presentation className="h-5 w-5" />,
+      },
+      {
+        time: "10:30 – 12:30",
+        title: "Parallel Sessions 4–6",
+        location: "Rooms 1–3",
+        type: "session",
+        details:
+          "S4: IoT & Computing (Room 1) · S5: AI/ML/DL (Room 2) · S6: Data Analysis, Big Data & HPC (Room 3)",
+        icon: <Users className="h-5 w-5" />,
+      },
+      {
+        time: "13:00 – 15:30",
         title: "Lunch Break",
         location: "Dining Hall",
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
       },
       {
-        time: "14:30 - 16:30",
-        title: "Technical Session: Robotics and Autonomous Systems",
-        location: "Room 102",
-        type: "session",
-        icon: <Users className="h-5 w-5" />,
+        time: "15:30 – 17:00",
+        title: "Keynotes Block #3 (Healthcare Innovations)",
+        location: "Conference Hall",
+        type: "keynote",
+        details:
+          "#7 Prof. Mohammed Choukri · #8 Prof. Dounia El Moujtahide · #9 Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · #11 Mr. Mustapha El Machad (Abbott Masterlab)",
+        icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "16:30 - 17:00",
+        time: "17:00 – 17:30",
         title: "Coffee Break",
         location: "Lobby",
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
       },
       {
-        time: "17:00 - 18:30",
-        title: "Panel Discussion: AI Ethics and Governance",
-        location: "Auditorium B",
-        type: "panel",
+        time: "17:30 – 20:00",
+        title: "Session 7: Networks, Security & Social Network",
+        location: "Room 1",
+        type: "session",
         icon: <Users className="h-5 w-5" />,
       },
       {
-        time: "19:00 - 22:00",
-        title: "Conference Banquet",
-        location: "Grand Ballroom",
-        type: "social",
+        time: "17:30 – 18:30",
+        title: "Medicine Special Session I — Workshop #1 (SOMADIAG)",
+        location: "Room 3",
+        type: "workshop",
+        details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada",
+        icon: <Presentation className="h-5 w-5" />,
+      },
+      {
+        time: "18:30 – 21:00",
+        title: "Medicine Special Session I — Oral Communications",
+        location: "Room 3",
+        type: "session",
         icon: <Users className="h-5 w-5" />,
+      },
+      {
+        time: "20:00",
+        title: "Dinner Break",
+        location: "Hotel Restaurants",
+        type: "break",
+        icon: <Coffee className="h-5 w-5" />,
       },
     ],
     day3: [
       {
-        time: "08:30 - 09:00",
-        title: "Breakfast",
-        location: "Main Hall",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
+        time: "08:00 – 09:00",
+        title: "Welcome & Registration",
+        location: "Main Conference Registration",
+        type: "registration",
+        icon: <Users className="h-5 w-5" />,
       },
       {
-        time: "09:00 - 10:30",
-        title: "Keynote: Multimodal Learning: Bridging Vision and Language",
-        speaker: "Dr. Emily Rodriguez",
-        location: "Auditorium A",
+        time: "09:00 – 10:30",
+        title: "Keynotes Block #4",
+        location: "Conference Hall",
         type: "keynote",
+        details:
+          "Prof. Muhamad Umar Khan — Empowering Healthcare with IoT & AI; Prof. Mostafa Azizi (with Prof. Cyril Drocourt) — MIoT & Security Challenges",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "10:30 - 11:00",
-        title: "Coffee Break",
-        location: "Lobby",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "11:00 - 13:00",
-        title: "Technical Session: AI in Healthcare",
-        location: "Room 101",
+        time: "09:00 – 12:40",
+        title: "Session 12: Medicine Special Session II — Oral Communications",
+        location: "Room 3",
         type: "session",
         icon: <Users className="h-5 w-5" />,
       },
       {
-        time: "13:00 - 14:30",
+        time: "10:30 – 12:40",
+        title: "Parallel Sessions 10–11",
+        location: "Rooms 1–2",
+        type: "session",
+        details:
+          "S10: Emerging Technologies & Environment (Room 1) · S11: Smart Applications & Computing (Room 2)",
+        icon: <Users className="h-5 w-5" />,
+      },
+      {
+        time: "12:40 – 14:00",
         title: "Lunch Break",
         location: "Dining Hall",
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
       },
       {
-        time: "14:30 - 16:00",
-        title: "Keynote: Aligning AI Systems with Human Values",
-        speaker: "Dr. James Wilson",
-        location: "Auditorium A",
-        type: "keynote",
+        time: "14:00 – 17:00",
+        title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)",
+        location: "Room 3",
+        type: "workshop",
+        details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "16:00 - 16:30",
-        title: "Coffee Break",
-        location: "Lobby",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "16:30 - 17:30",
-        title: "Closing Ceremony & Best Paper Awards",
-        location: "Auditorium A",
-        type: "ceremony",
+        time: "17:00",
+        title: "Closing Ceremony",
+        location: "Conference Hall",
+        type: "closing",
         icon: <Presentation className="h-5 w-5" />,
       },
     ],
   }
 
-  const getBadgeVariant = (type: string) => {
+  const getBadgeVariant = (type: ItemType["type"]) => {
     switch (type) {
       case "keynote":
+      case "ceremony":
+      case "closing":
         return "default"
       case "session":
-        return "secondary"
-      case "break":
-        return "outline"
+      case "panel":
+      case "workshop":
       case "social":
         return "secondary"
-      case "panel":
-        return "secondary"
-      case "ceremony":
-        return "default"
+      case "break":
+      case "registration":
       default:
         return "outline"
     }
+  }
+
+  const TypeLabel: Record<ItemType["type"], string> = {
+    keynote: "Keynote",
+    session: "Session",
+    break: "Break",
+    social: "Social",
+    panel: "Panel",
+    ceremony: "Ceremony",
+    workshop: "Workshop",
+    registration: "Registration",
+    closing: "Closing",
   }
 
   return (
@@ -234,12 +243,10 @@ export default function Program() {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
         >
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
-            Conference Program
-          </div>
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Conference Program</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Schedule of Events</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Explore our comprehensive program of keynotes, technical sessions, and networking events.
+            Explore the confirmed keynotes, technical sessions, and special tracks for ICSMAI 2025.
           </p>
         </motion.div>
 
@@ -260,6 +267,7 @@ export default function Program() {
                 </TabsTrigger>
               ))}
             </TabsList>
+
             {days.map((day) => (
               <TabsContent key={day.id} value={day.id} className="mt-0">
                 <Card>
@@ -267,11 +275,11 @@ export default function Program() {
                     <CardTitle>
                       Program for {day.label} ({day.date})
                     </CardTitle>
-                    <CardDescription>All times are in Morocco Standard Time (GMT+1)</CardDescription>
+                    <CardDescription>All times are in Morocco Standard Time (Africa/Casablanca, UTC+1)</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-6">
-                      {schedules[day.id as keyof typeof schedules].map((item, index) => (
+                      {schedules[day.id].map((item, index) => (
                         <motion.div
                           key={index}
                           initial={{ opacity: 0, y: 10 }}
@@ -279,7 +287,7 @@ export default function Program() {
                           transition={{ duration: 0.3, delay: index * 0.05 }}
                           className="flex flex-col sm:flex-row gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
                         >
-                          <div className="sm:w-36 flex-shrink-0">
+                          <div className="sm:w-40 flex-shrink-0">
                             <div className="flex items-center gap-2">
                               <Clock className="h-4 w-4 text-muted-foreground" />
                               <span className="font-medium">{item.time}</span>
@@ -289,17 +297,19 @@ export default function Program() {
                             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                               <h3 className="font-bold">{item.title}</h3>
                               <Badge variant={getBadgeVariant(item.type)} className="w-fit">
-                                {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
+                                {TypeLabel[item.type]}
                               </Badge>
                             </div>
-                            {item.speaker && <p className="text-sm text-muted-foreground">Speaker: {item.speaker}</p>}
+                            {item.details && (
+                              <p className="text-sm text-muted-foreground">{item.details}</p>
+                            )}
                             <div className="flex items-center gap-2 text-sm text-muted-foreground">
                               <MapPin className="h-4 w-4" />
                               <span>{item.location}</span>
                             </div>
                           </div>
                           <div className="sm:w-10 flex items-center justify-center">
-                            <div className="p-2 rounded-full bg-primary/10">{item.icon}</div>
+                            <div className="p-2 rounded-full bg-primary/10">{item.icon ?? <Users className="h-5 w-5" />}</div>
                           </div>
                         </motion.div>
                       ))}
@@ -314,4 +324,3 @@ export default function Program() {
     </section>
   )
 }
-
