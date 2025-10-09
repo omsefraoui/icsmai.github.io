@@ -4,45 +4,24 @@ import { useState, type ReactElement } from "react"
 import { motion } from "motion/react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
 /**
- * ICSMAI 2025 — Program Component (color‑coded by event type)
- * Venue: Saïdia, Morocco — Timezone: Africa/Casablanca (UTC+1)
+ * ICSMAI 2025 — Program Component (Saïdia, Morocco)
+ * Source of truth: Technical_Program_ICSMAI2025.docx
+ * All times: Africa/Casablanca (UTC+1)
  */
-export default function ProgramICSMAI2025Colored() {
+export default function ProgramICSMAI2025() {
   const [activeDay, setActiveDay] = useState("day1")
 
   const days = [
     { id: "day1", label: "Day 1", date: "Thursday, Oct 23" },
     { id: "day2", label: "Day 2", date: "Friday, Oct 24" },
-    { id: "day3", label: "Saturday, Oct 25" },
+    { id: "day3", label: "Day 3", date: "Saturday, Oct 25" },
   ] as const
 
-  type ItemType = {
-    time: string
-    title: string
-    location: string
-    type:
-      | "keynote"
-      | "session"
-      | "break"
-      | "social"
-      | "panel"
-      | "ceremony"
-      | "workshop"
-      | "registration"
-      | "closing"
-    speaker?: string
-    details?: string
-    track?: string
-    room?: string
-    chair?: string
-    papers?: string[]
-    icon?: ReactElement
-  }
-
-  // Color styles per event type (used for badges & legend)
+  // Color styles per event type
   const typeStyles: Record<ItemType["type"], string> = {
     keynote: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-200",
     session: "bg-sky-100 text-sky-800 ring-1 ring-sky-200",
@@ -67,6 +46,20 @@ export default function ProgramICSMAI2025Colored() {
     closing: "Closing",
   }
 
+  type ItemType = {
+    time: string
+    title: string
+    location: string
+    type: "keynote" | "session" | "break" | "social" | "panel" | "ceremony" | "workshop" | "registration" | "closing"
+    speaker?: string
+    details?: string
+    track?: string
+    room?: string
+    chair?: string
+    papers?: string[]
+    icon?: ReactElement
+  }
+
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
     day1: [
       {
@@ -81,7 +74,8 @@ export default function ProgramICSMAI2025Colored() {
         title: "Official Opening Ceremony",
         location: "Conference Hall",
         type: "ceremony",
-        details: "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee",
+        details:
+          "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee",
         icon: <Presentation className="h-5 w-5" />,
       },
       {
@@ -118,7 +112,6 @@ export default function ProgramICSMAI2025Colored() {
           "#5 Prof. Yassamine Bentata — The Future of Medicine: Horizons and Limits!; #6 Prof. Moulay Akhloufi — Advances & Challenges in AI for Healthcare",
         icon: <Presentation className="h-5 w-5" />,
       },
-      // Parallel Sessions 4–6 (split per room for color coding and clarity)
       {
         time: "10:30 – 12:30",
         title: "Session 4: IoT & Computing",
@@ -126,9 +119,6 @@ export default function ProgramICSMAI2025Colored() {
         room: "Room 1",
         type: "session",
         track: "IoT architectures, edge computing, embedded systems",
-        papers: [
-          "Topic examples: Smart sensing • Energy-aware IoT • Edge orchestration",
-        ],
         icon: <Users className="h-5 w-5" />,
       },
       {
@@ -138,9 +128,6 @@ export default function ProgramICSMAI2025Colored() {
         room: "Room 2",
         type: "session",
         track: "Learning theory, optimization, deep architectures",
-        papers: [
-          "Topic examples: Vision transformers • RL pipelines • Model compression",
-        ],
         icon: <Users className="h-5 w-5" />,
       },
       {
@@ -150,9 +137,6 @@ export default function ProgramICSMAI2025Colored() {
         room: "Room 3",
         type: "session",
         track: "Data engineering, analytics, high‑performance computing",
-        papers: [
-          "Topic examples: Spark pipelines • Graph data • HPC scheduling",
-        ],
         icon: <Users className="h-5 w-5" />,
       },
       {
@@ -181,17 +165,14 @@ export default function ProgramICSMAI2025Colored() {
       {
         time: "17:30 – 20:00",
         title: "Session 7: Networks, Security & Social Network",
-        location: "Technical Track",
-        room: "Room 1",
+        location: "Room 1",
         type: "session",
-        track: "Networks, cybersecurity, social graphs",
         icon: <Users className="h-5 w-5" />,
       },
       {
         time: "17:30 – 18:30",
         title: "Medicine Special Session I — Workshop #1 (SOMADIAG)",
-        location: "Medicine Track",
-        room: "Room 3",
+        location: "Room 3",
         type: "workshop",
         details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada",
         icon: <Presentation className="h-5 w-5" />,
@@ -199,8 +180,7 @@ export default function ProgramICSMAI2025Colored() {
       {
         time: "18:30 – 21:00",
         title: "Medicine Special Session I — Oral Communications",
-        location: "Medicine Track",
-        room: "Room 3",
+        location: "Room 3",
         type: "session",
         icon: <Users className="h-5 w-5" />,
       },
@@ -232,8 +212,7 @@ export default function ProgramICSMAI2025Colored() {
       {
         time: "09:00 – 12:40",
         title: "Session 12: Medicine Special Session II — Oral Communications",
-        location: "Medicine Track",
-        room: "Room 3",
+        location: "Room 3",
         type: "session",
         icon: <Users className="h-5 w-5" />,
       },
@@ -265,8 +244,7 @@ export default function ProgramICSMAI2025Colored() {
       {
         time: "14:00 – 17:00",
         title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)",
-        location: "Medicine Track",
-        room: "Room 3",
+        location: "Room 3",
         type: "workshop",
         details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)",
         icon: <Presentation className="h-5 w-5" />,
@@ -279,6 +257,21 @@ export default function ProgramICSMAI2025Colored() {
         icon: <Presentation className="h-5 w-5" />,
       },
     ],
+  }
+
+  
+  }
+
+  const TypeLabel: Record<ItemType["type"], string> = {
+    keynote: "Keynote",
+    session: "Session",
+    break: "Break",
+    social: "Social",
+    panel: "Panel",
+    ceremony: "Ceremony",
+    workshop: "Workshop",
+    registration: "Registration",
+    closing: "Closing",
   }
 
   return (
@@ -294,17 +287,8 @@ export default function ProgramICSMAI2025Colored() {
           <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Conference Program</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Schedule of Events</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Explore the confirmed keynotes, technical sessions, special tracks and workshops for ICSMAI 2025.
+            Explore the confirmed keynotes, technical sessions, and special tracks for ICSMAI 2025.
           </p>
-
-          {/* Legend */}
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
-            {(
-              ["keynote","session","workshop","panel","ceremony","registration","break","social","closing"] as ItemType["type"][]
-            ).map((t) => (
-              <span key={t} className={`px-2 py-1 rounded-md text-xs ${typeStyles[t]}`}>{TypeLabel[t]}</span>
-            ))}
-          </div>
         </motion.div>
 
         <motion.div
@@ -368,13 +352,6 @@ export default function ProgramICSMAI2025Colored() {
                               <MapPin className="h-4 w-4" />
                               <span>{item.room ? `${item.location} — ${item.room}` : item.location}</span>
                             </div>
-                            {item.papers && item.papers.length > 0 && (
-                              <ul className="list-disc ms-5 text-sm text-muted-foreground">
-                                {item.papers.map((p, i) => (
-                                  <li key={i}>{p}</li>
-                                ))}
-                              </ul>
-                            )}
                           </div>
                           <div className="sm:w-10 flex items-center justify-center">
                             <div className="p-2 rounded-full bg-primary/10">{item.icon ?? <Users className="h-5 w-5" />}</div>
