@@ -4,6 +4,7 @@ import { useState, type ReactElement } from "react"
 import { motion } from "motion/react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
@@ -13,6 +14,8 @@ import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
  */
 export default function ProgramICSMAI2025Fixed() {
   const [activeDay, setActiveDay] = useState("day1")
+  const [expandAll, setExpandAll] = useState(false)
+  const [accordionNonce, setAccordionNonce] = useState(0)
 
   const days = [
     { id: "day1", label: "Day 1", date: "Thursday, Oct 23" },
@@ -140,6 +143,10 @@ export default function ProgramICSMAI2025Fixed() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          <div className="flex items-center justify-end mb-3 gap-2">
+            <Button variant="outline" size="sm" onClick={() => { setExpandAll(true); setAccordionNonce((n) => n + 1) }}>Tout dérouler</Button>
+            <Button variant="outline" size="sm" onClick={() => { setExpandAll(false); setAccordionNonce((n) => n + 1) }}>Tout replier</Button>
+          </div>
           <Tabs defaultValue="day1" value={activeDay} onValueChange={setActiveDay} className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8 h-14">
               {days.map((day) => (
@@ -168,7 +175,7 @@ export default function ProgramICSMAI2025Fixed() {
                       return (
                         <div className="space-y-6">
                           {blocks.map(([time, items]) => (
-                            <Card key={time} className="border-muted">
+                            <Card key={`${time}-${accordionNonce}`} className="border-muted">
                               <CardHeader className="pb-2">
                                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                   <Clock className="h-4 w-4" />
@@ -188,27 +195,34 @@ export default function ProgramICSMAI2025Fixed() {
                               </CardHeader>
                               <CardContent>
                                 {items.length === 1 ? (
-                                  <div className="space-y-2">
-                                    {items[0].track && (
-                                      <div className="text-sm text-muted-foreground"><span className="font-medium">Track:</span> {items[0].track}</div>
-                                    )}
-                                    {items[0].chair && (
-                                      <div className="text-sm text-muted-foreground"><span className="font-medium">Chair:</span> {items[0].chair}</div>
-                                    )}
-                                    {items[0].details && (
-                                      <p className="text-sm text-muted-foreground">{items[0].details}</p>
-                                    )}
-                                    {items[0].papers && items[0].papers.length > 0 && (
-                                      <div className="mt-2">
-                                        <div className="text-sm font-medium">Papers</div>
-                                        <ul className="list-disc ms-5 text-sm text-muted-foreground">
-                                          {items[0].papers.map((p, i) => (
-                                            <li key={i}>{p}</li>
-                                          ))}
-                                        </ul>
-                                      </div>
-                                    )}
-                                  </div>
+                                  <Accordion type="multiple" defaultValue={expandAll ? [`details-${index}`] : []} className="w-full mt-1">
+                                    <AccordionItem value={`details-${index}`}>
+                                      <AccordionTrigger className="text-sm">Details</AccordionTrigger>
+                                      <AccordionContent>
+                                        <div className="space-y-2">
+                                          {items[0].track && (
+                                            <div className="text-sm text-muted-foreground"><span className="font-medium">Track:</span> {items[0].track}</div>
+                                          )}
+                                          {items[0].chair && (
+                                            <div className="text-sm text-muted-foreground"><span className="font-medium">Chair:</span> {items[0].chair}</div>
+                                          )}
+                                          {items[0].details && (
+                                            <p className="text-sm text-muted-foreground">{items[0].details}</p>
+                                          )}
+                                          {items[0].papers && items[0].papers.length > 0 && (
+                                            <div className="mt-2">
+                                              <div className="text-sm font-medium">Papers</div>
+                                              <ul className="list-disc ms-5 text-sm text-muted-foreground">
+                                                {items[0].papers.map((p, i) => (
+                                                  <li key={i}>{p}</li>
+                                                ))}
+                                              </ul>
+                                            </div>
+                                          )}
+                                        </div>
+                                      </AccordionContent>
+                                    </AccordionItem>
+                                  </Accordion>
                                 ) : (
                                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                                     {items.map((it, idx) => (
@@ -223,22 +237,36 @@ export default function ProgramICSMAI2025Fixed() {
                                           </div>
                                           <span className={`px-2 py-1 rounded-md text-[11px] ${typeStyles[it.type]}`}>{TypeLabel[it.type]}</span>
                                         </div>
-                                        {it.track && (
-                                          <div className="mt-2 text-xs text-muted-foreground"><span className="font-medium">Track:</span> {it.track}</div>
-                                        )}
-                                        {it.chair && (
-                                          <div className="text-xs text-muted-foreground"><span className="font-medium">Chair:</span> {it.chair}</div>
-                                        )}
-                                        {it.details && (
-                                          <p className="mt-1 text-xs text-muted-foreground">{it.details}</p>
-                                        )}
-                                        {it.papers && it.papers.length > 0 && (
-                                          <div className="mt-2">
-                                            <div className="text-xs font-medium">Papers</div>
-                                            <ul className="list-disc ms-5 text-xs text-muted-foreground">
-                                              {it.papers.map((p, i) => (
-                                                <li key={i}>{p}</li>
-                                              ))}
+                                        {(it.track || it.chair || it.details || (it.papers && it.papers.length > 0)) && (
+                                          <Accordion type="multiple" defaultValue={expandAll ? [`details-${idx}`] : []} className="mt-2">
+                                            <AccordionItem value={`details-${idx}`}>
+                                              <AccordionTrigger className="text-xs">Details</AccordionTrigger>
+                                              <AccordionContent>
+                                                <div className="space-y-1">
+                                                  {it.track && (
+                                                    <div className="text-xs text-muted-foreground"><span className="font-medium">Track:</span> {it.track}</div>
+                                                  )}
+                                                  {it.chair && (
+                									<div className="text-xs text-muted-foreground"><span className="font-medium">Chair:</span> {it.chair}</div>
+                                                  )}
+                                                  {it.details && (
+                                                    <p className="text-xs text-muted-foreground">{it.details}</p>
+                                                  )}
+                                                  {it.papers && it.papers.length > 0 && (
+                                                    <div>
+                                                      <div className="text-xs font-medium">Papers</div>
+                                                      <ul className="list-disc ms-5 text-xs text-muted-foreground">
+                                                        {it.papers.map((p, i) => (
+                                                          <li key={i}>{p}</li>
+                                                        ))}
+                                                      </ul>
+                                                    </div>
+                                                  )}
+                                                </div>
+                                              </AccordionContent>
+                                            </AccordionItem>
+                                          </Accordion>
+                                        )}}
                                             </ul>
                                           </div>
                                         )}
