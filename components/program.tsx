@@ -4,6 +4,7 @@ import { useState, type ReactElement } from "react"
 import { motion } from "motion/react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
 
 /**
@@ -67,272 +68,47 @@ export default function ProgramICSMAI2025Fixed() {
     closing: "Closing",
   }
 
+  // Group items by exact time range (e.g., "10:30 – 12:30")
+  const groupByTime = (items: ItemType[]) => {
+    return items.reduce((acc, it) => {
+      (acc[it.time] ||= []).push(it)
+      return acc
+    }, {} as Record<string, ItemType[]>)
+  }
+
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
-  day1: [
-    {
-      time: "14:00 – 15:30",
-      title: "Welcome and Registration",
-      location: "Main Conference Registration",
-      type: "registration",
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "15:30 – 16:30",
-      title: "Official Opening Ceremony",
-      location: "Conference Hall",
-      type: "ceremony",
-      chair: "Moderators: Prof. Kamal GHOUMID",
-      details:
-        "Addresses: President of Mohammed Premier University; Director of ENSA Oujda; Dean of Faculty of Science; Dean of Faculty of Medicine & Pharmacy; Director of EST Oujda; Director of CHU; Director of ENCG Oujda; Organizing Committee.",
-      icon: <Presentation className="h-5 w-5" />,
-    },
-    {
-      time: "16:30 – 18:30",
-      title: "Keynotes Block #1",
-      location: "Conference Hall",
-      type: "keynote",
-      track: "HADDIYA; VOSHMGIR; MESTARI",
-      details: [
-        "Keynote #1 – Prof. Intissar HADDIYA (FMPO, Med 1st Univ, Oujda): Environmental determinants of hypertension. (Moderators: Prof. A. Kerkri, Prof. Omar Sefraoui)",
-        "Keynote #2 – Prof. Shermin VOSHMGIR (Vienna University, Austria): Web3 on the Intersection of Blockchain, AI & IoT. (Moderators: Prof. A. Kerkri, Prof. Omar Sefraoui)",
-        "Keynote #3 – Prof. Mohammed MESTARI (ENSET, Hassan II Univ): From Complexity & Network Science to Graph Representation Learning: GNN Approach to Polypharmacy Side Effects. (Moderators: Prof. A. Naji, Prof. O. Sefraoui)",
-      ].join(" | "),
-      icon: <Presentation className="h-5 w-5" />,
-    },
-    {
-      time: "20:00 – 22:00",
-      title: "Dinner break",
-      location: "Hotel Restaurants",
-      type: "break",
-      icon: <Coffee className="h-5 w-5" />,
-    },
-  ],
-
-  day2: [   {
-      time: "08:00 – 09:00",
-      title: "Welcome and Registration",
-      location: "Main Conference Registration",
-      type: "registration",
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "09:00 – 11:00",
-      title: "Keynotes Block #2",
-      location: "Conference Hall",
-      type: "keynote",
-      details: [
-        "Keynote #4 – Prof. Yassamine BENTATA (FMPO): The Future of Medicine: Horizons and Limits! (Moderators: Prof. M.A. Madani, Prof. A. Kerkri)",
-        "Keynote #5 – Prof. Moulay AKHLOUFI (Univ. de Moncton, Canada): Advances and Challenges in AI for Healthcare. (Moderator: Prof. Omar SEFRAOUI)",
-        "Keynote #6 – Prof. Abdelkrim DAOUDI (FMPO): Telemedicine: experience in the Eastern region. (Moderator: Prof. Omar SEFRAOUI)",
-      ].join(" | "),
-      icon: <Presentation className="h-5 w-5" />,
-    },
-
-    // Sessions parallèles 4–6 (10:30–12:30)
-    {
-      time: "10:30 – 12:30",
-      title: "Session 4: Internet of Things and Computing",
-      location: "Parallel Sessions",
-      room: "Room 1",
-      type: "session",
-      chair: "Chairs: Prof. Mounir Grari",
-      track: "IoT architectures, edge computing, embedded systems",
-      papers: [
-        "ID9: Optimi",
-        
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "10:30 – 12:30",
-      title: "Session 5: AI, Machine Learning and Deep Learning",
-      location: "Parallel Sessions",
-      room: "Room 2",
-      type: "session",
-      chair: "Chairs: Prof. Mohamed Jeyar",
-      track: "Learning theory, optimization, deep architectures",
-      papers: [
-        "ID46: Forest Fire Surveillance through Deep Learning Segmentation and Drone Technology. (Mimoun Yandouzi et al.)",
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "10:30 – 12:30",
-      title: "Session 6: Data Analysis, Big Data and High Performance Computing",
-      location: "Parallel Sessions",
-      room: "Room 3",
-      type: "session",
-      chair: "Chairs: Prof. Madani Med Amine, Prof. Mohamed Emharraf",
-      track: "Data engineering, analytics, high-performance computing",
-      papers: [
-        "ID6: Trans",
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-
-    {
-      time: "13:00 – 15:30",
-      title: "Lunch break",
-      location: "Dining Hall",
-      type: "break",
-      icon: <Coffee className="h-5 w-5" />,
-    },
-
-    // Keynotes santé (15:30–17:00)
-    {
-      time: "15:30 – 17:00",
-      title: "Keynotes Block #3 (Healthcare Innovations)",
-      location: "Conference Hall",
-      type: "keynote",
-      details: [
-        "Keynote #8 – Prof. M (FMPO): AI : Feedback ",
-        
-      ].join(" | "),
-      icon: <Presentation className="h-5 w-5" />,
-    },
-    {
-      time: "17:00 – 17:30",
-      title: "Coffee break",
-      location: "Lobby",
-      type: "break",
-      icon: <Coffee className="h-5 w-5" />,
-    },
-
-    // Soir
-    {
-      time: "17:30 – 20:00",
-      title: "Session 7: Network, Security and Social Network",
-      location: "Technical Track",
-      room: "Room 1",
-      type: "session",
-      chair: "Chairs: Prof. Med",
-      papers: [
-        "ID3: A",
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "17:30 – 18:30",
-      title: "Medicine Special Session I — Workshop #1 (SOMADIAG)",
-      location: "Medicine Track",
-      room: "Room 3",
-      type: "workshop",
-      details:
-        "Comment concevoir ",
-      icon: <Presentation className="h-5 w-5" />,
-    },
-    {
-      time: "18:30 – 21:00",
-      title: "Medicine Special Session I — Oral Communications",
-      location: "Medicine Track",
-      room: "Room 3",
-      type: "session",
-      track: "Jury: Pr ",
-      papers: [
-        "CO1: Dr. ",
-        ,
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "20:00 – 22:00",
-      title: "Dinner break",
-      location: "Hotel Restaurants",
-      type: "break",
-      icon: <Coffee className="h-5 w-5" />,
-    },
-  ],
-
-  day3: [
-    {
-      time: "08:00 – 09:00",
-      title: "Welcome and Registration",
-      location: "Main Conference Registration",
-      type: "registration",
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "09:00 – 10:30",
-      title: "Keynotes Block #4",
-      location: "Conference Hall",
-      type: "keynote",
-      details: [
-        "Keynote – Prof. Daoudi (UMP): IoT and AI: Enhancing Medical Diagnosis and Treatment. (Moderators: Prof. Abderrahim Essadek & Prof. Jamal Yousfi)",
-        "Keynote – Prof. Mostafa AZIZI (ESTO, UMP): MIoT and Security Challenges. (Moderators: Prof. Mbarki & Prof. Omar)",
-      ].join(" | "),
-      icon: <Presentation className="h-5 w-5" />,
-    },
-
-    // Sessions parallèles 10–11 (10:30–12:40)
-    {
-      time: "10:30 – 12:40",
-      title: "Session 10: Emerging Technologies and Environment",
-      location: "Parallel Sessions",
-      room: "Room 1",
-      type: "session",
-      chair: "Chairs: Prof. Ahmed ",
-      papers: [
-        "ID5: Monte C",
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-    {
-      time: "10:30 – 12:40",
-      title: "Session 11: Smart Application and Computing",
-      location: "Parallel Sessions",
-      room: "Room 2",
-      type: "session",
-      chair: "Chairs: Prof. Hicham Bouali and Prof. El Miloud Ar-Reyouchi",
-      papers: [
-        "ID1: Smart stra.",
-        
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-
-    // Médecine — Orales (09:00–12:40)
-    {
-      time: "09:00 – 12:40",
-      title: "Session 12: Medicine Special Session II — Oral Communications",
-      location: "Medicine Track",
-      room: "Room 3",
-      type: "session",
-      track: "Jury: Pr Ali",
-      papers: [
-        "CO16: Verification o.",
-        
-      ],
-      icon: <Users className="h-5 w-5" />,
-    },
-
-    {
-      time: "12:40 – 14:00",
-      title: "Lunch break",
-      location: "Dining Hall",
-      type: "break",
-      icon: <Coffee className="h-5 w-5" />,
-    },
-    {
-      time: "14:00 – 17:00",
-      title: "Session 13: Medicine ",
-      location: "Medicine Track",
-      room: "Room 3",
-      type: "workshop",
-      details:
-        "Workshop Contrôle qualité",
-      icon: <Presentation className="h-5 w-5" />,
-    },
-    {
-      time: "17:00",
-      title: "Closing Ceremony",
-      location: "Conference Hall",
-      type: "closing",
-      icon: <Presentation className="h-5 w-5" />,
-    },
-  ],
-}
-
-  
+    day1: [
+      { time: "14:00 – 15:30", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
+      { time: "15:30 – 16:30", title: "Official Opening Ceremony", location: "Conference Hall", type: "ceremony", details: "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee", icon: <Presentation className="h-5 w-5" /> },
+      { time: "16:30 – 18:30", title: "Keynotes Block #1", location: "Conference Hall", type: "keynote", details: "#1 Prof. Intissar Haddiaya — Environmental determinants of hypertension; #2 Prof. Shermin Voshmgir — Web3 at the intersection of Blockchain, AI & IoT; #3 Prof. Mohammed Mestari — Graph Neural Networks for Polypharmacy Side Effects", icon: <Presentation className="h-5 w-5" /> },
+      { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
+    ],
+    day2: [
+      { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
+      { time: "09:00 – 10:30", title: "Keynotes Block #2", location: "Conference Hall", type: "keynote", details: "#5 Prof. Yassamine Bentata — The Future of Medicine: Horizons and Limits!; #6 Prof. Moulay Akhloufi — Advances & Challenges in AI for Healthcare", icon: <Presentation className="h-5 w-5" /> },
+      // Parallel Sessions 4–6
+      { time: "10:30 – 12:30", title: "Session 4: IoT & Computing", location: "Parallel Sessions", room: "Room 1", type: "session", track: "IoT architectures, edge computing, embedded systems", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:30", title: "Session 5: AI / ML / DL", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Learning theory, optimization, deep architectures", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:30", title: "Session 6: Data Analysis, Big Data & HPC", location: "Parallel Sessions", room: "Room 3", type: "session", track: "Data engineering, analytics, high‑performance computing", icon: <Users className="h-5 w-5" /> },
+      { time: "13:00 – 15:30", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
+      { time: "15:30 – 17:00", title: "Keynotes Block #3 (Healthcare Innovations)", location: "Conference Hall", type: "keynote", details: "#7 Prof. Mohammed Choukri · #8 Prof. Dounia El Moujtahide · #9 Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · #11 Mr. Mustapha El Machad (Abbott Masterlab)", icon: <Presentation className="h-5 w-5" /> },
+      { time: "17:00 – 17:30", title: "Coffee Break", location: "Lobby", type: "break", icon: <Coffee className="h-5 w-5" /> },
+      { time: "17:30 – 20:00", title: "Session 7: Networks, Security & Social Network", location: "Technical Track", room: "Room 1", type: "session", track: "Networks, cybersecurity, social graphs", icon: <Users className="h-5 w-5" /> },
+      { time: "17:30 – 18:30", title: "Medicine Special Session I — Workshop #1 (SOMADIAG)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada", icon: <Presentation className="h-5 w-5" /> },
+      { time: "18:30 – 21:00", title: "Medicine Special Session I — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
+      { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
+    ],
+    day3: [
+      { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
+      { time: "09:00 – 10:30", title: "Keynotes Block #4", location: "Conference Hall", type: "keynote", details: "Prof. Muhamad Umar Khan — Empowering Healthcare with IoT & AI; Prof. Mostafa Azizi (with Prof. Cyril Drocourt) — MIoT & Security Challenges", icon: <Presentation className="h-5 w-5" /> },
+      { time: "09:00 – 12:40", title: "Session 12: Medicine Special Session II — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:40", title: "Session 10: Emerging Technologies & Environment", location: "Parallel Sessions", room: "Room 1", type: "session", track: "Green ICT, energy systems, environmental sensing", icon: <Users className="h-5 w-5" /> },
+      { time: "10:30 – 12:40", title: "Session 11: Smart Applications & Computing", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Smart cities, recommender systems, applied AI", icon: <Users className="h-5 w-5" /> },
+      { time: "12:40 – 14:00", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
+      { time: "14:00 – 17:00", title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)", icon: <Presentation className="h-5 w-5" /> },
+      { time: "17:00", title: "Closing Ceremony", location: "Conference Hall", type: "closing", icon: <Presentation className="h-5 w-5" /> },
+    ],
+  }
 
   return (
     <section id="program" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
@@ -386,53 +162,104 @@ export default function ProgramICSMAI2025Fixed() {
                     <CardDescription>All times are in Morocco Standard Time (Africa/Casablanca, UTC+1)</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-6">
-                      {schedules[day.id].map((item, index) => (
-                        <motion.div
-                          key={index}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.3, delay: index * 0.05 }}
-                          className="flex flex-col sm:flex-row gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-                        >
-                          <div className="sm:w-40 flex-shrink-0">
-                            <div className="flex items-center gap-2">
-                              <Clock className="h-4 w-4 text-muted-foreground" />
-                              <span className="font-medium">{item.time}</span>
-                            </div>
-                          </div>
-                          <div className="flex-1 space-y-2">
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                              <h3 className="font-bold">{item.title}</h3>
-                              <span className={`px-2 py-1 rounded-md text-xs ${typeStyles[item.type]}`}>{TypeLabel[item.type]}</span>
-                            </div>
-                            {item.track && (
-                              <div className="text-sm text-muted-foreground"><span className="font-medium">Track:</span> {item.track}</div>
-                            )}
-                            {item.chair && (
-                              <div className="text-sm text-muted-foreground"><span className="font-medium">Chair:</span> {item.chair}</div>
-                            )}
-                            {item.details && (
-                              <p className="text-sm text-muted-foreground">{item.details}</p>
-                            )}
-                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                              <MapPin className="h-4 w-4" />
-                              <span>{item.room ? `${item.location} — ${item.room}` : item.location}</span>
-                            </div>
-                            {item.papers && item.papers.length > 0 && (
-                              <ul className="list-disc ms-5 text-sm text-muted-foreground">
-                                {item.papers.map((p, i) => (
-                                  <li key={i}>{p}</li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                          <div className="sm:w-10 flex items-center justify-center">
-                            <div className="p-2 rounded-full bg-primary/10">{item.icon ?? <Users className="h-5 w-5" />}</div>
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
+                    {(() => {
+                      const grouped = groupByTime(schedules[day.id])
+                      const blocks = Object.entries(grouped)
+                      return (
+                        <div className="space-y-6">
+                          {blocks.map(([time, items]) => (
+                            <Card key={time} className="border-muted">
+                              <CardHeader className="pb-2">
+                                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                  <Clock className="h-4 w-4" />
+                                  <span className="font-medium">{time}</span>
+                                </div>
+                                <CardTitle className="text-base md:text-lg">
+                                  {items.length === 1 ? items[0].title : `Parallel block (${items.length} tracks)`}
+                                </CardTitle>
+                                {items.length === 1 && (
+                                  <div className="flex items-center gap-2">
+                                    <span className={`px-2 py-1 rounded-md text-xs ${typeStyles[items[0].type]}`}>{TypeLabel[items[0].type]}</span>
+                                    <span className="text-xs text-muted-foreground">
+                                      {items[0].room ? `${items[0].location} — ${items[0].room}` : items[0].location}
+                                    </span>
+                                  </div>
+                                )}
+                              </CardHeader>
+                              <CardContent>
+                                {items.length === 1 ? (
+                                  <div className="space-y-2">
+                                    {items[0].track && (
+                                      <div className="text-sm text-muted-foreground"><span className="font-medium">Track:</span> {items[0].track}</div>
+                                    )}
+                                    {items[0].chair && (
+                                      <div className="text-sm text-muted-foreground"><span className="font-medium">Chair:</span> {items[0].chair}</div>
+                                    )}
+                                    {items[0].details && (
+                                      <p className="text-sm text-muted-foreground">{items[0].details}</p>
+                                    )}
+                                    {items[0].papers && items[0].papers.length > 0 && (
+                                      <Accordion type="single" collapsible className="w-full">
+                                        <AccordionItem value="papers">
+                                          <AccordionTrigger className="text-sm">Papers</AccordionTrigger>
+                                          <AccordionContent>
+                                            <ul className="list-disc ms-5 text-sm text-muted-foreground">
+                                              {items[0].papers.map((p, i) => (
+                                                <li key={i}>{p}</li>
+                                              ))}
+                                            </ul>
+                                          </AccordionContent>
+                                        </AccordionItem>
+                                      </Accordion>
+                                    )}
+                                  </div>
+                                ) : (
+                                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                                    {items.map((it, idx) => (
+                                      <div key={idx} className="rounded-lg border p-4">
+                                        <div className="flex items-start justify-between gap-2">
+                                          <div className="space-y-1">
+                                            <h3 className="font-semibold leading-tight">{it.title}</h3>
+                                            <div className="text-xs text-muted-foreground flex items-center gap-2">
+                                              <MapPin className="h-3 w-3" />
+                                              <span>{it.room ? `${it.location} — ${it.room}` : it.location}</span>
+                                            </div>
+                                          </div>
+                                          <span className={`px-2 py-1 rounded-md text-[11px] ${typeStyles[it.type]}`}>{TypeLabel[it.type]}</span>
+                                        </div>
+                                        {it.track && (
+                                          <div className="mt-2 text-xs text-muted-foreground"><span className="font-medium">Track:</span> {it.track}</div>
+                                        )}
+                                        {it.chair && (
+                                          <div className="text-xs text-muted-foreground"><span className="font-medium">Chair:</span> {it.chair}</div>
+                                        )}
+                                        {it.details && (
+                                          <p className="mt-1 text-xs text-muted-foreground">{it.details}</p>
+                                        )}
+                                        {it.papers && it.papers.length > 0 && (
+                                          <Accordion type="single" collapsible className="mt-2">
+                                            <AccordionItem value={`papers-${idx}`}>
+                                              <AccordionTrigger className="text-xs">Papers</AccordionTrigger>
+                                              <AccordionContent>
+                                                <ul className="list-disc ms-5 text-xs text-muted-foreground">
+                                                  {it.papers.map((p, i) => (
+                                                    <li key={i}>{p}</li>
+                                                  ))}
+                                                </ul>
+                                              </AccordionContent>
+                                            </AccordionItem>
+                                          </Accordion>
+                                        )}
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
+                              </CardContent>
+                            </Card>
+                          ))}
+                        </div>
+                      )
+                    })()}
                   </CardContent>
                 </Card>
               </TabsContent>
