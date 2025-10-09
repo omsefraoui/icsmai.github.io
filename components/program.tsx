@@ -68,38 +68,312 @@ export default function ProgramICSMAI2025Fixed() {
   }
 
   const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
-    day1: [
-      { time: "14:00 – 15:30", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
-      { time: "15:30 – 16:30", title: "Official Opening Ceremony", location: "Conference Hall", type: "ceremony", details: "University & School leadership addresses; Moderators: Prof. Kamal Ghoumid & Organizing Committee", icon: <Presentation className="h-5 w-5" /> },
-      { time: "16:30 – 18:30", title: "Keynotes Block #1", location: "Conference Hall", type: "keynote", details: "#1 Prof. Intissar Haddiaya — Environmental determinants of hypertension; #2 Prof. Shermin Voshmgir — Web3 at the intersection of Blockchain, AI & IoT; #3 Prof. Mohammed Mestari — Graph Neural Networks for Polypharmacy Side Effects", icon: <Presentation className="h-5 w-5" /> },
-      { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
-    ],
-    day2: [
-      { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
-      { time: "09:00 – 10:30", title: "Keynotes Block #2", location: "Conference Hall", type: "keynote", details: "#5 Prof. Yassamine Bentata — The Future of Medicine: Horizons and Limits!; #6 Prof. Moulay Akhloufi — Advances & Challenges in AI for Healthcare", icon: <Presentation className="h-5 w-5" /> },
-      // Parallel Sessions 4–6
-      { time: "10:30 – 12:30", title: "Session 4: IoT & Computing", location: "Parallel Sessions", room: "Room 1", type: "session", track: "IoT architectures, edge computing, embedded systems", icon: <Users className="h-5 w-5" /> },
-      { time: "10:30 – 12:30", title: "Session 5: AI / ML / DL", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Learning theory, optimization, deep architectures", icon: <Users className="h-5 w-5" /> },
-      { time: "10:30 – 12:30", title: "Session 6: Data Analysis, Big Data & HPC", location: "Parallel Sessions", room: "Room 3", type: "session", track: "Data engineering, analytics, high‑performance computing", icon: <Users className="h-5 w-5" /> },
-      { time: "13:00 – 15:30", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
-      { time: "15:30 – 17:00", title: "Keynotes Block #3 (Healthcare Innovations)", location: "Conference Hall", type: "keynote", details: "#7 Prof. Mohammed Choukri · #8 Prof. Dounia El Moujtahide · #9 Prof. El Houcine Sebbar · #10 Prof. Abderrazak Saddari · #11 Mr. Mustapha El Machad (Abbott Masterlab)", icon: <Presentation className="h-5 w-5" /> },
-      { time: "17:00 – 17:30", title: "Coffee Break", location: "Lobby", type: "break", icon: <Coffee className="h-5 w-5" /> },
-      { time: "17:30 – 20:00", title: "Session 7: Networks, Security & Social Network", location: "Technical Track", room: "Room 1", type: "session", track: "Networks, cybersecurity, social graphs", icon: <Users className="h-5 w-5" /> },
-      { time: "17:30 – 18:30", title: "Medicine Special Session I — Workshop #1 (SOMADIAG)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Designing & equipping a new Medical Biology Lab; LIS considerations — Zakaria Berrada", icon: <Presentation className="h-5 w-5" /> },
-      { time: "18:30 – 21:00", title: "Medicine Special Session I — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
-      { time: "20:00", title: "Dinner Break", location: "Hotel Restaurants", type: "break", icon: <Coffee className="h-5 w-5" /> },
-    ],
-    day3: [
-      { time: "08:00 – 09:00", title: "Welcome & Registration", location: "Main Conference Registration", type: "registration", icon: <Users className="h-5 w-5" /> },
-      { time: "09:00 – 10:30", title: "Keynotes Block #4", location: "Conference Hall", type: "keynote", details: "Prof. Muhamad Umar Khan — Empowering Healthcare with IoT & AI; Prof. Mostafa Azizi (with Prof. Cyril Drocourt) — MIoT & Security Challenges", icon: <Presentation className="h-5 w-5" /> },
-      { time: "09:00 – 12:40", title: "Session 12: Medicine Special Session II — Oral Communications", location: "Medicine Track", room: "Room 3", type: "session", icon: <Users className="h-5 w-5" /> },
-      { time: "10:30 – 12:40", title: "Session 10: Emerging Technologies & Environment", location: "Parallel Sessions", room: "Room 1", type: "session", track: "Green ICT, energy systems, environmental sensing", icon: <Users className="h-5 w-5" /> },
-      { time: "10:30 – 12:40", title: "Session 11: Smart Applications & Computing", location: "Parallel Sessions", room: "Room 2", type: "session", track: "Smart cities, recommender systems, applied AI", icon: <Users className="h-5 w-5" /> },
-      { time: "12:40 – 14:00", title: "Lunch Break", location: "Dining Hall", type: "break", icon: <Coffee className="h-5 w-5" /> },
-      { time: "14:00 – 17:00", title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)", location: "Medicine Track", room: "Room 3", type: "workshop", details: "Quality control workshop; interpreting internal/external reports; URT — Mme Asmae Aouiss (Bio-Rad/Masterlab)", icon: <Presentation className="h-5 w-5" /> },
-      { time: "17:00", title: "Closing Ceremony", location: "Conference Hall", type: "closing", icon: <Presentation className="h-5 w-5" /> },
-    ],
-  }
+  day1: [
+    {
+      time: "14:00 – 15:30",
+      title: "Welcome and Registration",
+      location: "Main Conference Registration",
+      type: "registration",
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "15:30 – 16:30",
+      title: "Official Opening Ceremony",
+      location: "Conference Hall",
+      type: "ceremony",
+      chair: "Moderators: Prof. Kamal GHOUMID",
+      details:
+        "Addresses: President of Mohammed Premier University; Director of ENSA Oujda; Dean of Faculty of Science; Dean of Faculty of Medicine & Pharmacy; Director of EST Oujda; Director of CHU; Director of ENCG Oujda; Organizing Committee.",
+      icon: <Presentation className="h-5 w-5" />,
+    },
+    {
+      time: "16:30 – 18:30",
+      title: "Keynotes Block #1",
+      location: "Conference Hall",
+      type: "keynote",
+      track: "HADDIYA; VOSHMGIR; MESTARI",
+      details: [
+        "Keynote #1 – Prof. Intissar HADDIYA (FMPO, Med 1st Univ, Oujda): Environmental determinants of hypertension. (Moderators: Prof. A. Kerkri, Prof. Omar Sefraoui)",
+        "Keynote #2 – Prof. Shermin VOSHMGIR (Vienna University, Austria): Web3 on the Intersection of Blockchain, AI & IoT. (Moderators: Prof. A. Kerkri, Prof. Omar Sefraoui)",
+        "Keynote #3 – Prof. Mohammed MESTARI (ENSET, Hassan II Univ): From Complexity & Network Science to Graph Representation Learning: GNN Approach to Polypharmacy Side Effects. (Moderators: Prof. A. Naji, Prof. O. Sefraoui)",
+      ].join(" | "),
+      icon: <Presentation className="h-5 w-5" />,
+    },
+    {
+      time: "20:00 – 22:00",
+      title: "Dinner break",
+      location: "Hotel Restaurants",
+      type: "break",
+      icon: <Coffee className="h-5 w-5" />,
+    },
+  ],
+
+  day2: [   {
+      time: "08:00 – 09:00",
+      title: "Welcome and Registration",
+      location: "Main Conference Registration",
+      type: "registration",
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "09:00 – 11:00",
+      title: "Keynotes Block #2",
+      location: "Conference Hall",
+      type: "keynote",
+      details: [
+        "Keynote #4 – Prof. Yassamine BENTATA (FMPO): The Future of Medicine: Horizons and Limits! (Moderators: Prof. M.A. Madani, Prof. A. Kerkri)",
+        "Keynote #5 – Prof. Moulay AKHLOUFI (Univ. de Moncton, Canada): Advances and Challenges in AI for Healthcare. (Moderator: Prof. Omar SEFRAOUI)",
+        "Keynote #6 – Prof. Abdelkrim DAOUDI (FMPO): Telemedicine: experience in the Eastern region. (Moderator: Prof. Omar SEFRAOUI)",
+      ].join(" | "),
+      icon: <Presentation className="h-5 w-5" />,
+    },
+
+    // Sessions parallèles 4–6 (10:30–12:30)
+    {
+      time: "10:30 – 12:30",
+      title: "Session 4: Internet of Things and Computing",
+      location: "Parallel Sessions",
+      room: "Room 1",
+      type: "session",
+      chair: "Chairs: Prof. Zineb Bougroun, Prof. Ilhame El Farissi, Prof. Mounir Grari",
+      track: "IoT architectures, edge computing, embedded systems",
+      papers: [
+        "ID94: Optimizing Digital Modulation for Energy Efficiency in WSN within IoMT. (Hadj Sadek et al.)",
+        "ID40: Enhancing GNSS Signal Integrity for Smart Medical Supply Chain Logistics Using Deep Learning. (Saadiâ Chabel et al.)",
+        "ID71: Framework for Agent-Based Simulation of Energy & Water Usage in Smart Homes. (Abdelkader Bouazza et al.)",
+        "ID121: Multi-networks communications in large set of modular robots. (Dominique Dhoutaut et al.)",
+        "ID123: Feature Selection Strategies in Failure Prediction. (Ouiam Khattach et al.)",
+        "ID79: Beyond the Lips: Exploring Factors Influencing Lipreading Accuracy. (Merieme Yakine et al.)",
+        "ID22: QC of Solar Radiation Data in Semi-Arid Climate (Ben-Guerir). (Fatiha Abbi et al.)",
+        "ID53: Oscillatory motion of a heavy pendulum with analog distance sensor (Micro-Lab). (Siham Machichi et al.)",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "10:30 – 12:30",
+      title: "Session 5: AI, Machine Learning and Deep Learning",
+      location: "Parallel Sessions",
+      room: "Room 2",
+      type: "session",
+      chair: "Chairs: Prof. Kamal Azghiou, Prof. Sanae Mazouz, Prof. Mohamed Jeyar",
+      track: "Learning theory, optimization, deep architectures",
+      papers: [
+        "ID46: Forest Fire Surveillance through Deep Learning Segmentation and Drone Technology. (Mimoun Yandouzi et al.)",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "10:30 – 12:30",
+      title: "Session 6: Data Analysis, Big Data and High Performance Computing",
+      location: "Parallel Sessions",
+      room: "Room 3",
+      type: "session",
+      chair: "Chairs: Prof. Madani Med Amine, Prof. Mohamed Emharraf, Prof. Belkacem Tidaf",
+      track: "Data engineering, analytics, high-performance computing",
+      papers: [
+        "ID60: Transfer Learning for Efficiency in Elderly Fall Detection with Limited Data Samples. (Moustafa Fayad et al.)",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+
+    {
+      time: "13:00 – 15:30",
+      title: "Lunch break",
+      location: "Dining Hall",
+      type: "break",
+      icon: <Coffee className="h-5 w-5" />,
+    },
+
+    // Keynotes santé (15:30–17:00)
+    {
+      time: "15:30 – 17:00",
+      title: "Keynotes Block #3 (Healthcare Innovations)",
+      location: "Conference Hall",
+      type: "keynote",
+      details: [
+        "Keynote #7 – Prof. Mohammed CHOUKRI (FMPO/CHU): AI & Big Data: Feedback and projects from the Central Laboratory of UHC Mohammed VI, Oujda.",
+        "Keynote #8 – Prof. Dounia EL MOUJTAHIDE (FMPO/CHU): Revolutionizing error detection in medical biology exams: impact of AI validation.",
+        "Keynote #9 – Prof. El Houcine SEBBAR (FMPO/CHU): Molecular Docking: Interests and Opportunities.",
+        "Keynote #10 – Prof. Abderrazak SADDARI (FMPO/CHU): Connected devices from the central laboratory (INDEXOR example).",
+        "Keynote #11 – Mr Mustapha EL MACHAD (MASTERLAB): AlinIQ – Abbott digital health solutions suite.",
+      ].join(" | "),
+      icon: <Presentation className="h-5 w-5" />,
+    },
+    {
+      time: "17:00 – 17:30",
+      title: "Coffee break",
+      location: "Lobby",
+      type: "break",
+      icon: <Coffee className="h-5 w-5" />,
+    },
+
+    // Soir
+    {
+      time: "17:30 – 20:00",
+      title: "Session 7: Network, Security and Social Network",
+      location: "Technical Track",
+      room: "Room 1",
+      type: "session",
+      chair: "Chairs: Prof. Hajji Tarik, Prof. Blej Mohammed, Prof. El Miloud Chaabelasri",
+      papers: [
+        "ID38: Adaptive DSR Metrics for Low-Energy LoRa Mesh Ad Hoc Routing: Theoretical Study on Forest Fire Detection. (Mustapha Hammouti et al.)",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "17:30 – 18:30",
+      title: "Medicine Special Session I — Workshop #1 (SOMADIAG)",
+      location: "Medicine Track",
+      room: "Room 3",
+      type: "workshop",
+      details:
+        "Comment concevoir et équiper un nouveau laboratoire de biologie médicale ? Place du système d'information. (Mr Zakaria BERRADA, SOMADIAG)",
+      icon: <Presentation className="h-5 w-5" />,
+    },
+    {
+      time: "18:30 – 21:00",
+      title: "Medicine Special Session I — Oral Communications",
+      location: "Medicine Track",
+      room: "Room 3",
+      type: "session",
+      track: "Jury: Pr Abdesslam Assahrao, Pr Assya Khermach, Pr Abderrazak Saddari, Pr Aziza Hami",
+      papers: [
+        "CO1: Dr. Asmae Kidoun — Primitive plasma leukemia: case-report",
+        "CO2: Dr. Asmae Kidoun — Difficulties of grouping ABO: retrospective study (97 cases)",
+        "CO3: Dr. Mohammed Amine Nejjari — Carcinocythemia: First Case Detected in University",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "20:00 – 22:00",
+      title: "Dinner break",
+      location: "Hotel Restaurants",
+      type: "break",
+      icon: <Coffee className="h-5 w-5" />,
+    },
+  ],
+
+  day3: [
+    {
+      time: "08:00 – 09:00",
+      title: "Welcome and Registration",
+      location: "Main Conference Registration",
+      type: "registration",
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "09:00 – 10:30",
+      title: "Keynotes Block #4",
+      location: "Conference Hall",
+      type: "keynote",
+      details: [
+        "Keynote – Prof. Daoudi (UMP): IoT and AI: Enhancing Medical Diagnosis and Treatment. (Moderators: Prof. Abderrahim Essadek & Prof. Jamal Yousfi)",
+        "Keynote – Prof. Mostafa AZIZI (ESTO, UMP): MIoT and Security Challenges. (Moderators: Prof. Mbarki & Prof. Omar)",
+      ].join(" | "),
+      icon: <Presentation className="h-5 w-5" />,
+    },
+
+    // Sessions parallèles 10–11 (10:30–12:40)
+    {
+      time: "10:30 – 12:40",
+      title: "Session 10: Emerging Technologies and Environment",
+      location: "Parallel Sessions",
+      room: "Room 1",
+      type: "session",
+      chair: "Chairs: Prof. Benbrike Abdelhak, Prof. Mohammed Benhaddou, Prof. Khalil Kasmi",
+      papers: [
+        "ID50: Monte Carlo simulation of a modified Elekta Precise LINAC for FLASH radiotherapy using TOPAS. (Fatimazahra Rimchi et al.)",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+    {
+      time: "10:30 – 12:40",
+      title: "Session 11: Smart Application and Computing",
+      location: "Parallel Sessions",
+      room: "Room 2",
+      type: "session",
+      chair: "Chairs: Prof. Hicham Bouali, Prof. Farid Falyouni, Prof. El Miloud Ar-Reyouchi",
+      papers: [
+        "ID17: Smart strategies for heat transfer enhancement using nanofluids in complex geometries.",
+        "ID120: Dynamic Hybrid ACO + Simulated Annealing for multi-objective k-MST.",
+        "ID125: Smart city Framework model-Driven — Literature review.",
+        "ID18: Improving Natural Convection in a Nanofluid-Filled Cavity (SMART Numerical Simulation).",
+        "ID19: Enhance Heat Transfer in a Rectangular Duct with 7-Shaped Baffle (CFD).",
+        "ID105: Beat Phenomenon using Oscillating Coupled Pendulums & Distance Sensors (MicroLab).",
+        "ID76: Multi-Class Diabetic Retinopathy Classification (Transfer Learning + MixUp).",
+        "ID116: Plasma Discharge Characteristics in 2D Inductively Coupled Reactors — EEDF models.",
+        "ID86: Extending emission range — InAs/InP vs InAs/GaAs Quantum Dots: advancements & challenges.",
+        "ID57: Compression of curved intersected honeycomb structures (double vs single walls).",
+        "ID102: Elastic Pendulum Analysis via Piezoelectric Sensor & Microlab Interface.",
+        "ID14: Empowering Moroccan Aromatic & Medicinal Plant Cooperatives with New Technologies.",
+        "ID200: Enhancing Age & Residence Time Theory using Physics-Informed Neural Networks.",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+
+    // Médecine — Orales (09:00–12:40)
+    {
+      time: "09:00 – 12:40",
+      title: "Session 12: Medicine Special Session II — Oral Communications",
+      location: "Medicine Track",
+      room: "Room 3",
+      type: "session",
+      track: "Jury: Pr Benachat, Pr Maarouf, Pr Mohcine Kodad, Pr El Houcine SEBBAR",
+      papers: [
+        "CO16: Verification of analytical performance of iPTH assay (Abbott Alinity i®).",
+        "CO17: Verification of analytical performance of 25-OH Vitamin D assay (Alinity i®).",
+        "CO18: Verification of S-DHEA dosing method (Architect ci8200) — Biochemistry lab, CHU Oujda.",
+        "CO19: Verification of Methotrexate dosing method (Architect c).",
+        "CO20: Verification of CEA assay (Alinity i®) — Biochemistry lab, CHU Oujda.",
+        "CO21: Verification of TSH assay (Alinity i®) — Biochemistry lab, CHU Oujda.",
+        "CO22: TRAb assay analytical performance (Alinity i®).",
+        "CO23: C-peptide assay CMIA (Alinity i®) — Biochemistry lab, CHU Oujda.",
+        "CO25: Cyclosporin assay analytical performance (Alinity i®) — CHU Oujda.",
+        "CO25: Triglyceride assay analytical performance (Architect Ci8200®) — Central lab CHU Oujda.",
+        "CO26: CK-MB assay analytical performance (Alinity i®) — CHU Oujda.",
+        "CO27: AI-Enhanced method verification for iron (Alinity ci®) — Central lab CHU Oujda.",
+        "CO28: Leveraging AI for targeting protein-protein interactions in drug design.",
+        "CO29: Relevance of serum/urine immunofixation in hypogammaglobulinemia — CHU Oujda.",
+        "CO30: Vitamin D status & diabetic balance — CHU Oujda experience.",
+        "CO31: Hypogammaglobulinemia in a biochemistry department.",
+        "CO32: Pertinence of immunofixation prescription in heterogeneity of gammaglobulin zone.",
+        "CO33: From Theory to Practice: Application for Quantitative Analytical Method Validation.",
+        "CO34: Sperm DNA Fragmentation & Semen Parameters in Moroccan Infertile Men — Fertility Center CHU Oujda.",
+        "CO35: Data management software for human fertility preservation — CHU Oujda.",
+        "CO36: Two doses of coenzyme Q10 & male fertility outcomes — RCT.",
+        "CO37: Free radical scavenging & metal chelating activities of Crocus sativus stamens.",
+      ],
+      icon: <Users className="h-5 w-5" />,
+    },
+
+    {
+      time: "12:40 – 14:00",
+      title: "Lunch break",
+      location: "Dining Hall",
+      type: "break",
+      icon: <Coffee className="h-5 w-5" />,
+    },
+    {
+      time: "14:00 – 17:00",
+      title: "Session 13: Medicine Special Session II — Workshop #2 (Masterlab)",
+      location: "Medicine Track",
+      room: "Room 3",
+      type: "workshop",
+      details:
+        "Workshop Contrôle qualité; Interprétation des Rapports de Contrôles Externe et Interne; URT. (Mme Asmae Aouiss, Bio-Rad / Masterlab)",
+      icon: <Presentation className="h-5 w-5" />,
+    },
+    {
+      time: "17:00",
+      title: "Closing Ceremony",
+      location: "Conference Hall",
+      type: "closing",
+      icon: <Presentation className="h-5 w-5" />,
+    },
+  ],
+}
+
+  
 
   return (
     <section id="program" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
