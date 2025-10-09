@@ -11,9 +11,9 @@ export default function Program() {
   const [activeDay, setActiveDay] = useState("day1")
 
   const days = [
-    { id: "day1", label: "Day 1", date: "June 15" },
-    { id: "day2", label: "Day 2", date: "June 16" },
-    { id: "day3", label: "Day 3", date: "June 17" },
+    { id: "day1", label: "Day 1", date: "October 23" },
+    { id: "day2", label: "Day 2", date: "October 24" },
+    { id: "day3", label: "Day 3", date: "October 25" },
   ]
 
   const schedules = {
@@ -225,7 +225,7 @@ export default function Program() {
   }
 
   return (
-    <section id="program" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section id="program" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
       <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -234,7 +234,9 @@ export default function Program() {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
         >
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Conference Program</div>
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
+            Conference Program
+          </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Schedule of Events</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Explore our comprehensive program of keynotes, technical sessions, and networking events.
@@ -248,7 +250,7 @@ export default function Program() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Tabs defaultValue="day1" value={activeDay} onValueChange={setActiveDay} className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-14">
               {days.map((day) => (
                 <TabsTrigger key={day.id} value={day.id} className="text-center">
                   <div className="flex flex-col">
@@ -265,7 +267,7 @@ export default function Program() {
                     <CardTitle>
                       Program for {day.label} ({day.date})
                     </CardTitle>
-                    <CardDescription>All times are in Eastern Time (ET)</CardDescription>
+                    <CardDescription>All times are in Morocco Standard Time (GMT+1)</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-6">
