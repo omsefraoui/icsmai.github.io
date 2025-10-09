@@ -7,6 +7,7 @@ import Topics from "@/components/topics"
 import Submission from "@/components/submission"
 import Dates from "@/components/dates"
 import Registration from "@/components/registration"
+import Program from "@/components/programme"
 import Sponsors from "@/components/sponsors"
 import Contact from "@/components/contact"
 
@@ -25,7 +26,7 @@ export default function Home() {
       {/*<Acknowledgment/>*/}
       <Dates />
       <Registration />
-      {/*<Programme />*/}
+      <Program />
       <Sponsors />
       <Contact />
     </main>
