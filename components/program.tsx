@@ -117,8 +117,8 @@ export default function Program() {
         track: "HADDIYA; VOSHMGIR; MESTARI",
         details: [
           "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension.",
-          "Keynote #2 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT.",
-          "Keynote #3 – Prof. Mohammed MESTARI: Graph Representation Learning for Polypharmacy Side Effects.",
+          "Keynote #2 – Prof.Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare.",
+          "Keynote #3 – Prof. Mohammed MESTARI: From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects.",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
@@ -128,6 +128,27 @@ export default function Program() {
         location: "Hotel Restaurants",
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
+      },
+      {
+        time: "10:30 – 12:30",
+        title: "Session 1: Artificial Intelligence for Healthcare, Medicine and Life Sciences",
+        location: "Parallel Sessions",
+        room: "Room 1",
+        type: "session",
+        chair: "Chairs: M. Yandouzi and M. Grari",
+        /*track: "IoT architectures, edge computing, embedded systems",*/
+        papers: [
+          "Hind Moumni et al., Use and Perception of AI for Psychological Self-Help Among Medical Students in Morocco.",
+          "Dounia El Moujtahide., Comparative Analysis of Machine Learning Algorithms for Predicting Creatinine Levels from Blood Parameters",
+          "Dounia El Moujtahide., Temporal Stability of Biochemical Phenotypes: A Four-Year Analysis of Blood Biomarker Clusters",
+          "EL MILOUD AR-REYOUCHI., Q2OPT-MED: A Hybrid AI–Heuristic Approach to Healthcare Pathway Optimization",
+          "Nouhaila Charef., Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
+          "Somaia El Ghazi., Artificial Intelligence in Medical Education: An Umbrella Review",
+          "Sara Ramdani., Artificial Intelligence and the Internet of Things in Smart Hypertension Management: A State-of-the-Art Review and Future Directions",
+          "Asmae EL MEZOUARI., AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
+          "Faysal Etroufi.,  Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
     ],
     day2: [
@@ -145,40 +166,46 @@ export default function Program() {
         type: "keynote",
         details: [
           "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!",
-          "Keynote #5 – Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare.",
+          "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT.",
           "Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region.",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
       {
         time: "10:30 – 12:30",
-        title: "Session 4: Internet of Things and Computing",
+        title: "Session 1: Artificial Intelligence for Healthcare, Medicine and Life Sciences",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "Chairs: Z. Bougroun, I. El Farissi, M. Grari",
-        track: "IoT architectures, edge computing, embedded systems",
+        chair: "Chairs: M. Yandouzi and M. Grari",
+        /*track: "IoT architectures, edge computing, embedded systems",*/
         papers: [
-          "ID94: Energy-efficient modulation in WSN within IoMT.",
-          "ID40: GNSS integrity for smart medical supply chain (DL).",
-          "ID71: Agent-based simulation of energy & water in smart homes.",
-          "ID121: Multi-networks communications in modular robots.",
-          "ID123: Feature selection for failure prediction.",
-          "ID79: Factors influencing lipreading accuracy.",
-          "ID22: QC of solar radiation data (semi-arid).",
-          "ID53: Heavy pendulum with analog distance sensor (Micro-Lab).",
+          "Hind Moumni et al., Use and Perception of AI for Psychological Self-Help Among Medical Students in Morocco.",
+          "Dounia El Moujtahide., Comparative Analysis of Machine Learning Algorithms for Predicting Creatinine Levels from Blood Parameters",
+          "Dounia El Moujtahide., Temporal Stability of Biochemical Phenotypes: A Four-Year Analysis of Blood Biomarker Clusters",
+          "EL MILOUD AR-REYOUCHI., Q2OPT-MED: A Hybrid AI–Heuristic Approach to Healthcare Pathway Optimization",
+          "Nouhaila Charef., Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
+          "Somaia El Ghazi., Artificial Intelligence in Medical Education: An Umbrella Review",
+          "Sara Ramdani., Artificial Intelligence and the Internet of Things in Smart Hypertension Management: A State-of-the-Art Review and Future Directions",
+          "Asmae EL MEZOUARI., AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
+          "Faysal Etroufi.,  Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
         ],
         icon: <Users className="h-5 w-5" />,
       },
       {
         time: "10:30 – 12:30",
-        title: "Session 5: AI, Machine Learning and Deep Learning",
+        title: "Session 5: Healthcare, Medicine and Public Health Sciences",
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "Chairs: K. Azghiou, S. Mazouz, M. Jeyar",
-        track: "Learning theory, optimization, deep architectures",
-        papers: ["ID46: Forest Fire Surveillance (DL segmentation + drones)."],
+        chair: "Chairs: A. Kerkri and M. Jeyar",
+        /*track: "Learning theory, optimization, deep architectures",*/
+        papers: [
+          
+          "ID46: Forest Fire Surveillance (DL segmentation + drones)."
+
+
+        ],
         icon: <Users className="h-5 w-5" />,
       },
       {
