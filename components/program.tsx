@@ -15,16 +15,19 @@ import html2canvas from "html2canvas"
  * Venue: Saïdia, Morocco — Timezone: Africa/Casablanca (UTC+1)
  */
 export default function Program() {
-  const [activeDay, setActiveDay] = useState<"day1" | "day2" | "day3">("day1")
-  const [expandAll, setExpandAll] = useState(false)
-  const [accordionNonce, setAccordionNonce] = useState(0)
-  const printRef = useRef<HTMLDivElement>(null)
-
   const days = [
     { id: "day1", label: "Day 1", date: "Thursday, Oct 23" },
     { id: "day2", label: "Day 2", date: "Friday, Oct 24" },
     { id: "day3", label: "Day 3", date: "Saturday, Oct 25" },
   ] as const
+  type DayId = (typeof days)[number]["id"]
+
+  const [activeDay, setActiveDay] = useState<DayId>("day1")
+  const [expandAll, setExpandAll] = useState(false)
+  const [accordionNonce, setAccordionNonce] = useState(0)
+  const printRef = useRef<HTMLDivElement>(null)
+
+  const handleTabChange = (v: string) => setActiveDay(v as DayId)
 
   type ItemType = {
     time: string
@@ -49,7 +52,6 @@ export default function Program() {
     icon?: ReactElement
   }
 
-  // Badges par type
   const typeStyles: Record<ItemType["type"], string> = {
     keynote: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-200",
     session: "bg-sky-100 text-sky-800 ring-1 ring-sky-200",
@@ -74,7 +76,6 @@ export default function Program() {
     closing: "Closing",
   }
 
-  // Groupement par créneau (ex. "10:30 – 12:30")
   const groupByTime = (items: ItemType[]) => {
     return items.reduce((acc, it) => {
       ;(acc[it.time] ||= []).push(it)
@@ -83,7 +84,7 @@ export default function Program() {
   }
 
   // --- PROGRAMME (synthèse) ---
-  const schedules: Record<(typeof days)[number]["id"], ItemType[]> = {
+  const schedules: Record<DayId, ItemType[]> = {
     day1: [
       {
         time: "14:00 – 15:30",
@@ -123,7 +124,6 @@ export default function Program() {
         icon: <Coffee className="h-5 w-5" />,
       },
     ],
-
     day2: [
       {
         time: "08:00 – 09:00",
@@ -144,8 +144,6 @@ export default function Program() {
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
-
-      // Parallèles 4–6
       {
         time: "10:30 – 12:30",
         title: "Session 4: Internet of Things and Computing",
@@ -188,7 +186,6 @@ export default function Program() {
         papers: ["ID60: Transfer learning for elderly fall detection (limited data)."],
         icon: <Users className="h-5 w-5" />,
       },
-
       {
         time: "13:00 – 15:30",
         title: "Lunch break",
@@ -258,7 +255,6 @@ export default function Program() {
         icon: <Coffee className="h-5 w-5" />,
       },
     ],
-
     day3: [
       {
         time: "08:00 – 09:00",
@@ -278,8 +274,6 @@ export default function Program() {
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
-
-      // Parallèles 10–11
       {
         time: "10:30 – 12:40",
         title: "Session 10: Emerging Technologies and Environment",
@@ -314,8 +308,6 @@ export default function Program() {
         ],
         icon: <Users className="h-5 w-5" />,
       },
-
-      // Médecine — orales
       {
         time: "09:00 – 12:40",
         title: "Session 12: Medicine Special Session II — Oral Communications",
@@ -349,7 +341,6 @@ export default function Program() {
         ],
         icon: <Users className="h-5 w-5" />,
       },
-
       {
         time: "12:40 – 14:00",
         title: "Lunch break",
@@ -464,7 +455,7 @@ export default function Program() {
             <Tabs
               defaultValue="day1"
               value={activeDay}
-              onValueChange={(v: "day1" | "day2" | "day3") => setActiveDay(v)}
+              onValueChange={handleTabChange}
               className="w-full"
             >
               <TabsList className="grid w-full grid-cols-3 mb-8 h-14">
