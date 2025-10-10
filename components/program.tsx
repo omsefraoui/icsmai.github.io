@@ -142,7 +142,7 @@ export default function Program() {
         chair: "Chairs:  M. Grari",
         track: "IoT architectures, edge computing, embedded systems",
         papers: [
-          "ID4: Optimizing Di
+          "ID4: Optimizing Di",
           "ID5: .",
         ],
         icon: <Users className="h-5 w-5" />,
