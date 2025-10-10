@@ -123,14 +123,7 @@ export default function Program() {
         icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "20:00 – 22:00",
-        title: "Dinner break",
-        location: "Hotel Restaurants",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },
-      {
-        time: "10:30 – 12:30",
+        time: "18:30 – 20:30",
         title: "Session 1: Artificial Intelligence for Healthcare, Medicine and Life Sciences",
         location: "Parallel Sessions",
         room: "Room 1",
@@ -150,6 +143,14 @@ export default function Program() {
         ],
         icon: <Users className="h-5 w-5" />,
       },
+      {
+        time: "20:30 – 22:00",
+        title: "Dinner break",
+        location: "Hotel Restaurants",
+        type: "break",
+        icon: <Coffee className="h-5 w-5" />,
+      },
+      
     ],
     day2: [
       {
