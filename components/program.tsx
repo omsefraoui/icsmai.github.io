@@ -99,8 +99,14 @@ export default function Program() {
         location: "Conference Hall",
         type: "ceremony",
         chair: "Moderators: Prof. Kamal GHOUMID",
-        details:
-          "Addresses: President of Mohammed Premier University; Director of ENSA Oujda; Dean of Faculty of Science; Dean of Faculty of Medicine & Pharmacy; Director of EST Oujda; Director of CHU; Director of ENCG Oujda; Organizing Committee.",
+        details:[
+          "President of Mohammed Premier University;",
+          "Director of ENSA Oujda;",
+          "Dean of Faculty of Science;",
+          " Dean of Faculty of Medicine & Pharmacy;",
+          " Director of CHU;",
+          "Organizing Committee.",
+        ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
       {
