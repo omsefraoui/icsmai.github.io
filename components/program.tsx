@@ -143,7 +143,7 @@ export default function Program() {
         track: "IoT architectures, edge computing, embedded systems",
         papers: [
           "ID4: Optimizing Di",
-          "ID5: .",
+          "ID5: Big data",
         ],
         icon: <Users className="h-5 w-5" />,
       },
