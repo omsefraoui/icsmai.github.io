@@ -12,7 +12,7 @@ import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
  * ICSMAI 2025 — Program Component (color‑coded, detailed)
  * Venue: Saïdia, Morocco — Timezone: Africa/Casablanca (UTC+1)
  */
-export default function ProgramICSMAI2025Fixed() {
+export default function Program() {
   const [activeDay, setActiveDay] = useState("day1")
   const [expandAll, setExpandAll] = useState(false)
   const [accordionNonce, setAccordionNonce] = useState(0)
@@ -195,8 +195,8 @@ export default function ProgramICSMAI2025Fixed() {
                               </CardHeader>
                               <CardContent>
                                 {items.length === 1 ? (
-                                  <Accordion type="multiple" defaultValue={expandAll ? [`details-${index}`] : []} className="w-full mt-1">
-                                    <AccordionItem value={`details-${index}`}>
+                                  <Accordion type="multiple" defaultValue={expandAll ? ["details"] : []} className="w-full mt-1">
+                                    <AccordionItem value="details">
                                       <AccordionTrigger className="text-sm">Details</AccordionTrigger>
                                       <AccordionContent>
                                         <div className="space-y-2">
@@ -266,9 +266,6 @@ export default function ProgramICSMAI2025Fixed() {
                                               </AccordionContent>
                                             </AccordionItem>
                                           </Accordion>
-                                        )}}
-                                            </ul>
-                                          </div>
                                         )}
                                       </div>
                                     ))}
