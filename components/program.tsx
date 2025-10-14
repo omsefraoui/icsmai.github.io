@@ -125,10 +125,10 @@ export default function Program() {
       {
         time: "19:00 – 20:30",
         title: "Session 1: AI in Healthcare & Medical Diagnosis",
-        /*location: "Parallel Sessions",*/
+        location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: " M. Yandouzi and M. Grari",
+        chair: "Chairs: M. Yandouzi and M. Grari",
         papers: [
           "Asmae EL MEZOUARI — AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
           "Faysal ETROUFI — Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
@@ -174,12 +174,12 @@ export default function Program() {
         icon: <Presentation className="h-5 w-5" />,
       },
       {
-        time: "11:00 – 12:30",
+        time: "10:30 – 12:30",
         title: "Session 2: IoT & Edge AI for Smart Systems",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: " M. Yandouzi and M. Grari",
+        chair: "Chairs: M. Yandouzi and M. Grari",
         papers: [
           "Kishan Reddy BHIMAVARAM — IoT-Based Urban Agriculture Container Farm Design and Implementation for Localized Produce Supply",
           "Vinay DANDAMRAJ — Smart IoT based Hydroponics Farming",
@@ -199,7 +199,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: " A. Kerkri and M. Jeyar",
+        chair: "Chairs: A. Kerkri and M. Jeyar",
         papers: [
           "Kaoutar M'RHAR — Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization",
           "Oussama GRARI — Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives",
@@ -216,8 +216,8 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
-        chair: "Prof. M. Zeryouh, Prof. K. Alaoui",
-        /*track: "Data engineering, analytics, high-performance computing",*/
+        chair: "Chairs: Prof. M. Zeryouh, Prof. K. Alaoui",
+        track: "Data engineering, analytics, high-performance computing",
         papers: [
           "N. HAREESH — AI Stethoscope: Revolutionizing Home Healthcare using Machine Learning",
           "Oussama GRARI — Precision and measurement uncertainty verification of procalcitonin assay for AI-enhanced sepsis management in smart hospitals",
@@ -256,7 +256,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: " H. Tarik, M. Blej, E.M. Chaabelasri",
+        chair: "Chairs: H. Tarik, M. Blej, E.M. Chaabelasri",
         papers: [
           "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
           "Omar SEFRAOUI — Adaptive AI Pipeline for Real-Time Cybersecurity Alert Classification: A Multi-Dataset Approach",
@@ -274,7 +274,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "M. Yandouzi and M. Grari",
+        chair: "Chairs: M. Yandouzi and M. Grari",
         papers: [
           "Sidi Omar EL KETTANI — AI-Powered Energy Management Diagnostics: A Comprehensive Framework for Industrial Predictive Maintenance with Large Language Model Integration",
           "Sidi Omar EL KETTANI — Enhanced AI-Powered Energy Management Diagnostics: Expert System Integration with LLM for Predictive Maintenance",
@@ -309,7 +309,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "A. mezouari and K. Kasmi",
+        chair: "Chairs: A. Benbrike, M. Benhaddou, K. Kasmi",
         papers: [
           "Nouhaila CHAREF — Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
           "Somaia EL GHAZI — Artificial Intelligence in Medical Education: An Umbrella Review",
@@ -330,7 +330,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: " H. Bouali and E.M. Ar-Reyouchi",
+        chair: "Chairs: H. Bouali and E.M. Ar-Reyouchi",
         papers: [
           "Meryem ELKADI — Groundwater Level Prediction in the Triffa Plain (Morocco) Using Machine Learning Approaches",
           "Hanae SENBA — Travel Time Optimization in the Old Medina of Fez",
