@@ -175,7 +175,7 @@ export default function Program() {
       },
       {
         time: "10:30 – 12:30",
-        title: "Session 2: IoT & Edge AI for Smart Systems "
+        title: "Session 2: IoT & Edge AI for Smart Systems ",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
@@ -215,7 +215,7 @@ icon: <Users className="h-5 w-5" />,
       },
       {
         time: "10:30 – 12:30",
-        "Session 4: Smart Hospitals & Clinical Decision Support ",
+        title: "Session 4: Smart Hospitals & Clinical Decision Support ",
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
@@ -237,14 +237,14 @@ icon: <Users className="h-5 w-5" />,
       },
       {
         time: "13:00 – 15:30",
-        "Lunch break",
+        title: "Lunch break",
         location: "Dining Hall",
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
       },
       {
         time: "15:30 – 17:00",
-        "Keynotes Block #3 (Healthcare Innovations)",
+        title: "Keynotes Block #3 (Healthcare Innovations)",
         location: "Conference Hall",
         type: "keynote",
         details: [
@@ -262,7 +262,7 @@ icon: <Users className="h-5 w-5" />,
       },*/
       {
         time: "17:00 – 20:00",
-        "Session 5: AI, NLP & Cybersecurity ",
+        title: "Session 5: AI, NLP & Cybersecurity ",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
@@ -309,7 +309,7 @@ papers: [
     day3: [
       {
         time: "08:00 – 09:00",
-        "Welcome and Registration",
+        title: "Welcome and Registration",
         location: "Main Conference Registration",
         type: "registration",
         icon: <Users className="h-5 w-5" />,
@@ -327,8 +327,7 @@ papers: [
       },*/
       {
         time: "09:00 – 12:00",
-        title: "AI in Education, Ethics & Society",
-        "Session 7: Emerging Technologies and Environment",
+        title: "Session 7: AI in Education, Ethics & Society",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
@@ -349,11 +348,12 @@ papers: [
       },
       {
         time: "09:00 – 12:00",
-        "Session 8: Smart Cities, Mobility & Environment",
+        title: "Session 8: Smart Cities, Mobility & Environment",
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
         chair: "Chairs: H. Bouali and E.M. Ar-Reyouchi",
+      
 papers: [
       { "Meryem Elkadi, Groundwater Level Prediction in the Triffa Plain (Morocco) Using Machine  Learning Approaches" },
       { "Hanae SENBA, Travel Time Optimization in the Old Medina of Fez" },
@@ -363,15 +363,15 @@ papers: [
       { "MERYEM BENKADDOUR, Verification of the First Principle through Joule's Experiments: Determining the Calorie Equivalent in Joules (J) Using Computer-Assisted Experimentation (CAEx)." },
       { "Salwa KHALYL, An Empirical Comparison of Topic Models: LDA, NMF, and BERTopic Applied to Hotel Customer Reviews" },
     ],        icon: <Users className="h-5 w-5" />,
-    
+  },
       {
         time: "12:00",
-        "Closing Ceremony",
+       title:  "Closing Ceremony",
         location: "Conference Hall",
         type: "closing",
         icon: <Presentation className="h-5 w-5" />,
       },
-    ],
+    
   }
 
   // -------- EXPORT PDF (client-side) --------
