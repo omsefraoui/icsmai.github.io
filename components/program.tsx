@@ -11,7 +11,7 @@ import { jsPDF } from "jspdf"
 import html2canvas from "html2canvas"
 
 /**
- * ICSMAI 2025 — Program Component (color-coded, structured)
+ * ICSMAI 2025 — Program Component (color‑coded, structured)
  * Venue: Saïdia, Morocco — Timezone: Africa/Casablanca (UTC+1)
  */
 export default function Program() {
@@ -83,7 +83,7 @@ export default function Program() {
     }, {} as Record<string, ItemType[]>)
   }
 
-  // --- PROGRAMME (synthèse) ---
+  // --- PROGRAMME (synthèse) — corrected data ---
   const schedules: Record<DayId, ItemType[]> = {
     day1: [
       {
@@ -98,14 +98,14 @@ export default function Program() {
         title: "Official Opening Ceremony",
         location: "Conference Hall",
         type: "ceremony",
-        chair: "Moderators: Prof. Kamal GHOUMID",
-        details:[
-          "President of Mohammed Premier University;",
-          "Director of ENSA Oujda;",
-          "Dean of Faculty of Science;",
-          " Dean of Faculty of Medicine & Pharmacy;",
-          " Director of CHU;",
-          "Organizing Committee.",
+        chair: "Moderator: Prof. Kamal GHOUMID",
+        details: [
+          "President of Mohammed Premier University",
+          "Director of ENSA Oujda",
+          "Dean of Faculty of Science",
+          "Dean of Faculty of Medicine & Pharmacy",
+          "Director of CHU",
+          "Organizing Committee",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
@@ -114,36 +114,36 @@ export default function Program() {
         title: "Keynotes Block #1",
         location: "Conference Hall",
         type: "keynote",
-        track: "HADDIYA; VOSHMGIR; MESTARI",
+        track: "HADDIYA; AKHLOUFI; MESTARI",
         details: [
-          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. A.KERKRI",
-          "Keynote #2 – Prof.Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare. Moderator: Prof. O.SEFRAOUI ",
+          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. A. KERKRI",
+          "Keynote #2 – Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare. Moderator: Prof. O. SEFRAOUI",
           "Keynote #3 – Prof. Mohammed MESTARI: From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects. Moderator: Prof. A. NAJI",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
       {
         time: "18:30 – 20:30",
-        title: "Session 1: AI in Healthcare & Medical Diagnosis ",
+        title: "Session 1: AI in Healthcare & Medical Diagnosis",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
         chair: "Chairs: M. Yandouzi and M. Grari",
-        /*track: "IoT architectures, edge computing, embedded systems",*/
-     papers: [
-      { "Asmae EL MEZOUARI, AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment" },
-      { "Faysal Etroufi, Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease" },
-      { "Abderrazak SADDARI, Comparative Analysis of Machine Learning Approaches for Antimicrobial Resistance Prediction and Multi-Drug Resistance Classification" },
-      { "MARYAM BENHEDDI, Detection of a rare mutation in exon 20 of the EGFR gene by EasyPGX™ real-time PCR in a case of non-small cell lung cancer at the Oujda pathology laboratory" },
-      { "MARYAM BENHEDDI, The Experience of the Pathology Laboratory at  Mohammed VI University Hospital of Oujda in the  Molecular Analysis of Colorectal Cancers: A Retrospec-tive Study of RAS Status Assessment by Real-Time PCR with TaqMan Probes" },
-      { "Jihane BENBRIK, Machine Learning Approaches for Predicting Vitamin D Levels: Comparative Analysis" },
-      { "Oumaima Aamarouchi, Optimizing Brain Tumor Detection: A Novel Approach Using Mixed Initialization Kernels and Genetic Algorithms in Convolutional Neural Networks" },
-      { "Omar Sefraoui, Artificial Intelligence for Diagnosis and Analysis of Multiple Sclerosis: A Data-Driven Approach" },
-      { "Oussama ABALI, Temporomandibular Joint Osteoarthritis Pathology and Artificial Intelligence: A brief Systematic Review" },
-      { "Fatima Fatih, Adaptive optimization of CNN architectures using Tree-structured Parzen Estimator for the diagnosis of lung diseases" },
-      { "YOUSSEF RAFIK, Cardiovascular diseases prediction by machine learning techniques" },
-      { "Ali  ARBAOUI, Predicting Autoimmune Flares Using AI and Emotional Analysis" },
-    ],               icon: <Users className="h-5 w-5" />,
+        papers: [
+          "Asmae EL MEZOUARI — AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
+          "Faysal ETROUFI — Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
+          "Abderrazak SADDARI — Comparative Analysis of Machine Learning Approaches for Antimicrobial Resistance Prediction and Multi-Drug Resistance Classification",
+          "Maryam BENHEDDI — Detection of a rare mutation in exon 20 of the EGFR gene by EasyPGX™ real-time PCR in a case of non-small cell lung cancer at the Oujda pathology laboratory",
+          "Maryam BENHEDDI — The Experience of the Pathology Laboratory at Mohammed VI University Hospital of Oujda in the Molecular Analysis of Colorectal Cancers: A Retrospective Study of RAS Status Assessment by Real-Time PCR with TaqMan Probes",
+          "Jihane BENBRIK — Machine Learning Approaches for Predicting Vitamin D Levels: Comparative Analysis",
+          "Oumaima AAMAROUCHI — Optimizing Brain Tumor Detection: A Novel Approach Using Mixed Initialization Kernels and Genetic Algorithms in Convolutional Neural Networks",
+          "Omar SEFRAOUI — Artificial Intelligence for Diagnosis and Analysis of Multiple Sclerosis: A Data-Driven Approach",
+          "Oussama ABALI — Temporomandibular Joint Osteoarthritis Pathology and Artificial Intelligence: A Brief Systematic Review",
+          "Fatima FATIH — Adaptive optimization of CNN architectures using Tree-structured Parzen Estimator for the diagnosis of lung diseases",
+          "Youssef RAFIK — Cardiovascular diseases prediction by machine learning techniques",
+          "Ali ARBAOUI — Predicting Autoimmune Flares Using AI and Emotional Analysis",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "20:30 – 22:00",
@@ -152,8 +152,8 @@ export default function Program() {
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
       },
-      
     ],
+
     day2: [
       {
         time: "08:00 – 09:00",
@@ -170,70 +170,68 @@ export default function Program() {
         details: [
           "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!",
           "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT.",
-                 ].join(" | "),
+        ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
       {
         time: "10:30 – 12:30",
-        title: "Session 2: IoT & Edge AI for Smart Systems ",
+        title: "Session 2: IoT & Edge AI for Smart Systems",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
         chair: "Chairs: M. Yandouzi and M. Grari",
-        /*track: "IoT architectures, edge computing, embedded systems",*/
-
-papers: [
-      { "kishan reddy bhimavaram, IoT-Based Urban Agriculture Container Farm Design and Implementation for Localized Produce Supply" },
-      { "Vinay Dandamraj,  Smart IoT based Hydroponics Farming" },
-      { "Mirthika  B,Intelligent Wildlife Monitoring and Repulsion Using YOLOv8-Based Bounding Box" },
-      { "HICHAM TIKAOUI, An IoT-Based Comparative Study of Machine Learning and Statistical Models for Energy Consumption Forecasting in Moroccan Buildings" },
-      { "Sidi Omar El kettani, IoT-Edge AI with ISO 42001 Governance for CNC Predictive Maintenance: Multisensor Fusion, Calibration, and Clause-Level Traceability" },
-      { "Chakib Taybi, A Dual-Band Reconfigurable Antenna Using a PIN Diode for 2.4 GHz and 5 GHz IoT Applications" },
-      { "Belaoufi  Yassine, SmartRoute+ : Toward Intelligent Road Maintenance Ecosystems through Deep Learning and Mobile Crowdsensing in Morocco" },
-      { "EL MILOUD AR-REYOUCHI, BAI-PLF: A Blockchain–AI–IoT Framework for Energy-Efficient and Predictive Logistics and Healthcare in Africa" },
-      { "Vighnan Kumar, AgroHeal – Intelligent Agricultural Assistant for Early Disease Identification and Organic Pesticide Recommendation." },
-    ],
-
-icon: <Users className="h-5 w-5" />,
+        papers: [
+          "Kishan Reddy BHIMAVARAM — IoT-Based Urban Agriculture Container Farm Design and Implementation for Localized Produce Supply",
+          "Vinay DANDAMRAJ — Smart IoT based Hydroponics Farming",
+          "Mirthika B — Intelligent Wildlife Monitoring and Repulsion Using YOLOv8-Based Bounding Box",
+          "Hicham TIKAOUI — An IoT-Based Comparative Study of Machine Learning and Statistical Models for Energy Consumption Forecasting in Moroccan Buildings",
+          "Sidi Omar EL KETTANI — IoT-Edge AI with ISO 42001 Governance for CNC Predictive Maintenance: Multisensor Fusion, Calibration, and Clause-Level Traceability",
+          "Chakib TAYBI — A Dual-Band Reconfigurable Antenna Using a PIN Diode for 2.4 GHz and 5 GHz IoT Applications",
+          "Belaoufi Yassine — SmartRoute+: Toward Intelligent Road Maintenance Ecosystems through Deep Learning and Mobile Crowdsensing in Morocco",
+          "El Miloud AR-REYOUCHI — BAI-PLF: A Blockchain–AI–IoT Framework for Energy-Efficient and Predictive Logistics and Healthcare in Africa",
+          "Vighnan KUMAR — AgroHeal – Intelligent Agricultural Assistant for Early Disease Identification and Organic Pesticide Recommendation.",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "10:30 – 12:30",
-        title: "Session 3: AI for Biomedical Research & Drug Design ",
+        title: "Session 3: AI for Biomedical Research & Drug Design",
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
         chair: "Chairs: A. Kerkri and M. Jeyar",
-        /*track: "Learning theory, optimization, deep architectures",*/
         papers: [
-      { "kaoutar M'rhar, Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization" },
-      { "Oussama Grari, Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives" },
-      { "EL MILOUD AR-REYOUCHI, Q2OPT-MED: A Hybrid AI–Heuristic Approach to Healthcare Pathway Optimization" },
-      { "Nazih ASSABBANE, SVHRSP for Skin Ageing: Bioinformatics Rationale and a Micro needle-Delivered Cosmetic Strategy" },
-      { "Mouad ALAOUI MHAMMEDI, Physics-Constrained Generative Inverse Design for Food-Grade Encapsulation Systems" },
-      { "Manale CHAKIR, An experimental evaluation of GRU-based architecture for ICD-9 code assignment using MIMIC-III clinical notes" },
-    ],        icon: <Users className="h-5 w-5" />,
+          "Kaoutar M'RHAR — Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization",
+          "Oussama GRARI — Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives",
+          "El Miloud AR-REYOUCHI — Q2OPT-MED: A Hybrid AI–Heuristic Approach to Healthcare Pathway Optimization",
+          "Nazih ASSABBANE — SVHRSP for Skin Ageing: Bioinformatics Rationale and a Microneedle-Delivered Cosmetic Strategy",
+          "Mouad ALAOUI MHAMMEDI — Physics-Constrained Generative Inverse Design for Food-Grade Encapsulation Systems",
+          "Manale CHAKIR — An experimental evaluation of GRU-based architecture for ICD-9 code assignment using MIMIC-III clinical notes",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "10:30 – 12:30",
-        title: "Session 4: Smart Hospitals & Clinical Decision Support ",
+        title: "Session 4: Smart Hospitals & Clinical Decision Support",
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
         chair: "Chairs: Prof. M. Zeryouh, Prof. K. Alaoui",
         track: "Data engineering, analytics, high-performance computing",
         papers: [
-      { "N Hareesh, AI Stethoscope Revolutionizing Home Healthcare using Machine Learning" },
-      { "Oussama Grari, Precision and measurement uncertainty verification of procalcitonin assay for AI-enhanced sepsis management in smart hospitals" },
-      { "Dounia El Moujtahide, Comparative Analysis of Machine Learning Algorithms for Predicting Creatinine Levels from Blood Parameters" },
-      { "Dounia El Moujtahide, Temporal Stability of Biochemical Phenotypes: A Four-Year Analysis of Blood Biomarker Clusters" },
-      { "Sara Ramdani, Artificial Intelligence and the Internet of Things in Smart Hypertension Management: A State-of-the-Art Review and Future Directions" },
-      { "Yassmine EL MOUSSAOUI, AI-Powered Simulation Platforms for Healthcare Communication Training : Scoping review" },
-      { "Omar Sefraoui, Integrating IoT and AI for Smart Medical Systems: Tools, Algorithms, and Challenges in Real-World Healthcare Applications" },
-      { "Hakim Nasaoui, MedACT-CL: Knowledge-Enhanced Tri-Modal Contrastive Learning for Medical Action Recognition" },
-      { "youssef Badinini, Public-private partnership for bringing healthcare services closer together and digitizing them: The example of connected mobile medical units." },
-      { "Nour El Houda  Benkaddour, KidneyLab 2.0: Innovative Integration of Arduino Technology for Immersive Teaching in Renal Hydrosodic Regulation" },
-      { "Hind Moumni, Use and Perception of AI for Psychological Self-Help Among Medical Students in Morocco" },
-    ],        icon: <Users className="h-5 w-5" />,
+          "N. HAREESH — AI Stethoscope: Revolutionizing Home Healthcare using Machine Learning",
+          "Oussama GRARI — Precision and measurement uncertainty verification of procalcitonin assay for AI-enhanced sepsis management in smart hospitals",
+          "Dounia EL MOUJTAHIDE — Comparative Analysis of Machine Learning Algorithms for Predicting Creatinine Levels from Blood Parameters",
+          "Dounia EL MOUJTAHIDE — Temporal Stability of Biochemical Phenotypes: A Four-Year Analysis of Blood Biomarker Clusters",
+          "Sara RAMDANI — Artificial Intelligence and the Internet of Things in Smart Hypertension Management: A State-of-the-Art Review and Future Directions",
+          "Yassmine EL MOUSSAOUI — AI-Powered Simulation Platforms for Healthcare Communication Training: Scoping review",
+          "Omar SEFRAOUI — Integrating IoT and AI for Smart Medical Systems: Tools, Algorithms, and Challenges in Real-World Healthcare Applications",
+          "Hakim NASAOUI — MedACT-CL: Knowledge-Enhanced Tri-Modal Contrastive Learning for Medical Action Recognition",
+          "Youssef BADININI — Public–private partnership for bringing healthcare services closer together and digitizing them: The example of connected mobile medical units.",
+          "Nour El Houda BENKADDOUR — KidneyLab 2.0: Innovative Integration of Arduino Technology for Immersive Teaching in Renal Hydrosodic Regulation",
+          "Hind MOUMNI — Use and Perception of AI for Psychological Self-Help Among Medical Students in Morocco",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "13:00 – 15:30",
@@ -248,34 +246,27 @@ icon: <Users className="h-5 w-5" />,
         location: "Conference Hall",
         type: "keynote",
         details: [
-            "Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region.",
-          
+          "Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region.",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
-     /* {
-        time: "17:00 – 17:30",
-        "Coffee break",
-        location: "Lobby",
-        type: "break",
-        icon: <Coffee className="h-5 w-5" />,
-      },*/
       {
         time: "17:00 – 20:00",
-        title: "Session 5: AI, NLP & Cybersecurity ",
+        title: "Session 5: AI, NLP & Cybersecurity",
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
         chair: "Chairs: H. Tarik, M. Blej, E.M. Chaabelasri",
-papers: [
-      { "ANAS TALHAOUI, Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches" },
-      { "Omar Sefraoui, Adaptive AI Pipeline for Real-Time Cybersecurity Alert Classification: A Multi-Dataset Approach" },
-      { "AYOUB JIBOUNI, Similarity Redefined: A Robust Metric for Predicting Links in Complex Networks" },
-      { "Anas Chahid, An Advanced Conversational AI System for Medical Specialty Triage Featuring a RAG-based Dialogue Engine" },
-      { "abdelmounaim Kerkri, Bridging Semantic Gaps: Cross-Lingual Alignment Through Contrastive Subword Regularization" },
-      { "abdelmounaim Kerkri, Stochastic-Approximation Reinforcement Learning for Urban Traffic Lights with Low-Cost Sensing" },
-      { "abdelmounaim Kerkri, Event-Driven Reinforcement Learning on Streams: Drift-Aware Policy Optimization with Reservoir-Constrained Replay" },
-    ],        icon: <Users className="h-5 w-5" />,
+        papers: [
+          "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
+          "Omar SEFRAOUI — Adaptive AI Pipeline for Real-Time Cybersecurity Alert Classification: A Multi-Dataset Approach",
+          "Ayoub JIBOUNI — Similarity Redefined: A Robust Metric for Predicting Links in Complex Networks",
+          "Anas CHAHID — An Advanced Conversational AI System for Medical Specialty Triage Featuring a RAG-based Dialogue Engine",
+          "Abdelmounaim KERKRI — Bridging Semantic Gaps: Cross-Lingual Alignment Through Contrastive Subword Regularization",
+          "Abdelmounaim KERKRI — Stochastic-Approximation Reinforcement Learning for Urban Traffic Lights with Low-Cost Sensing",
+          "Abdelmounaim KERKRI — Event-Driven Reinforcement Learning on Streams: Drift-Aware Policy Optimization with Reservoir-Constrained Replay",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "17:30 – 20:00",
@@ -284,16 +275,16 @@ papers: [
         room: "Room 2",
         type: "session",
         chair: "Chairs: M. Yandouzi and M. Grari",
-        /*track: "IoT architectures, edge computing, embedded systems",*/
-     papers: [
-      { "Sidi Omar El kettani, AI-Powered Energy Management Diagnostics: A Comprehensive Framework for Industrial Predictive Maintenance with Large Language Model Integration" },
-      { "Sidi Omar El kettani, Enhanced AI-Powered Energy Management Diagnostics: Expert System Integration with LLM for Predictive Maintenance" },
-      { "Mohammed Ali Arbaoui, Preliminary design choices for a Green Hydrogen production system" },
-      { "Ali  ARBAOUI, Advanced Control Study of a Heat Exchanger: Efficiency Modeling and Analysis for Control Optimization" },
-      { "HICHAM TIKAOUI, Vision-Based Angle Detection for Industrial Quality Inspection" },
-      { "HICHAM TIKAOUI, Few-Shot Learning hybrid Approach for Visual Quality Inspection with Limited Data" },
-      { "Hanae EL FAHFOUHI, Enhancing Solar Radiation Forecasting with Informer Architecture and Bayesian Hyperparameters Selection" },
-    ],icon: <Users className="h-5 w-5" />,
+        papers: [
+          "Sidi Omar EL KETTANI — AI-Powered Energy Management Diagnostics: A Comprehensive Framework for Industrial Predictive Maintenance with Large Language Model Integration",
+          "Sidi Omar EL KETTANI — Enhanced AI-Powered Energy Management Diagnostics: Expert System Integration with LLM for Predictive Maintenance",
+          "Mohammed Ali ARBAOUI — Preliminary design choices for a Green Hydrogen production system",
+          "Ali ARBAOUI — Advanced Control Study of a Heat Exchanger: Efficiency Modeling and Analysis for Control Optimization",
+          "Hicham TIKAOUI — Vision-Based Angle Detection for Industrial Quality Inspection",
+          "Hicham TIKAOUI — Few-Shot Learning Hybrid Approach for Visual Quality Inspection with Limited Data",
+          "Hanae EL FAHFOUHI — Enhancing Solar Radiation Forecasting with Informer Architecture and Bayesian Hyperparameters Selection",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "20:30 – 22:00",
@@ -302,10 +293,8 @@ papers: [
         type: "break",
         icon: <Coffee className="h-5 w-5" />,
       },
-      
     ],
 
-    
     day3: [
       {
         time: "08:00 – 09:00",
@@ -314,17 +303,6 @@ papers: [
         type: "registration",
         icon: <Users className="h-5 w-5" />,
       },
-      /*{
-        time: "09:00 – 10:30",
-        "Keynotes Block #4",
-        location: "Conference Hall",
-        type: "keynote",
-        details: [
-          "Daoudi — IoT & AI for diagnosis and treatment",
-          "Mostafa Azizi (+ C. Drocourt) — MIoT & Security Challenges",
-        ].join(" | "),
-        icon: <Presentation className="h-5 w-5" />,
-      },*/
       {
         time: "09:00 – 12:00",
         title: "Session 7: AI in Education, Ethics & Society",
@@ -332,19 +310,19 @@ papers: [
         room: "Room 1",
         type: "session",
         chair: "Chairs: A. Benbrike, M. Benhaddou, K. Kasmi",
-    
-    papers: [
-      { "Nouhaila Charef, Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices" },
-      { "somaia  El Ghazi, Artificial Intelligence in Medical Education:  An Umbrella Review" },
-      { "Manal Boudih, NLP based exploratory study of interviews on blood donation awareness campaigns: evidence from the University of Oujda (2023-2024)" },
-      { "Hicham  ARRID,  Modeling the Impact of Patient Experience Attributes on Satisfaction :  Generalized Additive Models Approach " },
-      { "Boulerhcha Brahim, sentiment analysis in social media with artificial intelligence" },
-      { "Hasnae Amnoun, AI and Big Data in Marketing Decision-Making: A  PRISMA-Guided Systematic Review of  Scopus-Indexed Studies" },
-      { "BOUBCHEUR Hanane, Ethical and Pedagogical Dimensions of AI-Assisted Mathematics Teaching for Students with Hearing and Speech Impairments" },
-      { "KAOUTAR GHOMARI, Electrolyte Disorders in Emergency and Intensive Care Units at Mohammed VI University Hospital Center Oujda: Prevalence, Seasonality and Associated Factors (Year 2022)" },
-      { "BILAL BOURKHA, Artificial intelligence and hospital management: between strategic imitation and innovation – The case of chain clinics in Morocco " },
-      { "Alaoui Khadija, An extensive categorization of triplestores" },
-    ],        icon: <Users className="h-5 w-5" />,
+        papers: [
+          "Nouhaila CHAREF — Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
+          "Somaia EL GHAZI — Artificial Intelligence in Medical Education: An Umbrella Review",
+          "Manal BOUDIH — NLP-based exploratory study of interviews on blood donation awareness campaigns: evidence from the University of Oujda (2023–2024)",
+          "Hicham ARRID — Modeling the Impact of Patient Experience Attributes on Satisfaction: Generalized Additive Models Approach",
+          "Boulerhcha BRAHIM — Sentiment analysis in social media with artificial intelligence",
+          "Hasnae AMNOUN — AI and Big Data in Marketing Decision-Making: A PRISMA-Guided Systematic Review of Scopus-Indexed Studies",
+          "BOUBCHEUR Hanane — Ethical and Pedagogical Dimensions of AI-Assisted Mathematics Teaching for Students with Hearing and Speech Impairments",
+          "Kaoutar GHOMARI — Electrolyte Disorders in Emergency and Intensive Care Units at Mohammed VI University Hospital Center Oujda: Prevalence, Seasonality and Associated Factors (Year 2022)",
+          "Bilal BOURKHA — Artificial intelligence and hospital management: between strategic imitation and innovation – The case of chain clinics in Morocco",
+          "Alaoui KHADIJA — An extensive categorization of triplestores",
+        ],
+        icon: <Users className="h-5 w-5" />,
       },
       {
         time: "09:00 – 12:00",
@@ -353,20 +331,20 @@ papers: [
         room: "Room 2",
         type: "session",
         chair: "Chairs: H. Bouali and E.M. Ar-Reyouchi",
-      
-papers: [
-      { "Meryem Elkadi, Groundwater Level Prediction in the Triffa Plain (Morocco) Using Machine  Learning Approaches" },
-      { "Hanae SENBA, Travel Time Optimization in the Old Medina of Fez" },
-      { "Rohit Shitole, An YOLOv9 Meets CBAM: A Real-Time Smart Traffic Signal System for Emergency Response Optimization" },
-      { "loubna azizi, Toward the Integration of Urban Green Spaces and Smart Technologies: An Approach to Strengthening the Sustainability of Smart Cities" },
-      { "Elmehdi Hassani, Towards a Paperless Environment: AI for Smart Invoice Processing" },
-      { "MERYEM BENKADDOUR, Verification of the First Principle through Joule's Experiments: Determining the Calorie Equivalent in Joules (J) Using Computer-Assisted Experimentation (CAEx)." },
-      { "Salwa KHALYL, An Empirical Comparison of Topic Models: LDA, NMF, and BERTopic Applied to Hotel Customer Reviews" },
-    ],        icon: <Users className="h-5 w-5" />,
-  },
+        papers: [
+          "Meryem ELKADI — Groundwater Level Prediction in the Triffa Plain (Morocco) Using Machine Learning Approaches",
+          "Hanae SENBA — Travel Time Optimization in the Old Medina of Fez",
+          "Rohit SHITOLE — YOLOv9 Meets CBAM: A Real-Time Smart Traffic Signal System for Emergency Response Optimization",
+          "Loubna AZIZI — Toward the Integration of Urban Green Spaces and Smart Technologies: An Approach to Strengthening the Sustainability of Smart Cities",
+          "Elmehdi HASSANI — Towards a Paperless Environment: AI for Smart Invoice Processing",
+          "Meryem BENKADDOUR — Verification of the First Principle through Joule's Experiments: Determining the Calorie Equivalent in Joules (J) Using Computer-Assisted Experimentation (CAEx)",
+          "Salwa KHALYL — An Empirical Comparison of Topic Models: LDA, NMF, and BERTopic Applied to Hotel Customer Reviews",
+        ],
+        icon: <Users className="h-5 w-5" />,
+      },
       {
         time: "12:00",
-       title:  "Closing Ceremony",
+        title: "Closing Ceremony",
         location: "Conference Hall",
         type: "closing",
         icon: <Presentation className="h-5 w-5" />,
@@ -374,7 +352,7 @@ papers: [
     ],
   }
 
-  // -------- EXPORT PDF (client-side) --------
+  // -------- EXPORT PDF (client‑side) --------
   const exportPdf = async () => {
     const node = printRef.current
     if (!node) return
@@ -402,7 +380,7 @@ papers: [
   return (
     <section id="program" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
       <div className="container px-4 md:px-6">
-        {/* En-tête */}
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -415,7 +393,7 @@ papers: [
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Explore the confirmed keynotes, technical sessions, special tracks and workshops for ICSMAI 2025.
           </p>
-          {/* Légende */}
+          {/* Legend */}
           <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
             {(
               ["keynote","session","workshop","panel","ceremony","registration","break","social","closing"] as ItemType["type"][]
@@ -450,7 +428,7 @@ papers: [
           </Button>
         </div>
 
-        {/* Programme (imprimable) */}
+        {/* Printable program */}
         <div ref={printRef}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -492,7 +470,7 @@ papers: [
                       <CardContent>
                         <div className="space-y-6">
                           {blocks.map(([time, items]) => (
-                            <Card key={`${time}-${accordionNonce}`} className="border-muted">
+                            <Card key={`${day.id}-${time}-${accordionNonce}`} className="border-muted">
                               <CardHeader className="pb-2">
                                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                   <Clock className="h-4 w-4" />
@@ -514,7 +492,6 @@ papers: [
                               </CardHeader>
                               <CardContent>
                                 {items.length === 1 ? (
-                                  // Accordéon du seul item du créneau
                                   (items[0].track ||
                                     items[0].chair ||
                                     items[0].details ||
@@ -553,7 +530,6 @@ papers: [
                                     </Accordion>
                                   )
                                 ) : (
-                                  // Grille de sous-cartes parallèles
                                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                                     {items.map((it, idx) => (
                                       <div key={idx} className="rounded-lg border p-4">
@@ -628,6 +604,3 @@ papers: [
     </section>
   )
 }
-
-
-
