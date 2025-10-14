@@ -371,7 +371,7 @@ papers: [
         type: "closing",
         icon: <Presentation className="h-5 w-5" />,
       },
-    
+    ],
   }
 
   // -------- EXPORT PDF (client-side) --------
