@@ -45,7 +45,6 @@ export default function Program() {
       | "closing"
     speaker?: string
     details?: string
-    Moderator?: string
     track?: string
     room?: string
     chair?: string
