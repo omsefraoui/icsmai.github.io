@@ -11,7 +11,7 @@ import { jsPDF } from "jspdf"
 import html2canvas from "html2canvas"
 
 /**
- * ICSMAI 2025 — Program Component (color‑coded, structured)
+ * ICSMAI 2025 — Program Component (color coded, structured)
  * Venue: Saïdia, Morocco — Timezone: Africa/Casablanca (UTC+1)
  */
 export default function Program() {
@@ -45,6 +45,7 @@ export default function Program() {
       | "closing"
     speaker?: string
     details?: string
+    Moderator?: string
     track?: string
     room?: string
     chair?: string
@@ -98,7 +99,7 @@ export default function Program() {
         title: "Official Opening Ceremony",
         location: "Conference Hall",
         type: "ceremony",
-        chair: "Moderator: Prof. Kamal GHOUMID",
+        Moderator: "Prof. Kamal GHOUMID",
         details: [
           "President of Mohammed Premier University",
           "Director of ENSA Oujda",
@@ -116,7 +117,7 @@ export default function Program() {
         type: "keynote",
         track: "HADDIYA; AKHLOUFI; MESTARI",
         details: [
-          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. A. KERKRI",
+          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. K. GHOUMID ",
           "Keynote #2 – Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare. Moderator: Prof. O. SEFRAOUI",
           "Keynote #3 – Prof. Mohammed MESTARI: From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects. Moderator: Prof. A. NAJI",
         ].join(" | "),
@@ -128,7 +129,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "M. Yandouzi and M. Grari",
+        chair: "M. H. Sebbar, A. Saddari, and D.  El Moujtahide ",
         papers: [
           "Asmae EL MEZOUARI — AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
           "Faysal ETROUFI — Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
@@ -167,9 +168,10 @@ export default function Program() {
         title: "Keynotes Block #2",
         location: "Conference Hall",
         type: "keynote",
+        track: " BENTATA; VOSHMGIR ",
         details: [
-          "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!",
-          "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT.",
+          "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!. Moderator: Prof. M.A. MADANI ",
+          "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT. Moderator: Prof. A. KERKRI ",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
@@ -199,7 +201,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "A. Kerkri and M. Jeyar",
+        chair: "H. Bouali, S. Daoudi and R. Malek ",
         papers: [
           "Kaoutar M'RHAR — Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization",
           "Oussama GRARI — Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives",
@@ -216,7 +218,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
-        chair: "Prof. M. Zeryouh, Prof. K. Alaoui",
+        chair: "M. Zeryouh and  K. Alaoui",
         /*track: "Data engineering, analytics, high-performance computing",*/
         papers: [
           "N. HAREESH — AI Stethoscope: Revolutionizing Home Healthcare using Machine Learning",
@@ -246,7 +248,7 @@ export default function Program() {
         location: "Conference Hall",
         type: "keynote",
         details: [
-          "Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region.",
+          "Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region. ",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
@@ -256,9 +258,9 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "H. Tarik, M. Blej, E.M. Chaabelasri",
+        chair: " A. KERKOUR ELMIAD and R. Naciri",
         papers: [
-          "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
+          
           "Omar SEFRAOUI — Adaptive AI Pipeline for Real-Time Cybersecurity Alert Classification: A Multi-Dataset Approach",
           "Ayoub JIBOUNI — Similarity Redefined: A Robust Metric for Predicting Links in Complex Networks",
           "Anas CHAHID — An Advanced Conversational AI System for Medical Specialty Triage Featuring a RAG-based Dialogue Engine",
@@ -274,7 +276,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: " M. Yandouzi and M. Grari",
+        chair: " M.A. Kassmi and D. Bahia ",
         papers: [
           "Sidi Omar EL KETTANI — AI-Powered Energy Management Diagnostics: A Comprehensive Framework for Industrial Predictive Maintenance with Large Language Model Integration",
           "Sidi Omar EL KETTANI — Enhanced AI-Powered Energy Management Diagnostics: Expert System Integration with LLM for Predictive Maintenance",
@@ -309,9 +311,10 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "A. Benbrike, M. Benhaddou, K. Kasmi",
+        chair: " A. El Mezouari and J. Oubaha",
         papers: [
           "Nouhaila CHAREF — Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
+           "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
           "Somaia EL GHAZI — Artificial Intelligence in Medical Education: An Umbrella Review",
           "Manal BOUDIH — NLP-based exploratory study of interviews on blood donation awareness campaigns: evidence from the University of Oujda (2023–2024)",
           "Hicham ARRID — Modeling the Impact of Patient Experience Attributes on Satisfaction: Generalized Additive Models Approach",
@@ -330,7 +333,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "H. Bouali and E.M. Ar-Reyouchi",
+        chair: "H. Barboucha and E.M. Ar-Reyouchi",
         papers: [
           "Meryem ELKADI — Groundwater Level Prediction in the Triffa Plain (Morocco) Using Machine Learning Approaches",
           "Hanae SENBA — Travel Time Optimization in the Old Medina of Fez",
@@ -352,7 +355,7 @@ export default function Program() {
     ],
   }
 
-  // -------- EXPORT PDF (client‑side) --------
+  // -------- EXPORT PDF (client side) --------
   const exportPdf = async () => {
     const node = printRef.current
     if (!node) return
@@ -604,3 +607,5 @@ export default function Program() {
     </section>
   )
 }
+
+
