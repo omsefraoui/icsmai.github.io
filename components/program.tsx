@@ -99,7 +99,7 @@ export default function Program() {
         title: "Official Opening Ceremony",
         location: "Conference Hall",
         type: "ceremony",
-        Moderator: "Prof. Kamal GHOUMID",
+        chair: "Prof. Kamal GHOUMID",
         details: [
           "President of Mohammed Premier University",
           "Director of ENSA Oujda",
