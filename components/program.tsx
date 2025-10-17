@@ -7,8 +7,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Clock, Coffee, MapPin, Presentation, Users } from "lucide-react"
-import { jsPDF } from "jspdf"
-import html2canvas from "html2canvas"
 
 /**
  * ICSMAI 2025 — Program Component (color coded, structured)
@@ -98,7 +96,7 @@ export default function Program() {
         title: "Official Opening Ceremony",
         location: "Conference Hall",
         type: "ceremony",
-        chair: "Prof. Kamal GHOUMID",
+        chair: "Moderator: Prof. Kamal GHOUMID",
         details: [
           "President of Mohammed Premier University",
           "Director of ENSA Oujda",
@@ -116,7 +114,7 @@ export default function Program() {
         type: "keynote",
         track: "HADDIYA; AKHLOUFI; MESTARI",
         details: [
-          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. K. GHOUMID ",
+          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. K. GHOUMID",
           "Keynote #2 – Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare. Moderator: Prof. O. SEFRAOUI",
           "Keynote #3 – Prof. Mohammed MESTARI: From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects. Moderator: Prof. A. NAJI",
         ].join(" | "),
@@ -128,9 +126,8 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "M. H. Sebbar, A. Saddari, and D.  El Moujtahide ",
+        chair: "M. H. Sebbar, A. Saddari, and D. El Moujtahide",
         papers: [
-          "Asmae EL MEZOUARI — AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
           "Faysal ETROUFI — Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
           "Abderrazak SADDARI — Comparative Analysis of Machine Learning Approaches for Antimicrobial Resistance Prediction and Multi-Drug Resistance Classification",
           "Maryam BENHEDDI — Detection of a rare mutation in exon 20 of the EGFR gene by EasyPGX™ real-time PCR in a case of non-small cell lung cancer at the Oujda pathology laboratory",
@@ -167,10 +164,10 @@ export default function Program() {
         title: "Keynotes Block #2",
         location: "Conference Hall",
         type: "keynote",
-        track: " BENTATA; VOSHMGIR ",
+        track: "BENTATA; VOSHMGIR",
         details: [
-          "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!. Moderator: Prof. M.A. MADANI ",
-          "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT. Moderator: Prof. A. KERKRI ",
+          "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!. Moderator: Prof. M.A. MADANI",
+          "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT. Moderator: Prof. A. KERKRI",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
@@ -200,7 +197,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "H. Bouali, S. Daoudi and R. Malek ",
+        chair: "H. Bouali, S. Daoudi and R. Malek",
         papers: [
           "Kaoutar M'RHAR — Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization",
           "Oussama GRARI — Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives",
@@ -217,8 +214,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
-        chair: "M. Zeryouh and  K. Alaoui",
-        /*track: "Data engineering, analytics, high-performance computing",*/
+        chair: "M. Zeryouh and K. Alaoui",
         papers: [
           "N. HAREESH — AI Stethoscope: Revolutionizing Home Healthcare using Machine Learning",
           "Oussama GRARI — Precision and measurement uncertainty verification of procalcitonin assay for AI-enhanced sepsis management in smart hospitals",
@@ -246,9 +242,7 @@ export default function Program() {
         title: "Keynotes Block #3 (Healthcare Innovations)",
         location: "Conference Hall",
         type: "keynote",
-        details: [
-          "Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region. ",
-        ].join(" | "),
+        details: ["Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region."].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
       {
@@ -257,9 +251,8 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: " A. KERKOUR ELMIAD and R. Naciri",
+        chair: "A. KERKOUR ELMIAD and R. Naciri",
         papers: [
-          
           "Omar SEFRAOUI — Adaptive AI Pipeline for Real-Time Cybersecurity Alert Classification: A Multi-Dataset Approach",
           "Ayoub JIBOUNI — Similarity Redefined: A Robust Metric for Predicting Links in Complex Networks",
           "Anas CHAHID — An Advanced Conversational AI System for Medical Specialty Triage Featuring a RAG-based Dialogue Engine",
@@ -275,7 +268,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: " M.A. Kassmi and D. Bahia ",
+        chair: "M.A. Kassmi and D. Bahia",
         papers: [
           "Sidi Omar EL KETTANI — AI-Powered Energy Management Diagnostics: A Comprehensive Framework for Industrial Predictive Maintenance with Large Language Model Integration",
           "Sidi Omar EL KETTANI — Enhanced AI-Powered Energy Management Diagnostics: Expert System Integration with LLM for Predictive Maintenance",
@@ -310,10 +303,10 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: " A. El Mezouari and J. Oubaha",
+        chair: "A. El Mezouari and J. Oubaha",
         papers: [
           "Nouhaila CHAREF — Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
-           "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
+          "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
           "Somaia EL GHAZI — Artificial Intelligence in Medical Education: An Umbrella Review",
           "Manal BOUDIH — NLP-based exploratory study of interviews on blood donation awareness campaigns: evidence from the University of Oujda (2023–2024)",
           "Hicham ARRID — Modeling the Impact of Patient Experience Attributes on Satisfaction: Generalized Additive Models Approach",
@@ -334,6 +327,7 @@ export default function Program() {
         type: "session",
         chair: "H. Barboucha and E.M. Ar-Reyouchi",
         papers: [
+          "Asmae EL MEZOUARI — AI-Driven Radiomics in Oncology: From Early Detection to Personalized Treatment",
           "Meryem ELKADI — Groundwater Level Prediction in the Triffa Plain (Morocco) Using Machine Learning Approaches",
           "Hanae SENBA — Travel Time Optimization in the Old Medina of Fez",
           "Rohit SHITOLE — YOLOv9 Meets CBAM: A Real-Time Smart Traffic Signal System for Emergency Response Optimization",
@@ -354,34 +348,21 @@ export default function Program() {
     ],
   }
 
-  // -------- EXPORT PDF (client side) --------
-  const exportPdf = async () => {
-    const node = printRef.current
-    if (!node) return
+  // ======= OUVRIR LE PDF HÉBERGÉ (au lieu d'exporter côté client) =======
+  // Placez votre fichier dans /public : public/ICSMAI2025_Program_Combined_v2__A4.pdf
+  // Il sera servi à /ICSMAI2025_Program_Combined_v2__A4.pdf
+  const PDF_URL =
+    process.env.NEXT_PUBLIC_PROGRAM_PDF_URL || "/ICSMAI2025_Program_Combined_v2__A4.pdf"
 
-    const canvas = await html2canvas(node, { scale: 2, useCORS: true, backgroundColor: "#ffffff" })
-    const imgData = canvas.toDataURL("image/png")
-
-    const pdf = new jsPDF("p", "pt", "a4")
-    const pageWidth = pdf.internal.pageSize.getWidth()
-    const pageHeight = pdf.internal.pageSize.getHeight()
-
-    const imgWidth = pageWidth
-    const imgHeight = (canvas.height * imgWidth) / canvas.width
-
-    let y = 0
-    while (y < imgHeight) {
-      pdf.addImage(imgData, "PNG", 0, -y, imgWidth, imgHeight)
-      y += pageHeight
-      if (y < imgHeight) pdf.addPage()
-    }
-
-    pdf.save(`ICSMAI2025_Program_${activeDay.toUpperCase()}.pdf`)
+  const exportPdf = () => {
+    const w = window.open(PDF_URL, "_blank", "noopener,noreferrer")
+    if (!w) window.location.href = PDF_URL
   }
+  // =======================================================================
 
   return (
     <section id="program" className="w-full py-12 md:py-24 lg:py-32 bg-primary/5">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6" ref={printRef}>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -390,7 +371,9 @@ export default function Program() {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
         >
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Conference Program</div>
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
+            Conference Program
+          </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Schedule of Events</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Explore the confirmed keynotes, technical sessions, special tracks and workshops for ICSMAI 2025.
@@ -398,16 +381,30 @@ export default function Program() {
           {/* Legend */}
           <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
             {(
-              ["keynote","session","workshop","panel","ceremony","registration","break","social","closing"] as ItemType["type"][]
+              [
+                "keynote",
+                "session",
+                "workshop",
+                "panel",
+                "ceremony",
+                "registration",
+                "break",
+                "social",
+                "closing",
+              ] as ItemType["type"][]
             ).map((t) => (
-              <span key={t} className={`px-2 py-1 rounded-md text-xs ${typeStyles[t]}`}>{TypeLabel[t]}</span>
+              <span key={t} className={`px-2 py-1 rounded-md text-xs ${typeStyles[t]}`}>
+                {TypeLabel[t]}
+              </span>
             ))}
           </div>
         </motion.div>
 
         {/* Actions */}
         <div className="flex items-center justify-end mb-3 gap-2">
-          <Button variant="default" size="sm" onClick={exportPdf}>Exporter en PDF</Button>
+          <Button variant="default" size="sm" onClick={exportPdf}>
+            Exporter en PDF
+          </Button>
           <Button
             variant="outline"
             size="sm"
@@ -431,180 +428,173 @@ export default function Program() {
         </div>
 
         {/* Printable program */}
-        <div ref={printRef}>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <Tabs
-              defaultValue="day1"
-              value={activeDay}
-              onValueChange={handleTabChange}
-              className="w-full"
-            >
-              <TabsList className="grid w-full grid-cols-3 mb-8 h-14">
-                {days.map((day) => (
-                  <TabsTrigger key={day.id} value={day.id} className="text-center">
-                    <div className="flex flex-col">
-                      <span className="font-medium">{day.label}</span>
-                      <span className="text-xs text-muted-foreground">{day.date}</span>
-                    </div>
-                  </TabsTrigger>
-                ))}
-              </TabsList>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Tabs defaultValue="day1" value={activeDay} onValueChange={handleTabChange} className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-8 h-14">
+              {days.map((day) => (
+                <TabsTrigger key={day.id} value={day.id} className="text-center">
+                  <div className="flex flex-col">
+                    <span className="font-medium">{day.label}</span>
+                    <span className="text-xs text-muted-foreground">{day.date}</span>
+                  </div>
+                </TabsTrigger>
+              ))}
+            </TabsList>
 
-              {days.map((day) => {
-                const grouped = groupByTime(schedules[day.id])
-                const blocks = Object.entries(grouped)
-                return (
-                  <TabsContent key={day.id} value={day.id} className="mt-0">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>
-                          Program for {day.label} ({day.date})
-                        </CardTitle>
-                        <CardDescription>
-                          All times are in Morocco Standard Time (Africa/Casablanca, UTC+1)
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-6">
-                          {blocks.map(([time, items]) => (
-                            <Card key={`${day.id}-${time}-${accordionNonce}`} className="border-muted">
-                              <CardHeader className="pb-2">
-                                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                  <Clock className="h-4 w-4" />
-                                  <span className="font-medium">{time}</span>
+            {days.map((day) => {
+              const grouped = groupByTime(schedules[day.id])
+              const blocks = Object.entries(grouped)
+              return (
+                <TabsContent key={day.id} value={day.id} className="mt-0">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Program for {day.label} ({day.date})</CardTitle>
+                      <CardDescription>
+                        All times are in Morocco Standard Time (Africa/Casablanca, UTC+1)
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-6">
+                        {blocks.map(([time, items]) => (
+                          <Card key={`${day.id}-${time}-${accordionNonce}`} className="border-muted">
+                            <CardHeader className="pb-2">
+                              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                <Clock className="h-4 w-4" />
+                                <span className="font-medium">{time}</span>
+                              </div>
+                              <CardTitle className="text-base md:text-lg">
+                                {items.length === 1 ? items[0].title : `Parallel block (${items.length} tracks)`}
+                              </CardTitle>
+                              {items.length === 1 && (
+                                <div className="flex items-center gap-2">
+                                  <span className={`px-2 py-1 rounded-md text-xs ${typeStyles[items[0].type]}`}>
+                                    {TypeLabel[items[0].type]}
+                                  </span>
+                                  <span className="text-xs text-muted-foreground">
+                                    {items[0].room ? `${items[0].location} — ${items[0].room}` : items[0].location}
+                                  </span>
                                 </div>
-                                <CardTitle className="text-base md:text-lg">
-                                  {items.length === 1 ? items[0].title : `Parallel block (${items.length} tracks)`}
-                                </CardTitle>
-                                {items.length === 1 && (
-                                  <div className="flex items-center gap-2">
-                                    <span className={`px-2 py-1 rounded-md text-xs ${typeStyles[items[0].type]}`}>
-                                      {TypeLabel[items[0].type]}
-                                    </span>
-                                    <span className="text-xs text-muted-foreground">
-                                      {items[0].room ? `${items[0].location} — ${items[0].room}` : items[0].location}
-                                    </span>
-                                  </div>
-                                )}
-                              </CardHeader>
-                              <CardContent>
-                                {items.length === 1 ? (
-                                  (items[0].track ||
-                                    items[0].chair ||
-                                    items[0].details ||
-                                    (items[0].papers && items[0].papers.length > 0)) && (
-                                    <Accordion type="multiple" defaultValue={expandAll ? ["details"] : []} className="w-full mt-1">
-                                      <AccordionItem value="details">
-                                        <AccordionTrigger className="text-sm">Details</AccordionTrigger>
-                                        <AccordionContent>
-                                          <div className="space-y-2">
-                                            {items[0].track && (
-                                              <div className="text-sm text-muted-foreground">
-                                                <span className="font-medium">Track:</span> {items[0].track}
-                                              </div>
-                                            )}
-                                            {items[0].chair && (
-                                              <div className="text-sm text-muted-foreground">
-                                                <span className="font-medium">Chair:</span> {items[0].chair}
-                                              </div>
-                                            )}
-                                            {items[0].details && (
-                                              <p className="text-sm text-muted-foreground">{items[0].details}</p>
-                                            )}
-                                            {items[0].papers && items[0].papers.length > 0 && (
-                                              <div className="mt-2">
-                                                <div className="text-sm font-medium">Papers</div>
-                                                <ul className="list-disc ms-5 text-sm text-muted-foreground">
-                                                  {items[0].papers.map((p, i) => (
-                                                    <li key={i}>{p}</li>
-                                                  ))}
-                                                </ul>
-                                              </div>
-                                            )}
-                                          </div>
-                                        </AccordionContent>
-                                      </AccordionItem>
-                                    </Accordion>
-                                  )
-                                ) : (
-                                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                                    {items.map((it, idx) => (
-                                      <div key={idx} className="rounded-lg border p-4">
-                                        <div className="flex items-start justify-between gap-2">
-                                          <div className="space-y-1">
-                                            <h3 className="font-semibold leading-tight">{it.title}</h3>
-                                            <div className="text-xs text-muted-foreground flex items-center gap-2">
-                                              <MapPin className="h-3 w-3" />
-                                              <span>{it.room ? `${it.location} — ${it.room}` : it.location}</span>
+                              )}
+                            </CardHeader>
+                            <CardContent>
+                              {items.length === 1 ? (
+                                (items[0].track ||
+                                  items[0].chair ||
+                                  items[0].details ||
+                                  (items[0].papers && items[0].papers.length > 0)) && (
+                                  <Accordion
+                                    type="multiple"
+                                    defaultValue={expandAll ? ["details"] : []}
+                                    className="w-full mt-1"
+                                  >
+                                    <AccordionItem value="details">
+                                      <AccordionTrigger className="text-sm">Details</AccordionTrigger>
+                                      <AccordionContent>
+                                        <div className="space-y-2">
+                                          {items[0].track && (
+                                            <div className="text-sm text-muted-foreground">
+                                              <span className="font-medium">Track:</span> {items[0].track}
                                             </div>
-                                          </div>
-                                          <span className={`px-2 py-1 rounded-md text-[11px] ${typeStyles[it.type]}`}>
-                                            {TypeLabel[it.type]}
-                                          </span>
+                                          )}
+                                          {items[0].chair && (
+                                            <div className="text-sm text-muted-foreground">
+                                              <span className="font-medium">Chair:</span> {items[0].chair}
+                                            </div>
+                                          )}
+                                          {items[0].details && (
+                                            <p className="text-sm text-muted-foreground">{items[0].details}</p>
+                                          )}
+                                          {items[0].papers && items[0].papers.length > 0 && (
+                                            <div className="mt-2">
+                                              <div className="text-sm font-medium">Papers</div>
+                                              <ul className="list-disc ms-5 text-sm text-muted-foreground">
+                                                {items[0].papers.map((p, i) => (
+                                                  <li key={i}>{p}</li>
+                                                ))}
+                                              </ul>
+                                            </div>
+                                          )}
                                         </div>
-
-                                        {(it.track || it.chair || it.details || (it.papers && it.papers.length > 0)) && (
-                                          <Accordion
-                                            type="multiple"
-                                            defaultValue={expandAll ? [`details-${idx}`] : []}
-                                            className="mt-2"
-                                          >
-                                            <AccordionItem value={`details-${idx}`}>
-                                              <AccordionTrigger className="text-xs">Details</AccordionTrigger>
-                                              <AccordionContent>
-                                                <div className="space-y-1">
-                                                  {it.track && (
-                                                    <div className="text-xs text-muted-foreground">
-                                                      <span className="font-medium">Track:</span> {it.track}
-                                                    </div>
-                                                  )}
-                                                  {it.chair && (
-                                                    <div className="text-xs text-muted-foreground">
-                                                      <span className="font-medium">Chair:</span> {it.chair}
-                                                    </div>
-                                                  )}
-                                                  {it.details && (
-                                                    <p className="text-xs text-muted-foreground">{it.details}</p>
-                                                  )}
-                                                  {it.papers && it.papers.length > 0 && (
-                                                    <div>
-                                                      <div className="text-xs font-medium">Papers</div>
-                                                      <ul className="list-disc ms-5 text-xs text-muted-foreground">
-                                                        {it.papers.map((p, i) => (
-                                                          <li key={i}>{p}</li>
-                                                        ))}
-                                                      </ul>
-                                                    </div>
-                                                  )}
-                                                </div>
-                                              </AccordionContent>
-                                            </AccordionItem>
-                                          </Accordion>
-                                        )}
+                                      </AccordionContent>
+                                    </AccordionItem>
+                                  </Accordion>
+                                )
+                              ) : (
+                                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                                  {items.map((it, idx) => (
+                                    <div key={idx} className="rounded-lg border p-4">
+                                      <div className="flex items-start justify-between gap-2">
+                                        <div className="space-y-1">
+                                          <h3 className="font-semibold leading-tight">{it.title}</h3>
+                                          <div className="text-xs text-muted-foreground flex items-center gap-2">
+                                            <MapPin className="h-3 w-3" />
+                                            <span>{it.room ? `${it.location} — ${it.room}` : it.location}</span>
+                                          </div>
+                                        </div>
+                                        <span className={`px-2 py-1 rounded-md text-[11px] ${typeStyles[it.type]}`}>
+                                          {TypeLabel[it.type]}
+                                        </span>
                                       </div>
-                                    ))}
-                                  </div>
-                                )}
-                              </CardContent>
-                            </Card>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </TabsContent>
-                )
-              })}
-            </Tabs>
-          </motion.div>
-        </div>
+
+                                      {(it.track || it.chair || it.details || (it.papers && it.papers.length > 0)) && (
+                                        <Accordion
+                                          type="multiple"
+                                          defaultValue={expandAll ? [`details-${idx}`] : []}
+                                          className="mt-2"
+                                        >
+                                          <AccordionItem value={`details-${idx}`}>
+                                            <AccordionTrigger className="text-xs">Details</AccordionTrigger>
+                                            <AccordionContent>
+                                              <div className="space-y-1">
+                                                {it.track && (
+                                                  <div className="text-xs text-muted-foreground">
+                                                    <span className="font-medium">Track:</span> {it.track}
+                                                  </div>
+                                                )}
+                                                {it.chair && (
+                                                  <div className="text-xs text-muted-foreground">
+                                                    <span className="font-medium">Chair:</span> {it.chair}
+                                                  </div>
+                                                )}
+                                                {it.details && (
+                                                  <p className="text-xs text-muted-foreground">{it.details}</p>
+                                                )}
+                                                {it.papers && it.papers.length > 0 && (
+                                                  <div>
+                                                    <div className="text-xs font-medium">Papers</div>
+                                                    <ul className="list-disc ms-5 text-xs text-muted-foreground">
+                                                      {it.papers.map((p, i) => (
+                                                        <li key={i}>{p}</li>
+                                                      ))}
+                                                    </ul>
+                                                  </div>
+                                                )}
+                                              </div>
+                                            </AccordionContent>
+                                          </AccordionItem>
+                                        </Accordion>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                            </CardContent>
+                          </Card>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+              )
+            })}
+          </Tabs>
+        </motion.div>
       </div>
     </section>
   )
 }
-
-
