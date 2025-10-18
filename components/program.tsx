@@ -126,7 +126,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "M. H. Sebbar, A. Saddari, and D. El Moujtahide",
+        chair: "M. H. Sebbar, A. Saddari, and K. Alaoui",
         papers: [
           "Faysal ETROUFI — Benchmarking Machine Learning Models for Early Detection of Chronic Kidney Disease",
           "Abderrazak SADDARI — Comparative Analysis of Machine Learning Approaches for Antimicrobial Resistance Prediction and Multi-Drug Resistance Classification",
@@ -214,7 +214,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 3",
         type: "session",
-        chair: "M. Zeryouh and K. Alaoui",
+        chair: "D. El Moujtahide and M. Zeryouh",
         papers: [
           "N. HAREESH — AI Stethoscope: Revolutionizing Home Healthcare using Machine Learning",
           "Oussama GRARI — Precision and measurement uncertainty verification of procalcitonin assay for AI-enhanced sepsis management in smart hospitals",
@@ -303,7 +303,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "A. El Mezouari and J. Oubaha",
+        chair: "A. El Mezouari, M. Benhaddou and J. Oubaha",
         papers: [
           "Nouhaila CHAREF — Artificial Intelligence in Medical Writing: A Systematic Review of Current Practices",
           "Anas TALHAOUI — Automated Role Classification in Security Policies: A Comparative Study of NLP Approaches",
