@@ -177,7 +177,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 1",
         type: "session",
-        chair: "M. Yandouzi and M. Grari",
+        chair: "H. Bouali, S. Daoudi and R. Malek",
         papers: [
           "Kishan Reddy BHIMAVARAM — IoT-Based Urban Agriculture Container Farm Design and Implementation for Localized Produce Supply",
           "Vinay DANDAMRAJ — Smart IoT based Hydroponics Farming",
@@ -197,7 +197,7 @@ export default function Program() {
         location: "Parallel Sessions",
         room: "Room 2",
         type: "session",
-        chair: "H. Bouali, S. Daoudi and R. Malek",
+        chair: "M. Yandouzi and M. Grari",
         papers: [
           "Kaoutar M'RHAR — Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization",
           "Oussama GRARI — Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives",
@@ -205,6 +205,7 @@ export default function Program() {
           "Nazih ASSABBANE — SVHRSP for Skin Ageing: Bioinformatics Rationale and a Microneedle-Delivered Cosmetic Strategy",
           "Mouad ALAOUI MHAMMEDI — Physics-Constrained Generative Inverse Design for Food-Grade Encapsulation Systems",
           "Manale CHAKIR — An experimental evaluation of GRU-based architecture for ICD-9 code assignment using MIMIC-III clinical notes",
+          "Omar SEFRAOUI — Integrating IoT and AI for Smart Medical Systems: Tools, Algorithms, and Challenges in Real-World Healthcare Applications",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -222,7 +223,6 @@ export default function Program() {
           "Dounia EL MOUJTAHIDE — Temporal Stability of Biochemical Phenotypes: A Four-Year Analysis of Blood Biomarker Clusters",
           "Sara RAMDANI — Artificial Intelligence and the Internet of Things in Smart Hypertension Management: A State-of-the-Art Review and Future Directions",
           "Yassmine EL MOUSSAOUI — AI-Powered Simulation Platforms for Healthcare Communication Training: Scoping review",
-          "Omar SEFRAOUI — Integrating IoT and AI for Smart Medical Systems: Tools, Algorithms, and Challenges in Real-World Healthcare Applications",
           "Hakim NASAOUI — MedACT-CL: Knowledge-Enhanced Tri-Modal Contrastive Learning for Medical Action Recognition",
           "Youssef BADININI — Public–private partnership for bringing healthcare services closer together and digitizing them: The example of connected mobile medical units.",
           "Nour El Houda BENKADDOUR — KidneyLab 2.0: Innovative Integration of Arduino Technology for Immersive Teaching in Renal Hydrosodic Regulation",
