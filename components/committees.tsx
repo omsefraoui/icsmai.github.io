@@ -224,11 +224,12 @@ export default function Committees() {
       "F. Falyouni, FSO Oujda, Morocco",
       "M. Merzougui, UMP Oujda, Morocco",
       "S. MAZOUZ, FSO, UMP, Oujda, Morocco",*/
+      "F. Falyouni, FSO Oujda, Morocco",
       "B. Al-Mahdawi, TCE, MT University, Baghdad, IRAQ",
       "A. Al-Azzawi, TCE, MT University, Baghdad, IRAQ",
       "A. Abdulazeez, CS, Al-Mustansiriyah University, Baghdad, IRAQ",
-      /*"A. Moussa, FSO, UMP, Oujda, Morocco",
-      "A. Ghadbane, FSO, UMP, Oujda, Morocco",*/
+      "A. Moussa, FSO, UMP, Oujda, Morocco",
+      /*"A. Ghadbane, FSO, UMP, Oujda, Morocco",*/
       "A. BENLGHAZI, ENSAO, Oujda, Morocco",
       //"Z. Bougroune, ENSAO, Oujda, Morocco",
       //"K. AZGHIOU, ENSAO, Oujda, Morocco",
