@@ -206,6 +206,7 @@ export default function Program() {
           "Mouad ALAOUI MHAMMEDI — Physics-Constrained Generative Inverse Design for Food-Grade Encapsulation Systems",
           "Manale CHAKIR — An experimental evaluation of GRU-based architecture for ICD-9 code assignment using MIMIC-III clinical notes",
           "Omar SEFRAOUI — Integrating IoT and AI for Smart Medical Systems: Tools, Algorithms, and Challenges in Real-World Healthcare Applications",
+          "Alaoui KHADIJA — An extensive categorization of triplestores",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -315,7 +316,8 @@ export default function Program() {
           "BOUBCHEUR Hanane — Ethical and Pedagogical Dimensions of AI-Assisted Mathematics Teaching for Students with Hearing and Speech Impairments",
           "Kaoutar GHOMARI — Electrolyte Disorders in Emergency and Intensive Care Units at Mohammed VI University Hospital Center Oujda: Prevalence, Seasonality and Associated Factors (Year 2022)",
           "Bilal BOURKHA — Artificial intelligence and hospital management: between strategic imitation and innovation – The case of chain clinics in Morocco",
-          "Alaoui KHADIJA — An extensive categorization of triplestores",
+          "Bilal BOURKHA — Artificial intelligence in hospital management: balancing strategic imitation and contextual innovation in moroccan private hospitals",
+          
         ],
         icon: <Users className="h-5 w-5" />,
       },
