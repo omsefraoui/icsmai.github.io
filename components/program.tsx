@@ -202,6 +202,7 @@ export default function Program() {
           "Kaoutar M'RHAR — Exploring Deep Learning for De Novo Drug Design: A Brief Review of Chemical Property Optimization",
           "Oussama GRARI — Harnessing artificial intelligence to tackle biofilm infections: Advances, challenges, and perspectives",
           "El Miloud AR-REYOUCHI — Q2OPT-MED: A Hybrid AI–Heuristic Approach to Healthcare Pathway Optimization",
+          "Nazih ASSABBANE - AI in Aesthetic Medicine: From Subjective Judgment to Algorithmic Precision",
           "Nazih ASSABBANE — SVHRSP for Skin Ageing: Bioinformatics Rationale and a Microneedle-Delivered Cosmetic Strategy",
           "Mouad ALAOUI MHAMMEDI — Physics-Constrained Generative Inverse Design for Food-Grade Encapsulation Systems",
           "Manale CHAKIR — An experimental evaluation of GRU-based architecture for ICD-9 code assignment using MIMIC-III clinical notes",
