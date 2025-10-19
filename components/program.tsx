@@ -355,7 +355,7 @@ export default function Program() {
   // Placez votre fichier dans /public : public/ICSMAI2025_Program_Combined_v2__A4.pdf
   // Il sera servi à /ICSMAI2025_Program_Combined_v2__A4.pdf
   const PDF_URL =
-    process.env.NEXT_PUBLIC_PROGRAM_PDF_URL || "/ICSMAI2025_Program_Timeline_Modern_A4_v4_02.pdf"
+    process.env.NEXT_PUBLIC_PROGRAM_PDF_URL || "/ICSMAI2025_Program__A4.pdf"
     //process.env.NEXT_PUBLIC_PROGRAM_PDF_URL || "/ICSMAI2025_Program_Combined_v2__A4.pdf"
 
   const exportPdf = () => {
