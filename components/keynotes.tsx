@@ -60,14 +60,14 @@ export default function Keynotes() {
       bio: "Leading researcher in deep learning and computer vision with over 100 publications.",
       topic: "Telemedicine: experience in the Eastern region",
     },
-    /*{
-      name: "Pr. MOHAMMED CHOUKRI",
+    {
+      name: "Pr. Abdesslam Boutayeb ",
       organization: "FMPO, Med 1st University",
       location: "Oujda, Morocco.",
-      image: "/images/keynotes/speaker_15.jpg?height=400&width=400",
-      bio: "Pioneer in reinforcement learning and robotics with 20+ years of experience.",
-      topic: "Reinforcement Learning for Autonomous Systems",
-    },*/
+      image: "/images/keynotes/speaker_19.jpeg?height=400&width=400",
+      bio: "",
+      topic: "Mathematical Modelling for Diabetes",
+    },
    
     /*{
       name: "Pr. Abdelhadi Zahouani",
