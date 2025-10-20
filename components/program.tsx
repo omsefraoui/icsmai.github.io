@@ -164,10 +164,11 @@ export default function Program() {
         title: "Keynotes Block #2",
         location: "Conference Hall",
         type: "keynote",
-        track: "BENTATA; VOSHMGIR",
+        track: "BOUTAYEB; VOSHMGIR; BENTATA",
         details: [
-          "Keynote #4 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!. Moderator: Prof. M.A. MADANI",
+          "Keynote #4 – Prof. Abdesslam Boutayeb : Mathematical Modelling for Diabetes. Moderator: Prof. A. KERKRI",
           "Keynote #5 – Prof. Shermin VOSHMGIR: Web3 at the Intersection of Blockchain, AI & IoT. Moderator: Prof. A. KERKRI",
+          "Keynote #6 – Prof. Yassamine BENTATA: The Future of Medicine: Horizons and Limits!. Moderator: Prof. M.A. MADANI",
         ].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
@@ -244,7 +245,7 @@ export default function Program() {
         title: "Keynotes Block #3 (Healthcare Innovations)",
         location: "Conference Hall",
         type: "keynote",
-        details: ["Keynote #6 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region."].join(" | "),
+        details: ["Keynote #7 – Prof. Abdelkrim DAOUDI: Telemedicine in the Eastern region."].join(" | "),
         icon: <Presentation className="h-5 w-5" />,
       },
       {
