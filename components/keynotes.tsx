@@ -62,7 +62,7 @@ export default function Keynotes() {
     },
     {
       name: "Pr. Abdesslam Boutayeb ",
-      organization: "FMPO, Med 1st University",
+      organization: "FSO, Med 1st University",
       location: "Oujda, Morocco.",
       image: "/images/keynotes/speaker_19.jpeg?height=400&width=400",
       bio: "",
