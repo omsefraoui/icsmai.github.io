@@ -114,7 +114,7 @@ export default function Program() {
         type: "keynote",
         track: "HADDIYA; AKHLOUFI; MESTARI",
         details: [
-          "Keynote #1 – Prof. Intissar HADDIYA: Environmental determinants of hypertension. Moderator: Prof. K. GHOUMID",
+          "Keynote #1 – Prof. Intissar HADDIYA: From Data to Diagnosis: How AI is Transforming Medical Practice. Moderator: Prof. K. GHOUMID",
           "Keynote #2 – Prof. Moulay AKHLOUFI: Advances and Challenges in AI for Healthcare. Moderator: Prof. O. SEFRAOUI",
           "Keynote #3 – Prof. Mohammed MESTARI: From Complexity and Network Science to Graph Representation Learning: A Graph Neural Network Approach to Polypharmacy Side Effects. Moderator: Prof. A. NAJI",
         ].join(" | "),
