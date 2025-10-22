@@ -339,6 +339,7 @@ export default function Program() {
           "Elmehdi HASSANI — Towards a Paperless Environment: AI for Smart Invoice Processing",
           "Meryem BENKADDOUR — Verification of the First Principle through Joule's Experiments: Determining the Calorie Equivalent in Joules (J) Using Computer-Assisted Experimentation (CAEx)",
           "Salwa KHALYL — An Empirical Comparison of Topic Models: LDA, NMF, and BERTopic Applied to Hotel Customer Reviews",
+          "Ikram MARKAOUI — Continuous Glucose Monitoring: A Real-Time Sampling Device Prototype for Critically Patients at Mohammed VI University Hospital, Oujda ",
         ],
         icon: <Users className="h-5 w-5" />,
       },
