@@ -138,7 +138,7 @@ export default function Program() {
           "Oussama ABALI — Temporomandibular Joint Osteoarthritis Pathology and Artificial Intelligence: A Brief Systematic Review",
           "Fatima FATIH — Adaptive optimization of CNN architectures using Tree-structured Parzen Estimator for the diagnosis of lung diseases",
           "Youssef RAFIK — Cardiovascular diseases prediction by machine learning techniques",
-          "Ali ARBAOUI — Predicting Autoimmune Flares Using AI and Emotional Analysis",
+          "KARIM Douae — Predicting Autoimmune Flares Using AI and Emotional Analysis",
         ],
         icon: <Users className="h-5 w-5" />,
       },
@@ -275,7 +275,7 @@ export default function Program() {
         papers: [
           "Sidi Omar EL KETTANI — AI-Powered Energy Management Diagnostics: A Comprehensive Framework for Industrial Predictive Maintenance with Large Language Model Integration",
           "Sidi Omar EL KETTANI — Enhanced AI-Powered Energy Management Diagnostics: Expert System Integration with LLM for Predictive Maintenance",
-          "Mohammed Ali ARBAOUI — Preliminary design choices for a Green Hydrogen production system",
+          "Fatima Ez-zahra Hasnaoui — Preliminary design choices for a Green Hydrogen production system",
           "Ali ARBAOUI — Advanced Control Study of a Heat Exchanger: Efficiency Modeling and Analysis for Control Optimization",
           "Hicham TIKAOUI — Vision-Based Angle Detection for Industrial Quality Inspection",
           "Hicham TIKAOUI — Few-Shot Learning Hybrid Approach for Visual Quality Inspection with Limited Data",
@@ -317,8 +317,8 @@ export default function Program() {
           "Hasnae AMNOUN — AI and Big Data in Marketing Decision-Making: A PRISMA-Guided Systematic Review of Scopus-Indexed Studies",
           "BOUBCHEUR Hanane — Ethical and Pedagogical Dimensions of AI-Assisted Mathematics Teaching for Students with Hearing and Speech Impairments",
           "Kaoutar GHOMARI — Electrolyte Disorders in Emergency and Intensive Care Units at Mohammed VI University Hospital Center Oujda: Prevalence, Seasonality and Associated Factors (Year 2022)",
-          "Bilal BOURKHA — Artificial intelligence and hospital management: between strategic imitation and innovation – The case of chain clinics in Morocco",
-          "Bilal BOURKHA — Artificial intelligence in hospital management: balancing strategic imitation and contextual innovation in moroccan private hospitals",
+          "Amine Abdeluahid — Artificial intelligence and hospital management: between strategic imitation and innovation – The case of chain clinics in Morocco",
+          "Amine Abdeluahid — Artificial intelligence in hospital management: balancing strategic imitation and contextual innovation in moroccan private hospitals",
           
         ],
         icon: <Users className="h-5 w-5" />,
